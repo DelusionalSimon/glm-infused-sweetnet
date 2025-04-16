@@ -34,4 +34,6 @@
 - Reverted back using git
 - created a divergence by mistake
 - Fixed with force. will use revert rather than reset in future
+- First sweetnet is up and running and working well. its accuracy matches the values found in the sweetnet paper
+- Prototype 0 is done, time to define prototype 1
 - 

@@ -11,4 +11,8 @@
 - Multilabel classification, one sample with multiple labers. Use sigmoid function
 - USe gifflar code benchmarks.py and look for other data and code. code to turn pairs into multi-label
 
-
+# things to improve in glycowork
+- documentation for using pretrained models
+- links to examples in documentation broken
+- the AUROC thing in model_training.py is broken, remove or fix
+- 
