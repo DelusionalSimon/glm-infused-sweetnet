@@ -36,4 +36,5 @@
 - Fixed with force. will use revert rather than reset in future
 - First sweetnet is up and running and working well. its accuracy matches the values found in the sweetnet paper
 - Prototype 0 is done, time to define prototype 1
-- 
+# Prototype 1 GLM-Infused Sweetnet
+- Set up Jupyter notebook structure

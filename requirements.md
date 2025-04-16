@@ -1,35 +1,56 @@
 Top level requirements (Plan for whole project)
 
-Must have:
-    !Getting SweetNet Up and running (2025-04-11)
-    Infusing SweetNet with GLM Embeddings (2025-04-25)
-    Test And compare infused model to original (2025-05-02)
-Should have:
-    Hyperparameter Optimized SweetNet
-    Applying SweetNet to specific problem
-Could have:
-    Tinkering with SweetNet Structure (birthing new model)
-Won’t have at this time (for future projects):
+2.1.1 Must have:
+1.	+Getting SweetNet Up and running (2025-04-11 2025-04-16)
+2.	!Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25)
+3.	Through testing and statistics to quantify how the infusion influenced the model (2025-05-02)
+4.	Write a thesis that conveys my findings and results (2024-05-29)
+2.1.2 Should have:
+5.	Applying SweetNet to specific problem 
+6.	Test embeddings from other GLMs (Roman has at least 19)
+7.	Hyperparameter Optimized Sweetnet (Evolutionary algorithm?)
+8.	Fix glycowork bugs
+9.	Improve glycowork documentation
+2.1.3 Could have:
+10.	Tinkering with Sweetnet Structure (birthing new model)
+2.1.2 Won’t have at this time (for future projects):
+1.	
 
 
-Current Iteration:
 
-Must haves (60% of effort max)
-    Fork Git Repo and make branch, clone branch to laptop
-    Experimentation jupyter notebook (should the whole project live here?)
-    GLM-infused Sweetnet development system
-    Set up dependencies (If needed)
-    Basic Evaluation system (make a class)
-    Pre-trained sweetnet implementation
-    
-Should haves
-    Training my own Sweetnet
-    
-Could haves (20% of effort)
-    Better name
-    Tinkering with my own sweetnet
-    More knowledge
+Current Iteration [1]:
 
-Won’t have at this time (for future iterations)
-    Embeddings
+3.6.1 Must haves (60% of effort max)
+0.	Jog memory by rereading DeepRank paper
+1.	Explore Embedding data
+2.	Copy SweetNet Code to new Jupyter notebook for experimentation
+3.	Filter and Transform embedding data to a format usable in SweetNet
+4.	Modify SweetNet to accept embedding data
+4.2	Run training and compare
+4.3	If results don’t show improvement, look for errors and try other embeddings
+3.6.2 Should haves
+5.	Add new SweetNet functionality to glycowork 
+6.	Test other GLM embeddings (if the first one fails)
+3.6.3 Could haves (20% of effort)
+7.	
+3.6.4 Won’t have at this time (for future iterations)
+8.	
+
+
+3.7 What is the done definition of each requirement? 
+0.	I’ve read the text again
+1.	I understand the structure and contents of the data
+2.	I can run the local experiment and get the same results as the imported version
+3.	I get a fitting datastructure that I can pipe into SweetNet
+4.	I can run training using the modified SweetNet and get an accuracy score
+5.	I port my experimental code into the models.py file of glycoworks without breaking anything
+6.	See if any of the other embeddings give different results
+3.7.1 How could each requirement be tested?
+0.	Do I Understand what I need to be doing?
+1.	What is the data I need? How might I add it?
+2.	Running the kingdom test with copied sweetnet, see that it behaves similarly
+3.	I get data that works in the modified sweetnet
+4.	Training works (I get convergence and accuracy scores)
+5.	Training works when running from local glycowork, 
+a.	test with other settings to make sure nothing broke
 
