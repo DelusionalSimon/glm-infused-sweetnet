@@ -1,0 +1,23 @@
+# Prework
+- Deep delve
+- Lipophilicity GNN project to familiarize myself
+- Planned project
+  - Started out in more complex project planning system
+  - Defined scope
+  - Broke down into milestones
+  - Moved to simplified PDD
+- Planned first prototype
+# Prototype 0 Basic sweetnet
+- Registered on Github
+- Forked glycowork
+- Made a new branch of dev branch
+- Installed Git
+- Local clone set up
+- Installed VS Code to work in
+- Installed Miniconda for virtual environment
+- editable install setup for glycowork
+- Set up second repo for my experimentation to live in
+- Couldn't get basic stuff to work 
+- Google colab tests as sanity check
+- About to skip editable install
+- I did a fresh conda environment and caught an error in my install. I got it working
