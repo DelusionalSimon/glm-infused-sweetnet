@@ -20,4 +20,12 @@
 - Couldn't get basic stuff to work 
 - Google colab tests as sanity check
 - About to skip editable install
-- I did a fresh conda environment and caught an error in my install. I got it working
+- Caught an error in my install.
+- I did a fresh conda environment and got it working
+- Set up pre-trained SweetNet
+- imported data to test it
+- Started writing evaluator
+- Couldn't figure out what data it expected
+- Found code snippet to train a quick SweetNet
+- 
+- 
