@@ -27,5 +27,11 @@
 - Started writing evaluator
 - Couldn't figure out what data it expected
 - Found code snippet to train a quick SweetNet
-- 
+- Couln't get it to work due to auroc errors
+- tried to fix the bug
+- managed to train the model nicely!
+- Found that my fix just made auroc Nan
+- Reverted back using git
+- created a divergence by mistake
+- Fixed with force. will use revert rather than reset in future
 - 
