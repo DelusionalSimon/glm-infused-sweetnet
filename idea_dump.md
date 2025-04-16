@@ -10,6 +10,19 @@
 - don't have too many cells, try to keep many things in one cell.
 - Multilabel classification, one sample with multiple labers. Use sigmoid function
 - USe gifflar code benchmarks.py and look for other data and code. code to turn pairs into multi-label
+- Perhaps you could optimize a language model to produce nice embeddings to use in another model? '
+- How do we know that the GLM actually produces high-quality embeddings?
+- Use Kingdom prediction (from Daniel via Roman)
+- Deeprank paper only ran their models for 20 models, was this to give the language model enhanced version the upper hand? what would happen after more epochs?
+
+
+# Ideas for paper
+- GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
+- Report on accuracy of GLM as well
+- Hybrid approach
+- Feature engineering
+- Do I go into detail how glycowork transforms data into graphs and all that jazz?
+- Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
 
 # things to improve in glycowork
 - documentation for using pretrained models

@@ -1,18 +1,21 @@
 Top level requirements (Plan for whole project)
 
 2.1.1 Must have:
-1.	+Getting SweetNet Up and running (2025-04-11 2025-04-16)
+1.	+Getting SweetNet Up and running (done 2025-04-16)
 2.	!Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25)
 3.	Through testing and statistics to quantify how the infusion influenced the model (2025-05-02)
 4.	Write a thesis that conveys my findings and results (2024-05-29)
 2.1.2 Should have:
 5.	Applying SweetNet to specific problem 
-6.	Test embeddings from other GLMs (Roman has at least 19)
+6.	Test embeddings from other GLMS
+    1. Roman has at least 19
+    2. Could try to extract embeddings from other models as well, such as SweetTalk
 7.	Hyperparameter Optimized Sweetnet (Evolutionary algorithm?)
 8.	Fix glycowork bugs
 9.	Improve glycowork documentation
 2.1.3 Could have:
 10.	Tinkering with Sweetnet Structure (birthing new model)
+11. Pre-trained GLM-Infused SweetNet
 2.1.2 Won’t have at this time (for future projects):
 1.	
 
@@ -26,8 +29,8 @@ Current Iteration [1]:
 2.	Copy SweetNet Code to new Jupyter notebook for experimentation
 3.	Filter and Transform embedding data to a format usable in SweetNet
 4.	Modify SweetNet to accept embedding data
-4.2	Run training and compare
-4.3	If results don’t show improvement, look for errors and try other embeddings
+    4.1	Run training and compare
+    4.2	If results don’t show improvement, look for errors and try other embeddings
 3.6.2 Should haves
 5.	Add new SweetNet functionality to glycowork 
 6.	Test other GLM embeddings (if the first one fails)
