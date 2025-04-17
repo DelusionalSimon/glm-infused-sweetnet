@@ -26,9 +26,9 @@ Current Iteration [1]:
 3.6.1 Must haves (60% of effort max)
 0.	+Jog memory by rereading DeepRank paper
 1.	+Explore Embedding data
-2.	!Copy SweetNet Code to new Jupyter notebook for experimentation
-3.	Filter and Transform embedding data to a format usable in SweetNet
-4.	Modify SweetNet to accept embedding data
+2.	+Copy SweetNet Code to new Jupyter notebook for experimentation
+3.	-Filter and Transform embedding data to a format usable in SweetNet
+4.	!Modify SweetNet to accept embedding data
     4.1	Run training and compare
     4.2	If results don’t show improvement, look for errors and try other embeddings
 3.6.2 Should haves

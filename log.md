@@ -42,3 +42,5 @@
 - Through exploration of embeddings
 - Loaded glyconet library
 - They correspond one to one!
+- I successfully ran the SweetNet, init_weights, and Prep_model code from cells, and the  training worked
+- I split the kingdom model running code into two cells to not have to load the data each time
