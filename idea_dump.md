@@ -14,7 +14,16 @@
 - How do we know that the GLM actually produces high-quality embeddings?
 - Use Kingdom prediction (from Daniel via Roman)
 - Deeprank paper only ran their models for 20 models, was this to give the language model enhanced version the upper hand? what would happen after more epochs?
+- How you handle embeddings for less frequent or unseen tokens might become a relevant consideration later
 
+
+# Ideas for Interesting applications (for framing in paper)
+- 
+
+# Improved model
+- Try to use evolutionary algorithms for feature optimization
+- Look into optimizing the feature matrix
+- 
 
 # Ideas for paper
 - GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
@@ -23,6 +32,7 @@
 - Feature engineering
 - Do I go into detail how glycowork transforms data into graphs and all that jazz?
 - Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
+- Focus on case where SweetNet already outperforms giifflar ( and all other models )
 
 # things to improve in glycowork
 - documentation for using pretrained models

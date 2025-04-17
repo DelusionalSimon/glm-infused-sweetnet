@@ -37,4 +37,8 @@
 - First sweetnet is up and running and working well. its accuracy matches the values found in the sweetnet paper
 - Prototype 0 is done, time to define prototype 1
 # Prototype 1 GLM-Infused Sweetnet
-- Set up Jupyter notebook structure
+- Set up Jupyter notebook structure 
+- Got Embedding data imported
+- Through exploration of embeddings
+- Loaded glyconet library
+- They correspond one to one!
