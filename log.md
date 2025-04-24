@@ -44,3 +44,20 @@
 - They correspond one to one!
 - I successfully ran the SweetNet, init_weights, and Prep_model code from cells, and the  training worked
 - I split the kingdom model running code into two cells to not have to load the data each time
+- tried to fix auroc again, for some reaon my commenting out broke the graphing of training. 
+- Abandoned that again
+- I seem to get single-class batches in my training and validation data (bug uncovered while tinkering with auroc code) This may impact the validity of my metrics, I would have to edit the 
+- Added code to model_training.py to detect single-class batches
+- 2 single batches in ten epochs. 10 in 100, 9 where batch label 1 one batch label 2 Amoebozoa': 0, 'Animalia': 1, 'Bacteria': 2,
+- Doesn't seem to matter that much, leaving it behind for now
+- I've been running SweetNet set on a classification task (assuming multi-class, single-label classification)
+- in reality the problem is a multi-class, multi-label task. 
+- Number of unique items: 18896, Number of duplicates: 660
+- running that as a classification task is no good. data leakage and all kinds of problems
+- I will need to work with how I load the data, using gifflar code
+- USe gifflar code benchmarks.py and look for other data and code. code to turn pairs into multi-label
+- Good thing I caught this now, I was so close to just being done in the wrong way.
+- Lets load the data properly using functions in GIFFLAR
+- Forked and cloned Gifflar Repo
+- Figured out how to run functions from it. 
+- Loaded kingdom data using get_data function (took 40 min)

@@ -15,13 +15,16 @@
 - Use Kingdom prediction (from Daniel via Roman)
 - Deeprank paper only ran their models for 20 models, was this to give the language model enhanced version the upper hand? what would happen after more epochs?
 - How you handle embeddings for less frequent or unseen tokens might become a relevant consideration later
+- Might need to downsample dominant organism groups to not skew data
 
 
 # Ideas for Interesting applications (for framing in paper)
-- 
+- Glycans as biomarker for disease x
 
 # Improved model
-- Try to use evolutionary algorithms for feature optimization
+- Try to use evolutionary algorithms for feature optimization (might be too slow)
+  - Use grid search instead
+  - raytune perhaps?
 - Look into optimizing the feature matrix
 - 
 
@@ -33,9 +36,13 @@
 - Do I go into detail how glycowork transforms data into graphs and all that jazz?
 - Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
 - Focus on case where SweetNet already outperforms giifflar ( and all other models )
+- 
+- 
 
 # things to improve in glycowork
 - documentation for using pretrained models
 - links to examples in documentation broken
 - the AUROC thing in model_training.py is broken, remove or fix
+- I seem to get single-class batches in my training and validation data (bug uncovered while tinkering with auroc code)
+- https://github.com/BojarLab/glycowork/blob/master/05_examples.ipynb Deep learning code snippets isn't correct, the model isn't for category prediction, the data needs to be transformed for multi-label prediction
 - 

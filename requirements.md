@@ -28,6 +28,7 @@ Current Iteration [1]:
 1.	+Explore Embedding data
 2.	+Copy SweetNet Code to new Jupyter notebook for experimentation
 3.	-Filter and Transform embedding data to a format usable in SweetNet
+99. !I will need to modify my base sweetnet training code as well as implement data loading to change from categorical to multilabel
 4.	!Modify SweetNet to accept embedding data
     4.1	Run training and compare
     4.2	If results don’t show improvement, look for errors and try other embeddings
