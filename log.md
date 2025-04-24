@@ -61,3 +61,6 @@
 - Forked and cloned Gifflar Repo
 - Figured out how to run functions from it. 
 - Loaded kingdom data using get_data function (took 40 min)
+- Loaded data into dataframe
+- Melted dataframe into long format and split into glycans and labels using prepare_multilabel
+- Made into graphs and loaded into dataloader
