@@ -66,3 +66,6 @@
 - Made into graphs and loaded into dataloader
 - Made my own split function and used the split_data_to_train for hyperefficent loading
 - Tested the split function, it doesn't work as expected
+- Built a new cleaner split pipeline
+- Validation still didn't work
+- Turns out the validator wasn't working as expected, it does work, and probably did with the old split.
