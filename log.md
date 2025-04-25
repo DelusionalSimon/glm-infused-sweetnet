@@ -69,3 +69,5 @@
 - Built a new cleaner split pipeline
 - Validation still didn't work
 - Turns out the validator wasn't working as expected, it does work, and probably did with the old split.
+- Validated graphs from dataloaders
+- 
