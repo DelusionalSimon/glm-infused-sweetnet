@@ -64,3 +64,5 @@
 - Loaded data into dataframe
 - Melted dataframe into long format and split into glycans and labels using prepare_multilabel
 - Made into graphs and loaded into dataloader
+- Made my own split function and used the split_data_to_train for hyperefficent loading
+- Tested the split function, it doesn't work as expected
