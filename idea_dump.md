@@ -16,6 +16,7 @@
 - Deeprank paper only ran their models for 20 models, was this to give the language model enhanced version the upper hand? what would happen after more epochs?
 - How you handle embeddings for less frequent or unseen tokens might become a relevant consideration later
 - Might need to downsample dominant organism groups to not skew data
+- Concatenate the output of self.item_embedding(x) with the GLM embeddings
 
 
 # Ideas for Interesting applications (for framing in paper)
@@ -35,8 +36,8 @@
 - Feature engineering
 - Do I go into detail how glycowork transforms data into graphs and all that jazz?
 - Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
-- Focus on case where SweetNet already outperforms giifflar ( and all other models )
-- 
+- Focus on case where SweetNet already outperforms gifflar ( and all other models )
+- Diagram showing how the features from a GLM map into the architecture of the GNN
 - 
 
 # things to improve in glycowork

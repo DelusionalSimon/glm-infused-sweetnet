@@ -70,4 +70,7 @@
 - Validation still didn't work
 - Turns out the validator wasn't working as expected, it does work, and probably did with the old split.
 - Validated graphs from dataloaders
-- 
+- Managed to run training on a multi-label multi-class sweetnet, and the accuracy is the same as the old flawed method!
+- Now I can tackle the embeddings. (the new data loading pipeline will make it quite easy to use otehr data for my final paper) 
+- First tried to edit the forward function of Sweetnet, 
+- Changed my mind and did a function to add the embeddings directly to the dataloaders
