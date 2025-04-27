@@ -74,3 +74,6 @@
 - Now I can tackle the embeddings. (the new data loading pipeline will make it quite easy to use otehr data for my final paper) 
 - First tried to edit the forward function of Sweetnet, 
 - Changed my mind and did a function to add the embeddings directly to the dataloaders
+- Trying to get it to work
+- Editing training_model to pipe in data from loaders correctly
+- The model trains (super slowly)
