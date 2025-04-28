@@ -17,6 +17,7 @@
 - How you handle embeddings for less frequent or unseen tokens might become a relevant consideration later
 - Might need to downsample dominant organism groups to not skew data
 - Concatenate the output of self.item_embedding(x) with the GLM embeddings
+- Might I be making a 320 dimensional embedding where each dimension is a 320 dimensional vector?
 
 
 # Ideas for Interesting applications (for framing in paper)

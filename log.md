@@ -76,4 +76,14 @@
 - Changed my mind and did a function to add the embeddings directly to the dataloaders
 - Trying to get it to work
 - Editing training_model to pipe in data from loaders correctly
-- The model trains (super slowly)
+- The model trains (super slowly (6 hours vs 15 minutes)) 15 times slower
+- And with very low accuracy 25 epochs in an an lrap of 0.0012 after 45 minutes
+- Abortimng and trying again with a learning rate of 0.005 rather than 0.0005
+- LRAP seems to go up slightly quicker
+- Training LRAP stalled quickly, going to 0.01
+- I've created fixed embeddings which is a way to do it, but it doesn't seem that effective
+- Fixed Sweetnet and Prep_model to work with no infused embeddings as well
+- Running the model without embeddings takes just as long, so I must hjave broken something in train_model
+- The horrendous speed was due to unneccecary to.device calls when adding the embeddings in the training loop
+- Now to find why the glm-infused model doesn't converge (which should still be an issue)
+- 

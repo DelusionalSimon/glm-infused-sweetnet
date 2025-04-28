@@ -31,7 +31,9 @@ Current Iteration [1]:
 99. +I will need to modify my base sweetnet training code as well as implement data loading to change from categorical to multilabel
 4.	!Modify SweetNet to accept embedding data
     4.1	Run training and compare
-    4.2	If results don’t show improvement, look for errors and try other embeddings
+    4.2	If results don’t show improvement 
+    4.3 look for errors or try other embeddings
+    4.4 Go back to 4.1
 3.6.2 Should haves
 5.	Add new SweetNet functionality to glycowork 
 6.	Test other GLM embeddings (if the first one fails)
