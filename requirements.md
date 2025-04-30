@@ -13,6 +13,7 @@ Top level requirements (Plan for whole project)
 7.	Hyperparameter Optimized Sweetnet (Evolutionary algorithm?)
 8.	Fix glycowork bugs
 9.	Improve glycowork documentation
+10. SHAP analysis (use GNNShap?)
 2.1.3 Could have:
 10.	Tinkering with Sweetnet Structure (birthing new model)
 11. Pre-trained GLM-Infused SweetNet
@@ -29,6 +30,17 @@ Current Iteration [1]:
 2.	+Copy SweetNet Code to new Jupyter notebook for experimentation
 3.	-Filter and Transform embedding data to a format usable in SweetNet
 99. +I will need to modify my base sweetnet training code as well as implement data loading to change from categorical to multilabel
+100. !While waiting for new embeddings
+     1.   Get dataloading and embedding pipeline working with glycowork data
+     2.   especially tissue data
+     3.   look into lectin glycan interaction
+     4.   refactor code
+          1.   move finished functions into utils.py
+          2.   make classes as needed
+          3.   New clean notebook for further work
+          4.   Do additional research
+          5.   Rest
+          6.   
 4.	!Modify SweetNet to accept embedding data
     4.1	Run training and compare
     4.2	If results don’t show improvement 

@@ -39,6 +39,12 @@
 - Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
 - Focus on case where SweetNet already outperforms gifflar ( and all other models )
 - Diagram showing how the features from a GLM map into the architecture of the GNN
+- In your discussion section, briefly touch upon potential applications of your method in areas like biomarker discovery. You can mention Disease X as a hypothetical example and discuss the potential benefits of using GLM embeddings for such tasks. This shows the broader relevance of your work without requiring you to solve a whole new problem.
+- Negative result: Frame your discussion around the potential limitations of directly using language model embeddings for GNN initialization. You could suggest that the effectiveness of this approach might depend on the similarity between the language model's pre-training domain and the downstream task
+- Positive result: Propose that this approach could be applicable to other domains where molecules or structured data can be represented as graphs and where language models can learn meaningful embeddings of the constituent parts 
+- Regardless of the outcome, the key to making your findings generalizable is to think critically about why you got the results you did and to relate those reasons to broader principles of machine learning, graph representation learning, and transfer learning from language models.
+- This kind of high-level framing can elevate your thesis beyond a specific application and contribute to the understanding of when and why these methods might be effective (or not) in a wider range of problems. It's definitely a worthwhile goal if you have the bandwidth to explore the "why" behind your findings.
+-  I could use SHAP values for evaluation in my paper (as well as some nice plots)
 - 
 
 # things to improve in glycowork
@@ -47,4 +53,4 @@
 - the AUROC thing in model_training.py is broken, remove or fix
 - I seem to get single-class batches in my training and validation data (bug uncovered while tinkering with auroc code)
 - https://github.com/BojarLab/glycowork/blob/master/05_examples.ipynb Deep learning code snippets isn't correct, the model isn't for category prediction, the data needs to be transformed for multi-label prediction
-- 
+- Fix LRAP at the end (takes overall best rather than best average, making it artificially high)

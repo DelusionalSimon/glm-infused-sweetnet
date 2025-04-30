@@ -86,4 +86,11 @@
 - Running the model without embeddings takes just as long, so I must hjave broken something in train_model
 - The horrendous speed was due to unneccecary to.device calls when adding the embeddings in the training loop
 - Now to find why the glm-infused model doesn't converge (which should still be an issue)
+- Looking cloesly at the training reports there seems to be an issue with the final reported LRAP value, not being find in any epoch report.
+- Trying to debug I found that all embedding vectors are the same, no wonder the system behaves badly, especially since they are fixed (which may be a good idea, because otherwise they would have changed and probably made things look better than they are)
+- Couldn't figure out how my embeddings to data function was loading the same embedding into all vectors eventually I found that the embedding file was filled with just one value, roman seem to have messed up a bit.
+- I only ever looked at the keeys when exploring the data of the embeddings, I should have looked at more of the embeddings themselves
+- While I wait on new embeddings from roman I'll refactor the code and generalize it to work with other kinds of data to solve other problems. 
+- made a pipeline to load glycowork datasets and splitting them into a chosen category
 - 
+  
