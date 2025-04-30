@@ -31,8 +31,8 @@ Current Iteration [1]:
 3.	-Filter and Transform embedding data to a format usable in SweetNet
 99. +I will need to modify my base sweetnet training code as well as implement data loading to change from categorical to multilabel
 100. !While waiting for new embeddings
-     1.   Get dataloading and embedding pipeline working with glycowork data
-     2.   especially tissue data
+     1.   +Get dataloading and embedding pipeline working with glycowork data
+     2.   +especially tissue data
      3.   look into lectin glycan interaction
      4.   refactor code
           1.   move finished functions into utils.py

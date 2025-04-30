@@ -95,4 +95,8 @@
 - created multilabel_split function to take glycans and labels and splitting them using StratifiedShuffleSplit
 - Now I need to remove rare classes
 - Rebuilt data loading pipeline into a function that also does the filtering
+- Explored different settings for the min_class_size until I found 6 to be the minimum that would lead to successful stratification
+- transformed into graphs and Loaded into dataloaders
+- Ran successful training'
+- 
   
