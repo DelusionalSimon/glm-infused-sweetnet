@@ -1,0 +1,602 @@
+Epoch 0/99
+----------
+train Loss: 2.8889 LRAP: 0.0000 NDCG: 0.4344
+val Loss: 2.3324 LRAP: 0.0003 NDCG: 0.4859
+Validation loss decreased (0.000000 --> 2.332450).  Saving model ...
+
+Epoch 1/99
+----------
+train Loss: 1.9290 LRAP: 0.0004 NDCG: 0.5217
+val Loss: 1.4636 LRAP: 0.0003 NDCG: 0.5192
+Validation loss decreased (2.332450 --> 1.463617).  Saving model ...
+
+Epoch 2/99
+----------
+train Loss: 1.3724 LRAP: 0.0642 NDCG: 0.5558
+val Loss: 1.2292 LRAP: 0.2832 NDCG: 0.6089
+Validation loss decreased (1.463617 --> 1.229225).  Saving model ...
+
+Epoch 3/99
+----------
+train Loss: 1.2388 LRAP: 0.3137 NDCG: 0.6313
+val Loss: 1.1449 LRAP: 0.4525 NDCG: 0.6639
+Validation loss decreased (1.229225 --> 1.144947).  Saving model ...
+
+Epoch 4/99
+----------
+train Loss: 1.1765 LRAP: 0.4567 NDCG: 0.6723
+val Loss: 1.1210 LRAP: 0.6041 NDCG: 0.7101
+Validation loss decreased (1.144947 --> 1.121000).  Saving model ...
+
+Epoch 5/99
+----------
+train Loss: 1.1404 LRAP: 0.5242 NDCG: 0.6979
+val Loss: 1.0764 LRAP: 0.5906 NDCG: 0.7100
+Validation loss decreased (1.121000 --> 1.076448).  Saving model ...
+
+Epoch 6/99
+----------
+train Loss: 1.1169 LRAP: 0.5512 NDCG: 0.7108
+val Loss: 1.0574 LRAP: 0.5176 NDCG: 0.7107
+Validation loss decreased (1.076448 --> 1.057401).  Saving model ...
+
+Epoch 7/99
+----------
+train Loss: 1.0907 LRAP: 0.5494 NDCG: 0.7167
+val Loss: 1.0492 LRAP: 0.5938 NDCG: 0.7215
+Validation loss decreased (1.057401 --> 1.049192).  Saving model ...
+
+Epoch 8/99
+----------
+train Loss: 1.0666 LRAP: 0.5637 NDCG: 0.7252
+val Loss: 1.0331 LRAP: 0.6406 NDCG: 0.7453
+Validation loss decreased (1.049192 --> 1.033064).  Saving model ...
+
+Epoch 9/99
+----------
+train Loss: 1.0516 LRAP: 0.5941 NDCG: 0.7404
+val Loss: 1.0278 LRAP: 0.6086 NDCG: 0.7471
+Validation loss decreased (1.033064 --> 1.027808).  Saving model ...
+
+Epoch 10/99
+----------
+train Loss: 1.0266 LRAP: 0.5653 NDCG: 0.7383
+val Loss: 1.0034 LRAP: 0.6606 NDCG: 0.7637
+Validation loss decreased (1.027808 --> 1.003407).  Saving model ...
+
+Epoch 11/99
+----------
+train Loss: 1.0052 LRAP: 0.5927 NDCG: 0.7551
+val Loss: 0.9968 LRAP: 0.6720 NDCG: 0.7881
+Validation loss decreased (1.003407 --> 0.996766).  Saving model ...
+
+Epoch 12/99
+----------
+train Loss: 0.9909 LRAP: 0.5971 NDCG: 0.7619
+val Loss: 0.9861 LRAP: 0.6537 NDCG: 0.7946
+Validation loss decreased (0.996766 --> 0.986111).  Saving model ...
+
+Epoch 13/99
+----------
+train Loss: 0.9824 LRAP: 0.5996 NDCG: 0.7694
+val Loss: 0.9770 LRAP: 0.6466 NDCG: 0.7909
+Validation loss decreased (0.986111 --> 0.977035).  Saving model ...
+
+Epoch 14/99
+----------
+train Loss: 0.9711 LRAP: 0.6122 NDCG: 0.7780
+val Loss: 0.9709 LRAP: 0.6523 NDCG: 0.7976
+Validation loss decreased (0.977035 --> 0.970933).  Saving model ...
+
+Epoch 15/99
+----------
+train Loss: 0.9666 LRAP: 0.6184 NDCG: 0.7809
+val Loss: 0.9739 LRAP: 0.6917 NDCG: 0.8103
+EarlyStopping counter: 1 out of 50
+
+Epoch 16/99
+----------
+train Loss: 0.9543 LRAP: 0.6337 NDCG: 0.7893
+val Loss: 0.9625 LRAP: 0.6663 NDCG: 0.8042
+Validation loss decreased (0.970933 --> 0.962530).  Saving model ...
+
+Epoch 17/99
+----------
+train Loss: 0.9428 LRAP: 0.6349 NDCG: 0.7941
+val Loss: 0.9565 LRAP: 0.6945 NDCG: 0.8148
+Validation loss decreased (0.962530 --> 0.956481).  Saving model ...
+
+Epoch 18/99
+----------
+train Loss: 0.9385 LRAP: 0.6497 NDCG: 0.8010
+val Loss: 0.9588 LRAP: 0.7043 NDCG: 0.8142
+EarlyStopping counter: 1 out of 50
+
+Epoch 19/99
+----------
+train Loss: 0.9320 LRAP: 0.6581 NDCG: 0.8029
+val Loss: 0.9592 LRAP: 0.7379 NDCG: 0.8337
+EarlyStopping counter: 2 out of 50
+
+Epoch 20/99
+----------
+train Loss: 0.9302 LRAP: 0.6746 NDCG: 0.8096
+val Loss: 0.9483 LRAP: 0.6914 NDCG: 0.8205
+Validation loss decreased (0.956481 --> 0.948311).  Saving model ...
+
+Epoch 21/99
+----------
+train Loss: 0.9221 LRAP: 0.6680 NDCG: 0.8102
+val Loss: 0.9511 LRAP: 0.7262 NDCG: 0.8286
+EarlyStopping counter: 1 out of 50
+
+Epoch 22/99
+----------
+train Loss: 0.9181 LRAP: 0.6801 NDCG: 0.8153
+val Loss: 0.9523 LRAP: 0.7268 NDCG: 0.8307
+EarlyStopping counter: 2 out of 50
+
+Epoch 23/99
+----------
+train Loss: 0.9117 LRAP: 0.6885 NDCG: 0.8210
+val Loss: 0.9489 LRAP: 0.7422 NDCG: 0.8388
+EarlyStopping counter: 3 out of 50
+
+Epoch 24/99
+----------
+train Loss: 0.9110 LRAP: 0.6852 NDCG: 0.8194
+val Loss: 0.9504 LRAP: 0.7439 NDCG: 0.8396
+EarlyStopping counter: 4 out of 50
+
+Epoch 25/99
+----------
+train Loss: 0.9027 LRAP: 0.7007 NDCG: 0.8267
+val Loss: 0.9463 LRAP: 0.7471 NDCG: 0.8419
+Validation loss decreased (0.948311 --> 0.946262).  Saving model ...
+
+Epoch 26/99
+----------
+train Loss: 0.9001 LRAP: 0.7082 NDCG: 0.8296
+val Loss: 0.9495 LRAP: 0.7391 NDCG: 0.8403
+EarlyStopping counter: 1 out of 50
+
+Epoch 27/99
+----------
+train Loss: 0.8967 LRAP: 0.7184 NDCG: 0.8342
+val Loss: 0.9460 LRAP: 0.7242 NDCG: 0.8352
+Validation loss decreased (0.946262 --> 0.946025).  Saving model ...
+
+Epoch 28/99
+----------
+train Loss: 0.8943 LRAP: 0.7187 NDCG: 0.8354
+val Loss: 0.9426 LRAP: 0.7428 NDCG: 0.8449
+Validation loss decreased (0.946025 --> 0.942626).  Saving model ...
+
+Epoch 29/99
+----------
+train Loss: 0.8895 LRAP: 0.7260 NDCG: 0.8387
+val Loss: 0.9386 LRAP: 0.7554 NDCG: 0.8515
+Validation loss decreased (0.942626 --> 0.938582).  Saving model ...
+
+Epoch 30/99
+----------
+train Loss: 0.8877 LRAP: 0.7316 NDCG: 0.8436
+val Loss: 0.9404 LRAP: 0.7551 NDCG: 0.8491
+EarlyStopping counter: 1 out of 50
+
+Epoch 31/99
+----------
+train Loss: 0.8827 LRAP: 0.7339 NDCG: 0.8436
+val Loss: 0.9368 LRAP: 0.7782 NDCG: 0.8613
+Validation loss decreased (0.938582 --> 0.936796).  Saving model ...
+
+Epoch 32/99
+----------
+train Loss: 0.8781 LRAP: 0.7406 NDCG: 0.8471
+val Loss: 0.9352 LRAP: 0.7685 NDCG: 0.8582
+Validation loss decreased (0.936796 --> 0.935225).  Saving model ...
+
+Epoch 33/99
+----------
+train Loss: 0.8744 LRAP: 0.7495 NDCG: 0.8517
+val Loss: 0.9345 LRAP: 0.7776 NDCG: 0.8619
+Validation loss decreased (0.935225 --> 0.934489).  Saving model ...
+
+Epoch 34/99
+----------
+train Loss: 0.8738 LRAP: 0.7554 NDCG: 0.8543
+val Loss: 0.9350 LRAP: 0.7673 NDCG: 0.8568
+EarlyStopping counter: 1 out of 50
+
+Epoch 35/99
+----------
+train Loss: 0.8717 LRAP: 0.7594 NDCG: 0.8556
+val Loss: 0.9336 LRAP: 0.7782 NDCG: 0.8612
+Validation loss decreased (0.934489 --> 0.933613).  Saving model ...
+
+Epoch 36/99
+----------
+train Loss: 0.8659 LRAP: 0.7622 NDCG: 0.8585
+val Loss: 0.9346 LRAP: 0.7862 NDCG: 0.8649
+EarlyStopping counter: 1 out of 50
+
+Epoch 37/99
+----------
+train Loss: 0.8632 LRAP: 0.7711 NDCG: 0.8628
+val Loss: 0.9324 LRAP: 0.7850 NDCG: 0.8635
+Validation loss decreased (0.933613 --> 0.932400).  Saving model ...
+
+Epoch 38/99
+----------
+train Loss: 0.8591 LRAP: 0.7752 NDCG: 0.8642
+val Loss: 0.9336 LRAP: 0.7885 NDCG: 0.8653
+EarlyStopping counter: 1 out of 50
+
+Epoch 39/99
+----------
+train Loss: 0.8592 LRAP: 0.7795 NDCG: 0.8652
+val Loss: 0.9308 LRAP: 0.7688 NDCG: 0.8574
+Validation loss decreased (0.932400 --> 0.930796).  Saving model ...
+
+Epoch 40/99
+----------
+train Loss: 0.8535 LRAP: 0.7839 NDCG: 0.8684
+val Loss: 0.9328 LRAP: 0.7970 NDCG: 0.8708
+EarlyStopping counter: 1 out of 50
+
+Epoch 41/99
+----------
+train Loss: 0.8530 LRAP: 0.7866 NDCG: 0.8699
+val Loss: 0.9280 LRAP: 0.7905 NDCG: 0.8678
+Validation loss decreased (0.930796 --> 0.927989).  Saving model ...
+
+Epoch 42/99
+----------
+train Loss: 0.8482 LRAP: 0.7939 NDCG: 0.8739
+val Loss: 0.9260 LRAP: 0.7947 NDCG: 0.8702
+Validation loss decreased (0.927989 --> 0.926031).  Saving model ...
+
+Epoch 43/99
+----------
+train Loss: 0.8454 LRAP: 0.7937 NDCG: 0.8749
+val Loss: 0.9249 LRAP: 0.8136 NDCG: 0.8822
+Validation loss decreased (0.926031 --> 0.924877).  Saving model ...
+
+Epoch 44/99
+----------
+train Loss: 0.8455 LRAP: 0.7984 NDCG: 0.8776
+val Loss: 0.9330 LRAP: 0.7967 NDCG: 0.8733
+EarlyStopping counter: 1 out of 50
+
+Epoch 45/99
+----------
+train Loss: 0.8439 LRAP: 0.8107 NDCG: 0.8818
+val Loss: 0.9272 LRAP: 0.7910 NDCG: 0.8692
+EarlyStopping counter: 2 out of 50
+
+Epoch 46/99
+----------
+train Loss: 0.8417 LRAP: 0.8085 NDCG: 0.8814
+val Loss: 0.9228 LRAP: 0.8142 NDCG: 0.8807
+Validation loss decreased (0.924877 --> 0.922752).  Saving model ...
+
+Epoch 47/99
+----------
+train Loss: 0.8374 LRAP: 0.8109 NDCG: 0.8817
+val Loss: 0.9185 LRAP: 0.8139 NDCG: 0.8813
+Validation loss decreased (0.922752 --> 0.918525).  Saving model ...
+
+Epoch 48/99
+----------
+train Loss: 0.8334 LRAP: 0.8191 NDCG: 0.8866
+val Loss: 0.9196 LRAP: 0.8182 NDCG: 0.8812
+EarlyStopping counter: 1 out of 50
+
+Epoch 49/99
+----------
+train Loss: 0.8327 LRAP: 0.8195 NDCG: 0.8869
+val Loss: 0.9215 LRAP: 0.8256 NDCG: 0.8852
+EarlyStopping counter: 2 out of 50
+
+Epoch 50/99
+----------
+train Loss: 0.8284 LRAP: 0.8260 NDCG: 0.8899
+val Loss: 0.9208 LRAP: 0.8287 NDCG: 0.8891
+EarlyStopping counter: 3 out of 50
+
+Epoch 51/99
+----------
+train Loss: 0.8296 LRAP: 0.8277 NDCG: 0.8919
+val Loss: 0.9222 LRAP: 0.8279 NDCG: 0.8851
+EarlyStopping counter: 4 out of 50
+
+Epoch 52/99
+----------
+train Loss: 0.8261 LRAP: 0.8322 NDCG: 0.8928
+val Loss: 0.9132 LRAP: 0.8341 NDCG: 0.8902
+Validation loss decreased (0.918525 --> 0.913211).  Saving model ...
+
+Epoch 53/99
+----------
+train Loss: 0.8240 LRAP: 0.8339 NDCG: 0.8936
+val Loss: 0.9150 LRAP: 0.8379 NDCG: 0.8948
+EarlyStopping counter: 1 out of 50
+
+Epoch 54/99
+----------
+train Loss: 0.8229 LRAP: 0.8396 NDCG: 0.8975
+val Loss: 0.9181 LRAP: 0.8407 NDCG: 0.8935
+EarlyStopping counter: 2 out of 50
+
+Epoch 55/99
+----------
+train Loss: 0.8214 LRAP: 0.8399 NDCG: 0.8989
+val Loss: 0.9127 LRAP: 0.8456 NDCG: 0.8965
+Validation loss decreased (0.913211 --> 0.912748).  Saving model ...
+
+Epoch 56/99
+----------
+train Loss: 0.8207 LRAP: 0.8429 NDCG: 0.8985
+val Loss: 0.9153 LRAP: 0.8421 NDCG: 0.8965
+EarlyStopping counter: 1 out of 50
+
+Epoch 57/99
+----------
+train Loss: 0.8159 LRAP: 0.8405 NDCG: 0.8994
+val Loss: 0.9186 LRAP: 0.8364 NDCG: 0.8932
+EarlyStopping counter: 2 out of 50
+
+Epoch 58/99
+----------
+train Loss: 0.8167 LRAP: 0.8443 NDCG: 0.9011
+val Loss: 0.9165 LRAP: 0.8379 NDCG: 0.8929
+EarlyStopping counter: 3 out of 50
+
+Epoch 59/99
+----------
+train Loss: 0.8138 LRAP: 0.8474 NDCG: 0.9020
+val Loss: 0.9159 LRAP: 0.8476 NDCG: 0.8992
+EarlyStopping counter: 4 out of 50
+
+Epoch 60/99
+----------
+train Loss: 0.8122 LRAP: 0.8537 NDCG: 0.9059
+val Loss: 0.9167 LRAP: 0.8484 NDCG: 0.8988
+EarlyStopping counter: 5 out of 50
+
+Epoch 61/99
+----------
+train Loss: 0.8050 LRAP: 0.8557 NDCG: 0.9078
+val Loss: 0.9119 LRAP: 0.8541 NDCG: 0.9017
+Validation loss decreased (0.912748 --> 0.911876).  Saving model ...
+
+Epoch 62/99
+----------
+train Loss: 0.8047 LRAP: 0.8543 NDCG: 0.9058
+val Loss: 0.9118 LRAP: 0.8510 NDCG: 0.9003
+Validation loss decreased (0.911876 --> 0.911758).  Saving model ...
+
+Epoch 63/99
+----------
+train Loss: 0.8035 LRAP: 0.8596 NDCG: 0.9079
+val Loss: 0.9107 LRAP: 0.8464 NDCG: 0.8977
+Validation loss decreased (0.911758 --> 0.910698).  Saving model ...
+
+Epoch 64/99
+----------
+train Loss: 0.8016 LRAP: 0.8580 NDCG: 0.9090
+val Loss: 0.9094 LRAP: 0.8498 NDCG: 0.8995
+Validation loss decreased (0.910698 --> 0.909420).  Saving model ...
+
+Epoch 65/99
+----------
+train Loss: 0.8003 LRAP: 0.8584 NDCG: 0.9086
+val Loss: 0.9086 LRAP: 0.8547 NDCG: 0.9014
+Validation loss decreased (0.909420 --> 0.908642).  Saving model ...
+
+Epoch 66/99
+----------
+train Loss: 0.8011 LRAP: 0.8615 NDCG: 0.9103
+val Loss: 0.9077 LRAP: 0.8533 NDCG: 0.9014
+Validation loss decreased (0.908642 --> 0.907738).  Saving model ...
+
+Epoch 67/99
+----------
+train Loss: 0.8008 LRAP: 0.8626 NDCG: 0.9113
+val Loss: 0.9094 LRAP: 0.8561 NDCG: 0.9024
+EarlyStopping counter: 1 out of 50
+
+Epoch 68/99
+----------
+train Loss: 0.8009 LRAP: 0.8637 NDCG: 0.9115
+val Loss: 0.9095 LRAP: 0.8573 NDCG: 0.9038
+EarlyStopping counter: 2 out of 50
+
+Epoch 69/99
+----------
+train Loss: 0.7989 LRAP: 0.8655 NDCG: 0.9125
+val Loss: 0.9103 LRAP: 0.8553 NDCG: 0.9013
+EarlyStopping counter: 3 out of 50
+
+Epoch 70/99
+----------
+train Loss: 0.7992 LRAP: 0.8649 NDCG: 0.9114
+val Loss: 0.9106 LRAP: 0.8584 NDCG: 0.9036
+EarlyStopping counter: 4 out of 50
+
+Epoch 71/99
+----------
+train Loss: 0.7979 LRAP: 0.8651 NDCG: 0.9119
+val Loss: 0.9088 LRAP: 0.8601 NDCG: 0.9050
+EarlyStopping counter: 5 out of 50
+
+Epoch 72/99
+----------
+train Loss: 0.7974 LRAP: 0.8658 NDCG: 0.9129
+val Loss: 0.9090 LRAP: 0.8581 NDCG: 0.9032
+EarlyStopping counter: 6 out of 50
+
+Epoch 73/99
+----------
+train Loss: 0.7948 LRAP: 0.8658 NDCG: 0.9120
+val Loss: 0.9098 LRAP: 0.8578 NDCG: 0.9037
+EarlyStopping counter: 7 out of 50
+
+Epoch 74/99
+----------
+train Loss: 0.7956 LRAP: 0.8667 NDCG: 0.9129
+val Loss: 0.9097 LRAP: 0.8561 NDCG: 0.9032
+EarlyStopping counter: 8 out of 50
+
+Epoch 75/99
+----------
+train Loss: 0.7958 LRAP: 0.8649 NDCG: 0.9116
+val Loss: 0.9103 LRAP: 0.8553 NDCG: 0.9017
+EarlyStopping counter: 9 out of 50
+
+Epoch 76/99
+----------
+train Loss: 0.7944 LRAP: 0.8698 NDCG: 0.9144
+val Loss: 0.9096 LRAP: 0.8581 NDCG: 0.9042
+EarlyStopping counter: 10 out of 50
+
+Epoch 77/99
+----------
+train Loss: 0.7966 LRAP: 0.8649 NDCG: 0.9125
+val Loss: 0.9087 LRAP: 0.8570 NDCG: 0.9037
+EarlyStopping counter: 11 out of 50
+
+Epoch 78/99
+----------
+train Loss: 0.7942 LRAP: 0.8665 NDCG: 0.9132
+val Loss: 0.9093 LRAP: 0.8544 NDCG: 0.9015
+EarlyStopping counter: 12 out of 50
+
+Epoch 79/99
+----------
+train Loss: 0.7957 LRAP: 0.8652 NDCG: 0.9122
+val Loss: 0.9097 LRAP: 0.8584 NDCG: 0.9035
+EarlyStopping counter: 13 out of 50
+
+Epoch 80/99
+----------
+train Loss: 0.7960 LRAP: 0.8646 NDCG: 0.9126
+val Loss: 0.9095 LRAP: 0.8570 NDCG: 0.9035
+EarlyStopping counter: 14 out of 50
+
+Epoch 81/99
+----------
+train Loss: 0.7962 LRAP: 0.8649 NDCG: 0.9123
+val Loss: 0.9093 LRAP: 0.8581 NDCG: 0.9039
+EarlyStopping counter: 15 out of 50
+
+Epoch 82/99
+----------
+train Loss: 0.7960 LRAP: 0.8690 NDCG: 0.9146
+val Loss: 0.9083 LRAP: 0.8570 NDCG: 0.9040
+EarlyStopping counter: 16 out of 50
+
+Epoch 83/99
+----------
+train Loss: 0.7963 LRAP: 0.8682 NDCG: 0.9146
+val Loss: 0.9089 LRAP: 0.8550 NDCG: 0.9022
+EarlyStopping counter: 17 out of 50
+
+Epoch 84/99
+----------
+train Loss: 0.7961 LRAP: 0.8679 NDCG: 0.9137
+val Loss: 0.9092 LRAP: 0.8567 NDCG: 0.9022
+EarlyStopping counter: 18 out of 50
+
+Epoch 85/99
+----------
+train Loss: 0.7952 LRAP: 0.8651 NDCG: 0.9133
+val Loss: 0.9096 LRAP: 0.8587 NDCG: 0.9043
+EarlyStopping counter: 19 out of 50
+
+Epoch 86/99
+----------
+train Loss: 0.7940 LRAP: 0.8687 NDCG: 0.9143
+val Loss: 0.9081 LRAP: 0.8590 NDCG: 0.9047
+EarlyStopping counter: 20 out of 50
+
+Epoch 87/99
+----------
+train Loss: 0.7957 LRAP: 0.8693 NDCG: 0.9148
+val Loss: 0.9079 LRAP: 0.8558 NDCG: 0.9034
+EarlyStopping counter: 21 out of 50
+
+Epoch 88/99
+----------
+train Loss: 0.7949 LRAP: 0.8665 NDCG: 0.9133
+val Loss: 0.9109 LRAP: 0.8570 NDCG: 0.9031
+EarlyStopping counter: 22 out of 50
+
+Epoch 89/99
+----------
+train Loss: 0.7970 LRAP: 0.8667 NDCG: 0.9133
+val Loss: 0.9103 LRAP: 0.8553 NDCG: 0.9026
+EarlyStopping counter: 23 out of 50
+
+Epoch 90/99
+----------
+train Loss: 0.7958 LRAP: 0.8665 NDCG: 0.9134
+val Loss: 0.9101 LRAP: 0.8576 NDCG: 0.9033
+EarlyStopping counter: 24 out of 50
+
+Epoch 91/99
+----------
+train Loss: 0.7936 LRAP: 0.8695 NDCG: 0.9148
+val Loss: 0.9086 LRAP: 0.8553 NDCG: 0.9027
+EarlyStopping counter: 25 out of 50
+
+Epoch 92/99
+----------
+train Loss: 0.7962 LRAP: 0.8663 NDCG: 0.9132
+val Loss: 0.9102 LRAP: 0.8570 NDCG: 0.9035
+EarlyStopping counter: 26 out of 50
+
+Epoch 93/99
+----------
+train Loss: 0.7949 LRAP: 0.8681 NDCG: 0.9141
+val Loss: 0.9100 LRAP: 0.8573 NDCG: 0.9032
+EarlyStopping counter: 27 out of 50
+
+Epoch 94/99
+----------
+train Loss: 0.7933 LRAP: 0.8685 NDCG: 0.9146
+val Loss: 0.9096 LRAP: 0.8564 NDCG: 0.9035
+EarlyStopping counter: 28 out of 50
+
+Epoch 95/99
+----------
+train Loss: 0.7963 LRAP: 0.8673 NDCG: 0.9135
+val Loss: 0.9095 LRAP: 0.8564 NDCG: 0.9034
+EarlyStopping counter: 29 out of 50
+
+Epoch 96/99
+----------
+train Loss: 0.7954 LRAP: 0.8681 NDCG: 0.9141
+val Loss: 0.9103 LRAP: 0.8590 NDCG: 0.9041
+EarlyStopping counter: 30 out of 50
+
+Epoch 97/99
+----------
+train Loss: 0.7946 LRAP: 0.8662 NDCG: 0.9128
+val Loss: 0.9080 LRAP: 0.8564 NDCG: 0.9033
+EarlyStopping counter: 31 out of 50
+
+Epoch 98/99
+----------
+train Loss: 0.7956 LRAP: 0.8689 NDCG: 0.9138
+val Loss: 0.9104 LRAP: 0.8576 NDCG: 0.9035
+EarlyStopping counter: 32 out of 50
+
+Epoch 99/99
+----------
+train Loss: 0.7957 LRAP: 0.8662 NDCG: 0.9126
+val Loss: 0.9087 LRAP: 0.8587 NDCG: 0.9041
+EarlyStopping counter: 33 out of 50
+
+Training complete in 11m 9s
+Best val loss: 0.907738, best LRAP score: 0.9675
