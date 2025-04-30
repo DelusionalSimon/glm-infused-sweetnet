@@ -45,7 +45,8 @@
 - Regardless of the outcome, the key to making your findings generalizable is to think critically about why you got the results you did and to relate those reasons to broader principles of machine learning, graph representation learning, and transfer learning from language models.
 - This kind of high-level framing can elevate your thesis beyond a specific application and contribute to the understanding of when and why these methods might be effective (or not) in a wider range of problems. It's definitely a worthwhile goal if you have the bandwidth to explore the "why" behind your findings.
 -  I could use SHAP values for evaluation in my paper (as well as some nice plots)
-- 
+-  Generate graphs for split (and discuss why I used stratified shuffle): https://scikit-learn.org/stable/auto_examples/model_selection/plot_cv_indices.html#sphx-glr-auto-examples-model-selection-plot-cv-indices-py
+- Use cross-evaluation (edit multilabel_split)
 
 # things to improve in glycowork
 - documentation for using pretrained models

@@ -92,5 +92,6 @@
 - I only ever looked at the keeys when exploring the data of the embeddings, I should have looked at more of the embeddings themselves
 - While I wait on new embeddings from roman I'll refactor the code and generalize it to work with other kinds of data to solve other problems. 
 - made a pipeline to load glycowork datasets and splitting them into a chosen category
-- 
+- created multilabel_split function to take glycans and labels and splitting them using StratifiedShuffleSplit
+- Now I need to remove rare classes
   
