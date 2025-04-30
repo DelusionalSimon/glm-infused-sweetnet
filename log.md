@@ -94,4 +94,5 @@
 - made a pipeline to load glycowork datasets and splitting them into a chosen category
 - created multilabel_split function to take glycans and labels and splitting them using StratifiedShuffleSplit
 - Now I need to remove rare classes
+- Rebuilt data loading pipeline into a function that also does the filtering
   
