@@ -2,7 +2,7 @@ Top level requirements (Plan for whole project)
 
 2.1.1 Must have:
 1.	+Getting SweetNet Up and running (done 2025-04-16)
-2.	!Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25)
+2.	!Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25) <-- we are here
 3.	Through testing and statistics to quantify how the infusion influenced the model (2025-05-02)
 4.	Write a thesis that conveys my findings and results (2024-05-29)
 2.1.2 Should have:
@@ -22,7 +22,7 @@ Top level requirements (Plan for whole project)
 
 
 
-Current Iteration [1]:
+Current Iteration requirements [1]:
 
 3.6.1 Must haves (60% of effort max)
 0.	+Jog memory by rereading DeepRank paper
@@ -33,22 +33,25 @@ Current Iteration [1]:
 100. !While waiting for new embeddings
      1.   +Get dataloading and embedding pipeline working with glycowork data
      2.   +especially tissue data
-     3.   look into lectin glycan interaction
-     4.   refactor code
+     3.   !Modify embedding function with setting to not use fixed embeddings <-- we are here
+     4.   look into lectin glycan interaction
+     5.   refactor code
           1.   move finished functions into utils.py
           2.   make classes as needed
           3.   New clean notebook for further work
           4.   Do additional research
           5.   Rest
           6.   
-4.	!Modify SweetNet to accept embedding data
-    4.1	Run training and compare
+4.	!Modify SweetNet to accept embedding data <-- stalled while awaiting new embeddings
+    4.1	!Run training and compare
     4.2	If results don’t show improvement 
     4.3 look for errors or try other embeddings
     4.4 Go back to 4.1
 3.6.2 Should haves
 5.	Add new SweetNet functionality to glycowork 
 6.	Test other GLM embeddings (if the first one fails)
+7.  !Work on paper <-- we are here as well
+
 3.6.3 Could haves (20% of effort)
 7.	
 3.6.4 Won’t have at this time (for future iterations)

@@ -28,7 +28,19 @@
   - Use grid search instead
   - raytune perhaps?
 - Look into optimizing the feature matrix
+- Explore different embedding fusion strategies (e.g., sum, learned layer, gating).
+- Investigate impact of using embeddings from different GLM layers.
+- Analyze sensitivity to embedding dimensionality or use dimensionality reduction.
 - 
+
+# Analysis & Interpretation Ideas
+- Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
+- Quantify and compare the performance of the standalone GLM, baseline SweetNet, and GLM-infused SweetNet ("emergent accuracy").
+- Assess the computational cost trade-off of using GLM embeddings.
+- Apply explainability methods (e.g., SHAP, GNN tools) to understand model predictions.
+- Evaluate the transferability of the GLM-infused approach to other glycan prediction tasks/datasets.
+- Benchmark the GLM-infused SweetNet against other state-of-the-art glycan representation learning methods (e.g., GIFFLAR).
+- Compare GLM infusion impact across multiple prediction tasks (e.g., disease, tissue, different taxonomic levels) to assess generalizability.
 
 # Ideas for paper
 - GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
@@ -47,6 +59,12 @@
 -  I could use SHAP values for evaluation in my paper (as well as some nice plots)
 -  Generate graphs for split (and discuss why I used stratified shuffle): https://scikit-learn.org/stable/auto_examples/model_selection/plot_cv_indices.html#sphx-glr-auto-examples-model-selection-plot-cv-indices-py
 - Use cross-evaluation (edit multilabel_split)
+- Multi-label nature of your task: Ensure your evaluation metrics and loss function are appropriate for multi-label classification.
+- Graph data: Emphasize the use of GNNs to handle the non-linear structure of glycans.
+- GLM embeddings: Clearly explain how you obtained and integrated these.
+- Frame the results around the multi-task comparison: Show how GLM infusion performs across different types of glycan prediction problems.
+- Discuss the implications of results across tasks – are some tasks more (or less) amenable to improvement via GLM embeddings, and why?
+- 
 
 # things to improve in glycowork
 - documentation for using pretrained models

@@ -101,5 +101,6 @@
 - Can't get new embedding data since the models and data were stored on Saarbruchen university servers which were struck by a big power outage
 - Explored different batch sizes but although I gained some speed with larger batches performance they didn't train as well.
 - After restarting the kernel I found higher batch sizes to be effective, but they didn't really give better performance after 128 so I stuck there
-- 
+- Created a Skeleton for the paper of my thesis.
+- Ran a training cycle for disease_association data, got quite good LRAP values
   
