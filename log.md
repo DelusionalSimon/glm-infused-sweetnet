@@ -107,5 +107,8 @@
 - My filter doesn't remove the labels that have no members, that could pose a problem
 - Removed those columns, in the disease data 60 was cut down to 18 which is significant, and may have effected my results (and perhaps be why my LRAPs from epochs were weird)
 - Ran training and my results were better!
+- Modified prepare_multilabel in glycowork to sort the class_list to ensure reproducerability
+- Let's rewrite the way I handle the embeddings in the more standard way within Sweetnet Itself to enable trainable embeddings and other possible edits later
+- 
 
   
