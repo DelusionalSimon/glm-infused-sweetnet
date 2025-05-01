@@ -111,5 +111,7 @@
 - Let's rewrite the way I handle the embeddings in the more standard way within Sweetnet Itself to enable trainable embeddings and other possible edits later
 - Copied glycowork functions again to work on integrating embeddings there (to keep old fucntionality)
 - Rolled back SweetNet to the base from glycowork, I can handle the embeddings in the prep_model function
+- Got a bit of the way on a new prep_infused_sweetnet function that I will use rather than modifying prep_model
+- 
 
   

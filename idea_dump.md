@@ -64,6 +64,8 @@
 - GLM embeddings: Clearly explain how you obtained and integrated these.
 - Frame the results around the multi-task comparison: Show how GLM infusion performs across different types of glycan prediction problems.
 - Discuss the implications of results across tasks – are some tasks more (or less) amenable to improvement via GLM embeddings, and why?
+- I'm using the same exact prep funciton for  a fair comparison to truly isolate the impact of the GLM embeddings, ensuring that the rest of the SweetNet model (the GraphConv layers, linear layers, batch norms) starts from the same point in both the baseline and the GLM-infused versions
+- Try to make infusion a thing, a general name for using pre-trained embeddings from a nother type of model. Include definition.
 - 
 
 # things to improve in glycowork
