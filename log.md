@@ -103,4 +103,7 @@
 - After restarting the kernel I found higher batch sizes to be effective, but they didn't really give better performance after 128 so I stuck there
 - Created a Skeleton for the paper of my thesis.
 - Ran a training cycle for disease_association data, got quite good LRAP values
+- Edited build_multilabel_dataset to output label names as well, to enable me to descifer label associations later
+- My filter doesn't remove the labels that have no members, that could pose a problem
+- 
   
