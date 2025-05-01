@@ -109,6 +109,6 @@
 - Ran training and my results were better!
 - Modified prepare_multilabel in glycowork to sort the class_list to ensure reproducerability
 - Let's rewrite the way I handle the embeddings in the more standard way within Sweetnet Itself to enable trainable embeddings and other possible edits later
-- 
+- Copied glycowork functions again to work on integrating embeddings there (to keep old fucntionality)
 
   
