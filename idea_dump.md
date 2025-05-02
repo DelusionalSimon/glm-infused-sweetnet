@@ -18,10 +18,19 @@
 - Might need to downsample dominant organism groups to not skew data
 - Concatenate the output of self.item_embedding(x) with the GLM embeddings
 - Might I be making a 320 dimensional embedding where each dimension is a 320 dimensional vector?
+- I should remember to clear outputs before commits for better edit history in the notebook
 
 
 # Ideas for Interesting applications (for framing in paper)
 - Glycans as biomarker for disease x
+  - Find disease in dataset that is hard to diagnose using traditional methods 
+    - Parkinson's Disease: This is primarily a clinical diagnosis based on observing motor symptoms like tremor and slowness of movement. There is currently no definitive blood test or imaging marker that can definitively diagnose Parkinson's, especially in its early stages when symptoms are subtle and overlap with other movement disorders, leading to misdiagnosis. Glycan changes are being investigated in neurodegenerative diseases, and identifying specific glycan patterns in blood or other biofluids could potentially lead to objective biomarkers for earlier and more accurate diagnosis of Parkinson's disease and help distinguish it from similar conditions.
+    - This case study provides a perfect opportunity to incorporate your SHAP analysis or other explainability methods, showing why the model made a certain prediction for that specific glycan and disease association. (make this one section of paper and perhaps indicate in title)
+    - Pancreatic Cancer and Autoimmune Pancreatitis (AIP): Diagnosing AIP is challenging primarily because its symptoms and imaging findings can closely mimic those of pancreatic cancer. Distinguishing between these two conditions is crucial because their treatments are vastly different. 
+  - Use SHAP analysis to find what features (sugars or bonds) influence the prediction of a specific disease the most, to get a general marker that could be easy to look for
+- Glycans and caries
+  - Might one develop a "toothpaste" that includes glycans that lower the risk of caries?
+-  
 
 # Improved model
 - Try to use evolutionary algorithms for feature optimization (might be too slow)
@@ -31,7 +40,7 @@
 - Explore different embedding fusion strategies (e.g., sum, learned layer, gating).
 - Investigate impact of using embeddings from different GLM layers.
 - Analyze sensitivity to embedding dimensionality or use dimensionality reduction.
-- 
+- GGNN Uses gated recurrent units (GRUs) for node updates, allowing for longer-range information propagation.
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
@@ -41,6 +50,8 @@
 - Evaluate the transferability of the GLM-infused approach to other glycan prediction tasks/datasets.
 - Benchmark the GLM-infused SweetNet against other state-of-the-art glycan representation learning methods (e.g., GIFFLAR).
 - Compare GLM infusion impact across multiple prediction tasks (e.g., disease, tissue, different taxonomic levels) to assess generalizability.
+- Use SHAP analysis to find what features (sugars or bonds) influence the prediction of a specific disease the most, to get a general marker that could be easy to look for 
+- GNNExplainer 
 
 # Ideas for paper
 - GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
@@ -66,6 +77,13 @@
 - Discuss the implications of results across tasks – are some tasks more (or less) amenable to improvement via GLM embeddings, and why?
 - I'm using the same exact prep funciton for  a fair comparison to truly isolate the impact of the GLM embeddings, ensuring that the rest of the SweetNet model (the GraphConv layers, linear layers, batch norms) starts from the same point in both the baseline and the GLM-infused versions
 - Try to make infusion a thing, a general name for using pre-trained embeddings from a nother type of model. Include definition.
+-  explainable AI (XAI)
+-  Lay bare the forking paths that lead to my conclusions, map the model space that show different conclusions 
+-  Glycans are the most information dense and complex biological sequences 
+-  The sugar language of cells 
+-  Glycans as the dark matter of biology 
+-  Start with why and end with what when presenting in text or in person 
+-  What I am doing is transfer learning
 - 
 
 # things to improve in glycowork
