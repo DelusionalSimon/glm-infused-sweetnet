@@ -112,6 +112,11 @@
 - Copied glycowork functions again to work on integrating embeddings there (to keep old fucntionality)
 - Rolled back SweetNet to the base from glycowork, I can handle the embeddings in the prep_model function
 - Got a bit of the way on a new prep_infused_sweetnet function that I will use rather than modifying prep_model
+- Added a nice docstring
+- Changed all of my docstrings to NumPy/SciPy foprmat from google 
+- Changed the standard docstring format to make the defaults clearer
+- Added behaviour to use one-hot embeddings in prep_infused_sweetnet as well
+- Changed flags and logic for better flow and clarity with the addition of one-hot encodings
 - 
 
   

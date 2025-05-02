@@ -52,6 +52,9 @@
 - Compare GLM infusion impact across multiple prediction tasks (e.g., disease, tissue, different taxonomic levels) to assess generalizability.
 - Use SHAP analysis to find what features (sugars or bonds) influence the prediction of a specific disease the most, to get a general marker that could be easy to look for 
 - GNNExplainer 
+- compare performances of Random and OneHot Embeddings, both fixed and learnable. And in case of learnable enbeddings, you can make tSNE or UMAP plots of the learned embeddings
+  - For the tSNE/UMAP it's probably best to focus on the common monosaccharides or groups of monosaccharides with Same modifications, stuff like this, because you'll have ~2500 "token" in lib, i.e. classes in SweetNet nodes
+- 
 
 # Ideas for paper
 - GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
