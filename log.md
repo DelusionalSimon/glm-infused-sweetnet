@@ -117,6 +117,7 @@
 - Changed the standard docstring format to make the defaults clearer
 - Added behaviour to use one-hot embeddings in prep_infused_sweetnet as well
 - Changed flags and logic for better flow and clarity with the addition of one-hot encodings
+- Reordered parameters so that prep_infused_sweetnet(15, embeddings) works
 - 
 
   
