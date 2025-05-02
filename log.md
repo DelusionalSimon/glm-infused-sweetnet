@@ -118,6 +118,8 @@
 - Added behaviour to use one-hot embeddings in prep_infused_sweetnet as well
 - Changed flags and logic for better flow and clarity with the addition of one-hot encodings
 - Reordered parameters so that prep_infused_sweetnet(15, embeddings) works
+- Rather than using the more standard way to handle OOV by setting the glycowords not in the dictionary to zero, I will initialize all to random variables and only replace the ones I have embeddings for, to keep the comparison as clean as possible (I don't want the zero vectors to negatively influsence my results)
+- all I did was perhaps make the index 0 random instead of 0. This would have been good to know when discussing the virtues of OOV handling. I guess the function is more robust now and can handle embedding files that are smaller than the lib
 - 
 
   
