@@ -122,6 +122,6 @@
 - all I did was perhaps make the index 0 random instead of 0. This would have been good to know when discussing the virtues of OOV handling. I guess the function is more robust now and can handle embedding files that are smaller than the lib
 - Random was easy to do
 - One-hot seems flawed, since it needs to have the same hidden dimension as there are members in the library, will need to squeeze dimensions or make hidden dimensions match the lkibrary, although I don't know if that will make a fair comparison
-- 
+- Got good embeddings from roman and ran a static round of training using my old pipeline, which whowed comparable results to the baseline even without learning
 
   

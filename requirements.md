@@ -17,6 +17,7 @@ Top level requirements (Plan for whole project)
 2.1.3 Could have:
 10.	Tinkering with Sweetnet Structure (birthing new model)
 11. Pre-trained GLM-Infused SweetNet
+12. One-hot encoding work
 2.1.2 Won’t have at this time (for future projects):
 1.	
 
