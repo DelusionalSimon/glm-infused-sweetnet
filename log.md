@@ -84,7 +84,7 @@
 - I've created fixed embeddings which is a way to do it, but it doesn't seem that effective
 - Fixed Sweetnet and Prep_model to work with no infused embeddings as well
 - Running the model without embeddings takes just as long, so I must hjave broken something in train_model
--   -------------------------------Monday meeting--------------------------------------------
+-   -------------------------------Monday meeting 2025-04-28--------------------------------------------
 - The horrendous speed was due to unneccecary to.device calls when adding the embeddings in the training loop
 - Now to find why the glm-infused model doesn't converge (which should still be an issue)
 - Looking cloesly at the training reports there seems to be an issue with the final reported LRAP value, not being find in any epoch report.
@@ -125,7 +125,7 @@
 - One-hot seems flawed, since it needs to have the same hidden dimension as there are members in the library, will need to squeeze dimensions or make hidden dimensions match the lkibrary, although I don't know if that will make a fair comparison
 - Got good embeddings from roman and ran a static round of training using my old pipeline, which whowed comparable results to the baseline even without learning
 - With the new pipeline the results are weird, I'll have to explore further another day.
-  -------------------------------Monday meeting--------------------------------------------
+  -------------------------------Monday meeting 2025-05-05--------------------------------------------
 - I think I may be able to use the new pipeline as a general way to try infusion with different gnn models
 - I've been running some more training runs today but the results seem weird. I get really good results with non-trainable random embeddings. Perhaps the variation when using the smaller dataset is a bit too big. perhaps it might be a good idea to try out the kingdom prediction task again as those results seemed more stable? (although they take an order of magnitude longer to complete)
 - Since my pipeline is quite stable now, perhaps I should iterate and make a new jupyter notebook optimized for evaluation (moving my functions to an utils.py, and building a framework to run several trials in a row)

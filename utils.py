@@ -79,6 +79,9 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
     all_possible_label_names = sorted(list(custom_glycan_df[glycan_class].unique()))
     print(f"Found {len(all_possible_label_names)} unique individual classes/labels.")
 
+    # Populates the the label_names so that they are there even when filtering is disabled
+    label_names = all_possible_label_names
+
 
     # Prepare for multi-label prediction
     glycans, labels = prepare_multilabel(custom_glycan_df, glycan_class)
