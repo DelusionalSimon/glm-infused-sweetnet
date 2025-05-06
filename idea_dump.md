@@ -30,6 +30,7 @@
   - Use SHAP analysis to find what features (sugars or bonds) influence the prediction of a specific disease the most, to get a general marker that could be easy to look for
 - Glycans and caries
   - Might one develop a "toothpaste" that includes glycans that lower the risk of caries?
+  - Using a slightly modified version of prep_infused _sweetnet as a general way to test infusion on different Gnn arcgitectures and embedding data sources?
 -  
 
 # Improved model
@@ -41,6 +42,7 @@
 - Investigate impact of using embeddings from different GLM layers.
 - Analyze sensitivity to embedding dimensionality or use dimensionality reduction.
 - GGNN Uses gated recurrent units (GRUs) for node updates, allowing for longer-range information propagation.
+- Implement Cross-Validation: K-fold cross-validation involves splitting your data into K folds. You train the model K times, each time using K-1 folds for training and the remaining fold for validation. This uses your data more efficiently and provides a more robust estimate of performance by averaging results over different train/validation splits.
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
