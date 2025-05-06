@@ -1,7 +1,7 @@
 """
 Utility functions for the GLM-Infused SweetNet project.
 
-includes build_multilabel_dataset, multilabel_split, and prep_infused_sweetnet
+includes build_multilabel_dataset, multilabel_split, prep_infused_sweetnet
 
 This file contains functions for data loading, preprocessing, splitting,
 and model preparation for training and evaluation.
@@ -25,6 +25,7 @@ except ImportError:
 # Glycowork dependencies
 from glycowork.glycan_data.loader import build_custom_df, df_glycan, lib
 from glycowork.ml.train_test_split import prepare_multilabel
+from glycowork.ml.models import SweetNet, init_weights
 
 
 # --- Data Loading and Preparation Functions ---

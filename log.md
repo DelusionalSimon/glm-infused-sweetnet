@@ -84,7 +84,7 @@
 - I've created fixed embeddings which is a way to do it, but it doesn't seem that effective
 - Fixed Sweetnet and Prep_model to work with no infused embeddings as well
 - Running the model without embeddings takes just as long, so I must hjave broken something in train_model
-- ----------------------------------------------------------------
+-   -------------------------------Monday meeting--------------------------------------------
 - The horrendous speed was due to unneccecary to.device calls when adding the embeddings in the training loop
 - Now to find why the glm-infused model doesn't converge (which should still be an issue)
 - Looking cloesly at the training reports there seems to be an issue with the final reported LRAP value, not being find in any epoch report.
@@ -125,10 +125,18 @@
 - One-hot seems flawed, since it needs to have the same hidden dimension as there are members in the library, will need to squeeze dimensions or make hidden dimensions match the lkibrary, although I don't know if that will make a fair comparison
 - Got good embeddings from roman and ran a static round of training using my old pipeline, which whowed comparable results to the baseline even without learning
 - With the new pipeline the results are weird, I'll have to explore further another day.
+  -------------------------------Monday meeting--------------------------------------------
 - I think I may be able to use the new pipeline as a general way to try infusion with different gnn models
 - I've been running some more training runs today but the results seem weird. I get really good results with non-trainable random embeddings. Perhaps the variation when using the smaller dataset is a bit too big. perhaps it might be a good idea to try out the kingdom prediction task again as those results seemed more stable? (although they take an order of magnitude longer to complete)
 - Since my pipeline is quite stable now, perhaps I should iterate and make a new jupyter notebook optimized for evaluation (moving my functions to an utils.py, and building a framework to run several trials in a row)
 - The new embedding pipeline is around twise as effective. the new prep funciton seeems more effective than the base one as well. 
-- Briefly trying to fix LRAP (if it actually needs fixing?)
+- Briefly trying to fix LRAP 
+- Got lost getting nowhere. 
+- Reverting course
+- I need to run several trials and run statistics to evaluate the core hypothesis
+- Setting up new optimized Notebook to handle this evaluation: Infusion_Evaluation_System
+- Moved my custom functions to utils.py file
+- Perhaps I'll make automated functions to run several training runs and average the stats
+- Skeleton of Infusion_Evaluation_System set up and tested. 
 
   

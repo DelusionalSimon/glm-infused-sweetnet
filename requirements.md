@@ -38,14 +38,15 @@ Current Iteration requirements [1]:
      3.   !Modify embedding function with setting to not use fixed embeddings <-- we are here
      4.   look into lectin glycan interaction
      5.   refactor code
-          1.   move finished functions into utils.py
+          1.   +move finished functions into utils.py
           2.   make classes as needed
-          3.   New clean notebook for further work
+          3.   +New clean notebook for further work
           4.   Do additional research
           5.   Rest
           6.   
 4.	!Modify SweetNet to accept embedding data <-- stalled while awaiting new embeddings
     4.1	!Run training and compare
+        inconclusive results, will need to run  several runs to get good data
     4.2	If results don’t show improvement 
     4.3 look for errors or try other embeddings
     4.4 Go back to 4.1
