@@ -1,15 +1,17 @@
 """
 Utility functions for the GLM-Infused SweetNet project.
 
-includes build_multilabel_dataset, multilabel_split, prep_infused_sweetnet, 
+includes build_multilabel_dataset, multilabel_split, prep_infused_sweetnet, and seed_everything.
 
-This file contains functions for data loading, preprocessing, splitting,
-and model preparation for training and evaluation.
+This file contains general utilities as well as functions for data loading, preprocessing, splitting,
+and model preparation for training and evaluation. 
 """
 
 # Standard library imports
 from typing import List, Tuple, Union, Dict, Optional, Literal 
 from collections import Counter
+import random
+import os 
 
 # Third-party library imports
 from sklearn.model_selection import StratifiedShuffleSplit
@@ -188,8 +190,6 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
     return train_glycans, val_glycans, test_glycans, train_labels, val_labels, test_labels
 
 
-# --- Model Preparation Function ---
-
 def prep_infused_sweetnet(num_classes: int, # number of unique classes for classification
                            embeddings_dict: Optional[Dict[str, np.ndarray]] = None, # embeddings for 'external' method
                            initialization_method: Literal['external', 'random', 'one_hot'] = 'external', # specifies initialization method
@@ -343,3 +343,40 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     
     # Return the model
     return model
+
+
+# --- Utility Functions ---
+
+def seed_everything(seed: int, full_reproducibility: bool = True) -> None:   
+    """
+    Set all random seeds for reproducibility.
+
+    Ensures that operations involving randomness (e.g., data splitting,
+    model weight initialization, some PyTorch/NumPy operations)
+    produce the same results across different runs when the same
+    seed is provided.
+
+    Parameters
+    ----------
+    seed : int
+        The seed value to use for all random number generators.
+    full_reproducibility : bool, optional, default = True
+        If True, sets additional PyTorch settings for full reproducibility.
+        This may affect performance but ensures that results are consistent
+        across different runs and hardware configurations.
+    """
+      
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        # These settings are not recommended for performance, but are necessary for true reproducibility.
+        if full_reproducibility:
+            torch.backends.cudnn.deterministic = True 
+            torch.backends.cudnn.benchmark = False
+        else:
+            torch.backends.cudnn.deterministic = False
+            torch.backends.cudnn.benchmark = True
+    print(f"All random seeds set to: {seed}")

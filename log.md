@@ -148,6 +148,7 @@
 - I shouldn't try to meddle with the model until I get the results I want, the fact that the infused model performs worse is also a result. 
 - I've tested my hypothesis. I have a basic thesis that I could write. I still have quite a bit of time left, what more could I experiment with?
 - let's set up automated evaluation system, it will save me time later
-- 
+- Built a seed_everything function for true reproducability
+- Moved to utils.py file
 
   
