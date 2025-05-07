@@ -150,5 +150,9 @@
 - let's set up automated evaluation system, it will save me time later
 - Built a seed_everything function for true reproducability
 - Moved to utils.py file
+- Set up basic Experiment Loop, let's see if it runs
+- It seems to work! 
+- Tomorrow I'll have to implement a way to store the data (and perhaps models)
+- Then I'll add some analytics (deep dive into pandas)
 
   
