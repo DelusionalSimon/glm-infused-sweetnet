@@ -93,7 +93,7 @@
    -  Which was completely uneccecary, since the model doesn't really work that way, OOV is handled in data preparation
 -  catastrophic forgetting
 - Robust Finding: Your initial observation that the baseline model performs better seems to hold even after this round of hyperparameter adjustment for both models. This makes your finding more robust because you've attempted to optimize both configurations to a similar learning rate
-- 
+- Based on preliminary learning rate sweeps, a rate of 0.005 was found to be effective for both the baseline and the infused-trainable models
 
 # things to improve in glycowork
 - documentation for using pretrained models
