@@ -91,6 +91,8 @@
 -  What I am doing is transfer learning
 -  - Rather than using the more standard way to handle OOV by setting the glycowords not in the dictionary to zero, I will initialize all to random variables and only replace the ones I have embeddings for, to keep the comparison as clean as possible (I don't want the zero vectors to negatively influsence my results)
    -  Which was completely uneccecary, since the model doesn't really work that way, OOV is handled in data preparation
+-  catastrophic forgetting
+- Robust Finding: Your initial observation that the baseline model performs better seems to hold even after this round of hyperparameter adjustment for both models. This makes your finding more robust because you've attempted to optimize both configurations to a similar learning rate
 - 
 
 # things to improve in glycowork

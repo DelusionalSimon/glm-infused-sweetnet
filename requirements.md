@@ -46,9 +46,9 @@ Current Iteration requirements [1]:
           4.   Do additional research
           5.   Rest
           6.   
-4.	!Modify SweetNet to accept embedding data <-- stalled while awaiting new embeddings
+4.	!Modify SweetNet to accept embedding data 
     4.1	!Run training and compare
-        inconclusive results, will need to run  several runs to get good data
+        Infusion makes the model worse
     4.2	If results don’t show improvement 
     4.3 look for errors or try other embeddings
     4.4 Go back to 4.1

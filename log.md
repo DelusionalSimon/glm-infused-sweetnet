@@ -142,5 +142,10 @@
 - basic system set up with data saving into a pickle file
 - Lets do the run (starting at 0722) (ended around 8)
 - Test: Ran five trials and tabulated the results. Infusion is not effective. 
+- working on some quick hyperparameter optimization
+- ran a trial of several different learning rate, and at 0.05 I might get better results than the base model!
+- The baseline also benifits from a higher learning rate (might be due to the smallness of the dataset)
+- I shouldn't try to meddle with the model until I get the results I want, the fact that the infused model performs worse is also a result. 
+- I've tested my hypothesis. I have a basic thesis that I could write. I still have quite a bit of time left, what more could I experiment with?
 
   
