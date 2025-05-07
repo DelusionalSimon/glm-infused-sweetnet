@@ -138,5 +138,7 @@
 - Moved my custom functions to utils.py file
 - Perhaps I'll make automated functions to run several training runs and average the stats
 - Skeleton of Infusion_Evaluation_System set up and tested. 
+- before iterating the whole evaluation system, lets just run ten trials manually and use excel to get some averages. using the same split for each run of three (random, infused with training, and infused without training)
+- basic system set up with data saving into a pickle file
 
   
