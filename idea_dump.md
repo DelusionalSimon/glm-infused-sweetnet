@@ -30,7 +30,7 @@
   - Use SHAP analysis to find what features (sugars or bonds) influence the prediction of a specific disease the most, to get a general marker that could be easy to look for
 - Glycans and caries
   - Might one develop a "toothpaste" that includes glycans that lower the risk of caries?
-  - Using a slightly modified version of prep_infused _sweetnet as a general way to test infusion on different Gnn arcgitectures and embedding data sources?
+  - Using a slightly modified version of prep_infused _sweetnet as a general way to test infusion on different Gnn arcgitectures and embedding data sources? a model-agnostic infusion function
 -  
 
 # Improved model

@@ -140,5 +140,7 @@
 - Skeleton of Infusion_Evaluation_System set up and tested. 
 - before iterating the whole evaluation system, lets just run ten trials manually and use excel to get some averages. using the same split for each run of three (random, infused with training, and infused without training)
 - basic system set up with data saving into a pickle file
+- Lets do the run (starting at 0722) (ended around 8)
+- Test: Ran five trials and tabulated the results. Infusion is not effective. 
 
   
