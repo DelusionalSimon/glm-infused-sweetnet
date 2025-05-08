@@ -155,6 +155,8 @@
 - Tomorrow I'll have to implement a way to store the data (and perhaps models)
 - Then I'll add some analytics (deep dive into pandas)
 - Did a quick sanity check, making sure the embeddings match the original dictionary
+- Cleaned up glycowork repo, removing unneeded modifications and keeping good updates using cherry picking
+- Back to the experiment loop
 - 
 
   
