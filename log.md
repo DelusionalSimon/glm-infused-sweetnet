@@ -160,5 +160,8 @@
 - Feat: epoch-wise metrics and summary results collected and saved
 - Let's do a proper run over breakfast
 - Experiment with ten trials and four configurations took 25 minutes
+- Running long test with Kingdom prediction
+- Had meeting with Roman, learnt a lot. 
+- My testing strategy isn't really valid, I would be polluting my models. the test set should only be used once at the end on the best model to test its performance, I don't think I can even use it between models?
 
   
