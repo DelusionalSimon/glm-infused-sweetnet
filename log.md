@@ -157,6 +157,8 @@
 - Did a quick sanity check, making sure the embeddings match the original dictionary
 - Cleaned up glycowork repo, removing unneeded modifications and keeping good updates using cherry picking
 - Back to the experiment loop
-- 
+- Feat: epoch-wise metrics and summary results collected and saved
+- Let's do a proper run over breakfast
+- Experiment with ten trials and four configurations took 25 minutes
 
   
