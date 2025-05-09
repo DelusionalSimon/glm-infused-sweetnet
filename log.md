@@ -163,5 +163,9 @@
 - Running long test with Kingdom prediction
 - Had meeting with Roman, learnt a lot. 
 - My testing strategy isn't really valid, I would be polluting my models. the test set should only be used once at the end on the best model to test its performance, I don't think I can even use it between models?
+- Kingdom prediction task gives accuracy much closer to random model, perhaps the small dataset was an issue
+- I ran a trial with tissue data and it didn't even seem to reach its max within 100 epochs, trying 200 epochs now
+- Added patiance as global parameter in automated evaluation system
+- I Think I'll try to implement a hyperloop around the experiment loop foir basic hyperparameter exploration
 
   

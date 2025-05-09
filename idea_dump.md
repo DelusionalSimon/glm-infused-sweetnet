@@ -89,7 +89,7 @@
   - different functions I've made. 
   - preliminary data
   - tSNP plots
-  - 
+- comparing how sweetnet performs on the different tasks (tissue needing more epochs)
 
 # Ideas for paper
 - GLMs take a long time to train and are resource intensive to run, by taking their embeddings we can improve efficiency while getting a model with emergent accuracy (better than both models that go in)
