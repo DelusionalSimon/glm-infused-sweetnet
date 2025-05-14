@@ -35,7 +35,8 @@
 - Glycans and caries
   - Might one develop a "toothpaste" that includes glycans that lower the risk of caries?
   - Using a slightly modified version of prep_infused _sweetnet as a general way to test infusion on different Gnn arcgitectures and embedding data sources? a model-agnostic infusion function
--  
+  - When looking at the disease dataset it might make sense to look what clycans aren't present on one disease
+  - -  
 
 # Improved model
 - Try to use evolutionary algorithms for feature optimization (might be too slow)
@@ -48,6 +49,7 @@
 - GGNN Uses gated recurrent units (GRUs) for node updates, allowing for longer-range information propagation.
 - Implement Cross-Validation: K-fold cross-validation involves splitting your data into K folds. You train the model K times, each time using K-1 folds for training and the remaining fold for validation. This uses your data more efficiently and provides a more robust estimate of performance by averaging results over different train/validation splits.
 - Since the embeddings didn't matter much, perhaps I could minimize them for a more efficient model
+- Set learning rate higher for just the embeddings layer
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
@@ -63,6 +65,7 @@
   - For the tSNE/UMAP it's probably best to focus on the common monosaccharides or groups of monosaccharides with Same modifications, stuff like this, because you'll have ~2500 "token" in lib, i.e. classes in SweetNet nodes
 - Multilabel NCC and AUROC
 - t-sne plots of different common types of glycans (salicitated vs glycolated5)
+- Go through disease and tussiue data and create new higher-level categories like cancer or circulatory system
 
 
 # Presentation (monday, can be adapted to main presenation later)
@@ -100,7 +103,7 @@
 - Hybrid approach
 - Feature engineering
 - Do I go into detail how glycowork transforms data into graphs and all that jazz?
-- Should I compare my method to traditional methods to simulate glycans (Do they even exist?)
+- Should I compare my method to traditional methods to figure out glycan properties
 - Focus on case where SweetNet already outperforms gifflar ( and all other models )
 - Diagram showing how the features from a GLM map into the architecture of the GNN
 - In your discussion section, briefly touch upon potential applications of your method in areas like biomarker discovery. You can mention Disease X as a hypothetical example and discuss the potential benefits of using GLM embeddings for such tasks. This shows the broader relevance of your work without requiring you to solve a whole new problem.
@@ -130,6 +133,8 @@
 -  catastrophic forgetting
 - Robust Finding: Your initial observation that the baseline model performs better seems to hold even after this round of hyperparameter adjustment for both models. This makes your finding more robust because you've attempted to optimize both configurations to a similar learning rate
 - Based on preliminary learning rate sweeps, a rate of 0.005 was found to be effective for both the baseline and the infused-trainable models
+- Include all datasets I have generated for others to analyze
+- The reason the GlyLM embeddings didn't work well for the prediction tasks I threw at them was that they were mainly evolutionary relationships where structure wasn't really related to chemestry?
 
 # things to improve in glycowork
 - documentation for using pretrained models

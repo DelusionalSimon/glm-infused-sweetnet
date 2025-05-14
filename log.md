@@ -172,7 +172,9 @@
 - Running proper run of Kingdom
 - Did basic averages of my runs so far
 - Interestingly the traibability of the embeddings mattered very little
-- Preented my work to the Bojar Lab
+- Preenting my work to the Bojar Lab
+-   -------------------------------Monday meeting 2025-05-12--------------------------------------------
 - Time to iterate the project using my PDD. 
+- PDD used to generate new requirements
 
   
