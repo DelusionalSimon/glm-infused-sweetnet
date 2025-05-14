@@ -19,6 +19,9 @@
 - Concatenate the output of self.item_embedding(x) with the GLM embeddings
 - Might I be making a 320 dimensional embedding where each dimension is a 320 dimensional vector?
 - I should remember to clear outputs before commits for better edit history in the notebook
+- Embeddings on base sweetnet might be way bigger (lib size)
+  - I might have compared the bigger base Sweetnet to a reduced model.
+  - No they seem to match after all
 - 
 
 
@@ -44,6 +47,7 @@
 - Analyze sensitivity to embedding dimensionality or use dimensionality reduction.
 - GGNN Uses gated recurrent units (GRUs) for node updates, allowing for longer-range information propagation.
 - Implement Cross-Validation: K-fold cross-validation involves splitting your data into K folds. You train the model K times, each time using K-1 folds for training and the remaining fold for validation. This uses your data more efficiently and provides a more robust estimate of performance by averaging results over different train/validation splits.
+- Since the embeddings didn't matter much, perhaps I could minimize them for a more efficient model
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
@@ -58,16 +62,13 @@
 - compare performances of Random and OneHot Embeddings, both fixed and learnable. And in case of learnable enbeddings, you can make tSNE or UMAP plots of the learned embeddings
   - For the tSNE/UMAP it's probably best to focus on the common monosaccharides or groups of monosaccharides with Same modifications, stuff like this, because you'll have ~2500 "token" in lib, i.e. classes in SweetNet nodes
 - Multilabel NCC and AUROC
+- t-sne plots of different common types of glycans (salicitated vs glycolated5)
 
 
 # Presentation (monday, can be adapted to main presenation later)
 - present findings in tables for ease 
 - Disease association data not complete, focus on other datasets (include but with caveat)
   - Kingdom, tissue,
-- Sum up LRAP instead of averaging them
-- Embeddings on base sweetnet might be way bigger (lib size)
-  - I might have compared the bigger base Sweetnet to a reduced model.
-  - No they seem to match after all
 - tSNP plots for baseline trained embeddings, glm embeddings, and trained glm embeddings  for only the ones with icon
 - Doubleheck dimensionality of SweetNet 
 - Tables of results,
@@ -87,6 +88,8 @@
   - Pipelines
   - Diagram of how I run my models
   - different functions I've made. 
+  - Stratified shuffle split
+  - Multi-label multi-class
   - preliminary data
   - tSNP plots
 - comparing how sweetnet performs on the different tasks (tissue needing more epochs)

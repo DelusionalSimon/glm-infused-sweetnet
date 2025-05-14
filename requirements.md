@@ -46,7 +46,7 @@ Current Iteration requirements [1]:
           4.   Do additional research
           5.   Rest
           6.   
-4.	!Modify SweetNet to accept embedding data 
+4.	+Modify SweetNet to accept embedding data 
     4.1	!Run training and compare
         Infusion makes the model worse
     4.2	If results don’t show improvement 
@@ -56,6 +56,7 @@ Current Iteration requirements [1]:
 5.	Add new SweetNet functionality to glycowork 
 6.	Test other GLM embeddings (if the first one fails)
 7.  !Work on paper <-- we are here as well
+8.  I think I'm going to make a clone of my project on my desktop computer as well to allow me to run larger experiments while working on the code
 
 3.6.3 Could haves (20% of effort)
 7.	

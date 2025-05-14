@@ -1,0 +1,2901 @@
+Initializing infusion_trial_time experiment with 4 configurations and 10 runs per configuration.
+----------------
+Run 1/10
+
+All random seeds set to: 420
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.6757 LRAP: 0.3366 NDCG: 0.5909
+val Loss: 1.3538 LRAP: 0.5795 NDCG: 0.6776
+Validation loss decreased (0.000000 --> 1.353787).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2056 LRAP: 0.6570 NDCG: 0.7336
+val Loss: 1.1128 LRAP: 0.6737 NDCG: 0.7404
+Validation loss decreased (1.353787 --> 1.112771).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1102 LRAP: 0.6820 NDCG: 0.7610
+val Loss: 1.0534 LRAP: 0.7188 NDCG: 0.7678
+Validation loss decreased (1.112771 --> 1.053400).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0537 LRAP: 0.6953 NDCG: 0.7819
+val Loss: 1.0252 LRAP: 0.7063 NDCG: 0.7907
+Validation loss decreased (1.053400 --> 1.025220).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0290 LRAP: 0.7064 NDCG: 0.7941
+val Loss: 1.0242 LRAP: 0.6868 NDCG: 0.7906
+Validation loss decreased (1.025220 --> 1.024245).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 0.9955 LRAP: 0.7157 NDCG: 0.8071
+val Loss: 0.9935 LRAP: 0.7354 NDCG: 0.8170
+Validation loss decreased (1.024245 --> 0.993498).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9715 LRAP: 0.7189 NDCG: 0.8115
+val Loss: 0.9769 LRAP: 0.7334 NDCG: 0.8182
+Validation loss decreased (0.993498 --> 0.976885).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9587 LRAP: 0.7233 NDCG: 0.8184
+val Loss: 0.9601 LRAP: 0.7331 NDCG: 0.8229
+Validation loss decreased (0.976885 --> 0.960064).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9390 LRAP: 0.7309 NDCG: 0.8253
+val Loss: 0.9652 LRAP: 0.7505 NDCG: 0.8266
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 0.9288 LRAP: 0.7441 NDCG: 0.8309
+val Loss: 0.9559 LRAP: 0.7631 NDCG: 0.8380
+Validation loss decreased (0.960064 --> 0.955865).  Saving model ...
+
+Training complete in 1m 17s
+Best val loss: 0.955865, best LRAP score: 0.9529
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7619 LRAP: 0.2255 NDCG: 0.5668
+val Loss: 1.4315 LRAP: 0.4171 NDCG: 0.6428
+Validation loss decreased (0.000000 --> 1.431466).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3038 LRAP: 0.5027 NDCG: 0.6848
+val Loss: 1.1651 LRAP: 0.6280 NDCG: 0.7323
+Validation loss decreased (1.431466 --> 1.165126).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1769 LRAP: 0.6252 NDCG: 0.7396
+val Loss: 1.1115 LRAP: 0.6323 NDCG: 0.7419
+Validation loss decreased (1.165126 --> 1.111533).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1193 LRAP: 0.6406 NDCG: 0.7507
+val Loss: 1.1135 LRAP: 0.6400 NDCG: 0.7534
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.0868 LRAP: 0.6526 NDCG: 0.7624
+val Loss: 1.0510 LRAP: 0.6928 NDCG: 0.7843
+Validation loss decreased (1.111533 --> 1.051029).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0481 LRAP: 0.6656 NDCG: 0.7724
+val Loss: 1.0284 LRAP: 0.6848 NDCG: 0.7808
+Validation loss decreased (1.051029 --> 1.028396).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0213 LRAP: 0.6605 NDCG: 0.7776
+val Loss: 1.0222 LRAP: 0.7165 NDCG: 0.7935
+Validation loss decreased (1.028396 --> 1.022201).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.0077 LRAP: 0.6663 NDCG: 0.7833
+val Loss: 1.0032 LRAP: 0.7034 NDCG: 0.8035
+Validation loss decreased (1.022201 --> 1.003165).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9909 LRAP: 0.6723 NDCG: 0.7903
+val Loss: 0.9793 LRAP: 0.7200 NDCG: 0.8106
+Validation loss decreased (1.003165 --> 0.979301).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9639 LRAP: 0.6764 NDCG: 0.7976
+val Loss: 0.9642 LRAP: 0.7222 NDCG: 0.8159
+Validation loss decreased (0.979301 --> 0.964203).  Saving model ...
+
+Training complete in 1m 38s
+Best val loss: 0.964203, best LRAP score: 0.9507
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7265 LRAP: 0.2972 NDCG: 0.5961
+val Loss: 2.4531 LRAP: 0.1302 NDCG: 0.4703
+Validation loss decreased (0.000000 --> 2.453069).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2514 LRAP: 0.6425 NDCG: 0.7235
+val Loss: 1.4252 LRAP: 0.6260 NDCG: 0.7035
+Validation loss decreased (2.453069 --> 1.425234).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1681 LRAP: 0.6584 NDCG: 0.7408
+val Loss: 1.2406 LRAP: 0.6001 NDCG: 0.7136
+Validation loss decreased (1.425234 --> 1.240552).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1225 LRAP: 0.6831 NDCG: 0.7605
+val Loss: 1.3182 LRAP: 0.4065 NDCG: 0.6667
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.0953 LRAP: 0.6811 NDCG: 0.7677
+val Loss: 1.1225 LRAP: 0.7014 NDCG: 0.7673
+Validation loss decreased (1.240552 --> 1.122473).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0759 LRAP: 0.6943 NDCG: 0.7773
+val Loss: 1.1140 LRAP: 0.5747 NDCG: 0.7298
+Validation loss decreased (1.122473 --> 1.114024).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0589 LRAP: 0.7006 NDCG: 0.7804
+val Loss: 1.1750 LRAP: 0.6931 NDCG: 0.7611
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0481 LRAP: 0.7074 NDCG: 0.7866
+val Loss: 1.1088 LRAP: 0.6808 NDCG: 0.7764
+Validation loss decreased (1.114024 --> 1.108773).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.0338 LRAP: 0.7117 NDCG: 0.7917
+val Loss: 1.1519 LRAP: 0.7242 NDCG: 0.7895
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.0267 LRAP: 0.7109 NDCG: 0.7952
+val Loss: 1.0626 LRAP: 0.7120 NDCG: 0.8001
+Validation loss decreased (1.108773 --> 1.062645).  Saving model ...
+
+Training complete in 1m 33s
+Best val loss: 1.062645, best LRAP score: 0.9319
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8160 LRAP: 0.1994 NDCG: 0.5707
+val Loss: 2.6543 LRAP: 0.0517 NDCG: 0.4615
+Validation loss decreased (0.000000 --> 2.654256).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3330 LRAP: 0.5959 NDCG: 0.6917
+val Loss: 1.2933 LRAP: 0.6603 NDCG: 0.7204
+Validation loss decreased (2.654256 --> 1.293280).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2578 LRAP: 0.6241 NDCG: 0.7084
+val Loss: 1.5223 LRAP: 0.5076 NDCG: 0.6350
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.2271 LRAP: 0.6266 NDCG: 0.7204
+val Loss: 1.1783 LRAP: 0.6326 NDCG: 0.7316
+Validation loss decreased (1.293280 --> 1.178344).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1980 LRAP: 0.6189 NDCG: 0.7274
+val Loss: 1.9610 LRAP: 0.2372 NDCG: 0.5353
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1755 LRAP: 0.6316 NDCG: 0.7340
+val Loss: 1.2534 LRAP: 0.5755 NDCG: 0.6982
+EarlyStopping counter: 2 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1551 LRAP: 0.6349 NDCG: 0.7406
+val Loss: 1.1542 LRAP: 0.6706 NDCG: 0.7470
+Validation loss decreased (1.178344 --> 1.154226).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.1427 LRAP: 0.6395 NDCG: 0.7456
+val Loss: 1.1565 LRAP: 0.6349 NDCG: 0.7411
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1316 LRAP: 0.6440 NDCG: 0.7502
+val Loss: 1.1384 LRAP: 0.6743 NDCG: 0.7599
+Validation loss decreased (1.154226 --> 1.138411).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1254 LRAP: 0.6423 NDCG: 0.7544
+val Loss: 1.1980 LRAP: 0.6389 NDCG: 0.7529
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 34s
+Best val loss: 1.138411, best LRAP score: 0.9169
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 2/10
+
+All random seeds set to: 421
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.6877 LRAP: 0.2298 NDCG: 0.5772
+val Loss: 1.2432 LRAP: 0.6003 NDCG: 0.7020
+Validation loss decreased (0.000000 --> 1.243221).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2112 LRAP: 0.6270 NDCG: 0.7232
+val Loss: 1.1171 LRAP: 0.6560 NDCG: 0.7439
+Validation loss decreased (1.243221 --> 1.117129).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1017 LRAP: 0.6773 NDCG: 0.7556
+val Loss: 1.0411 LRAP: 0.7025 NDCG: 0.7699
+Validation loss decreased (1.117129 --> 1.041112).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0592 LRAP: 0.6909 NDCG: 0.7679
+val Loss: 1.0442 LRAP: 0.6757 NDCG: 0.7738
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.0226 LRAP: 0.6947 NDCG: 0.7851
+val Loss: 1.0252 LRAP: 0.6657 NDCG: 0.7870
+Validation loss decreased (1.041112 --> 1.025238).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 0.9870 LRAP: 0.6981 NDCG: 0.7976
+val Loss: 0.9939 LRAP: 0.6900 NDCG: 0.7965
+Validation loss decreased (1.025238 --> 0.993902).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9600 LRAP: 0.7053 NDCG: 0.8048
+val Loss: 0.9820 LRAP: 0.7317 NDCG: 0.8194
+Validation loss decreased (0.993902 --> 0.982016).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9449 LRAP: 0.7178 NDCG: 0.8174
+val Loss: 0.9613 LRAP: 0.7397 NDCG: 0.8297
+Validation loss decreased (0.982016 --> 0.961260).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9291 LRAP: 0.7283 NDCG: 0.8234
+val Loss: 0.9580 LRAP: 0.7217 NDCG: 0.8211
+Validation loss decreased (0.961260 --> 0.957959).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9091 LRAP: 0.7274 NDCG: 0.8269
+val Loss: 0.9528 LRAP: 0.7505 NDCG: 0.8388
+Validation loss decreased (0.957959 --> 0.952795).  Saving model ...
+
+Training complete in 1m 35s
+Best val loss: 0.952795, best LRAP score: 0.9538
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7279 LRAP: 0.2148 NDCG: 0.5710
+val Loss: 1.3228 LRAP: 0.5138 NDCG: 0.6740
+Validation loss decreased (0.000000 --> 1.322776).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2484 LRAP: 0.5905 NDCG: 0.7089
+val Loss: 1.1250 LRAP: 0.6572 NDCG: 0.7489
+Validation loss decreased (1.322776 --> 1.124979).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1538 LRAP: 0.6442 NDCG: 0.7406
+val Loss: 1.0966 LRAP: 0.6626 NDCG: 0.7429
+Validation loss decreased (1.124979 --> 1.096570).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0905 LRAP: 0.6671 NDCG: 0.7555
+val Loss: 1.0489 LRAP: 0.6791 NDCG: 0.7710
+Validation loss decreased (1.096570 --> 1.048934).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0632 LRAP: 0.6762 NDCG: 0.7697
+val Loss: 1.0519 LRAP: 0.6954 NDCG: 0.7797
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0324 LRAP: 0.6849 NDCG: 0.7802
+val Loss: 1.0204 LRAP: 0.6968 NDCG: 0.7897
+Validation loss decreased (1.048934 --> 1.020400).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0022 LRAP: 0.6831 NDCG: 0.7885
+val Loss: 1.0009 LRAP: 0.7000 NDCG: 0.7994
+Validation loss decreased (1.020400 --> 1.000867).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9678 LRAP: 0.6852 NDCG: 0.7971
+val Loss: 0.9949 LRAP: 0.7180 NDCG: 0.8102
+Validation loss decreased (1.000867 --> 0.994943).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9552 LRAP: 0.6931 NDCG: 0.8054
+val Loss: 0.9831 LRAP: 0.7102 NDCG: 0.8155
+Validation loss decreased (0.994943 --> 0.983092).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9374 LRAP: 0.6923 NDCG: 0.8100
+val Loss: 0.9734 LRAP: 0.7122 NDCG: 0.8247
+Validation loss decreased (0.983092 --> 0.973449).  Saving model ...
+
+Training complete in 1m 45s
+Best val loss: 0.973449, best LRAP score: 0.9503
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.8377 LRAP: 0.1516 NDCG: 0.5591
+val Loss: 2.7906 LRAP: 0.0951 NDCG: 0.4320
+Validation loss decreased (0.000000 --> 2.790561).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2894 LRAP: 0.5997 NDCG: 0.7046
+val Loss: 1.5373 LRAP: 0.2395 NDCG: 0.5798
+Validation loss decreased (2.790561 --> 1.537297).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1709 LRAP: 0.6486 NDCG: 0.7267
+val Loss: 1.2345 LRAP: 0.6186 NDCG: 0.7263
+Validation loss decreased (1.537297 --> 1.234533).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1252 LRAP: 0.6617 NDCG: 0.7503
+val Loss: 1.1168 LRAP: 0.6569 NDCG: 0.7506
+Validation loss decreased (1.234533 --> 1.116813).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0877 LRAP: 0.6690 NDCG: 0.7593
+val Loss: 1.0678 LRAP: 0.6871 NDCG: 0.7601
+Validation loss decreased (1.116813 --> 1.067776).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0660 LRAP: 0.6803 NDCG: 0.7686
+val Loss: 1.1419 LRAP: 0.6029 NDCG: 0.7404
+EarlyStopping counter: 1 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0495 LRAP: 0.6888 NDCG: 0.7792
+val Loss: 1.0761 LRAP: 0.6823 NDCG: 0.7642
+EarlyStopping counter: 2 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0408 LRAP: 0.6852 NDCG: 0.7796
+val Loss: 1.0550 LRAP: 0.6828 NDCG: 0.7821
+Validation loss decreased (1.067776 --> 1.054997).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.0241 LRAP: 0.6830 NDCG: 0.7839
+val Loss: 1.1186 LRAP: 0.7214 NDCG: 0.7976
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.0142 LRAP: 0.6851 NDCG: 0.7876
+val Loss: 1.1018 LRAP: 0.6734 NDCG: 0.7822
+EarlyStopping counter: 2 out of 25
+
+Training complete in 1m 34s
+Best val loss: 1.054997, best LRAP score: 0.9349
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7613 LRAP: 0.2299 NDCG: 0.5712
+val Loss: 2.1494 LRAP: 0.5430 NDCG: 0.6292
+Validation loss decreased (0.000000 --> 2.149405).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3325 LRAP: 0.5980 NDCG: 0.6932
+val Loss: 1.5032 LRAP: 0.5124 NDCG: 0.6194
+Validation loss decreased (2.149405 --> 1.503175).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2521 LRAP: 0.6242 NDCG: 0.7068
+val Loss: 1.6209 LRAP: 0.2989 NDCG: 0.5584
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.2186 LRAP: 0.6259 NDCG: 0.7162
+val Loss: 1.4648 LRAP: 0.3757 NDCG: 0.6259
+Validation loss decreased (1.503175 --> 1.464805).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1952 LRAP: 0.6362 NDCG: 0.7239
+val Loss: 1.2853 LRAP: 0.6283 NDCG: 0.7201
+Validation loss decreased (1.464805 --> 1.285313).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.1797 LRAP: 0.6387 NDCG: 0.7283
+val Loss: 1.2154 LRAP: 0.5966 NDCG: 0.7228
+Validation loss decreased (1.285313 --> 1.215433).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.1624 LRAP: 0.6303 NDCG: 0.7341
+val Loss: 1.2048 LRAP: 0.5812 NDCG: 0.7076
+Validation loss decreased (1.215433 --> 1.204800).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.1411 LRAP: 0.6431 NDCG: 0.7448
+val Loss: 1.6258 LRAP: 0.2706 NDCG: 0.6443
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1341 LRAP: 0.6365 NDCG: 0.7464
+val Loss: 1.2833 LRAP: 0.6434 NDCG: 0.7209
+EarlyStopping counter: 2 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.1316 LRAP: 0.6385 NDCG: 0.7491
+val Loss: 1.0966 LRAP: 0.6749 NDCG: 0.7696
+Validation loss decreased (1.204800 --> 1.096559).  Saving model ...
+
+Training complete in 1m 28s
+Best val loss: 1.096559, best LRAP score: 0.9263
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 3/10
+
+All random seeds set to: 422
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7185 LRAP: 0.2214 NDCG: 0.5658
+val Loss: 1.2502 LRAP: 0.3523 NDCG: 0.6359
+Validation loss decreased (0.000000 --> 1.250234).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2166 LRAP: 0.5971 NDCG: 0.7241
+val Loss: 1.1007 LRAP: 0.6466 NDCG: 0.7518
+Validation loss decreased (1.250234 --> 1.100676).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1143 LRAP: 0.6504 NDCG: 0.7574
+val Loss: 1.0519 LRAP: 0.6811 NDCG: 0.7820
+Validation loss decreased (1.100676 --> 1.051914).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0631 LRAP: 0.6663 NDCG: 0.7735
+val Loss: 1.0111 LRAP: 0.6886 NDCG: 0.7842
+Validation loss decreased (1.051914 --> 1.011066).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0236 LRAP: 0.6786 NDCG: 0.7871
+val Loss: 0.9979 LRAP: 0.6877 NDCG: 0.7812
+Validation loss decreased (1.011066 --> 0.997947).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 0.9992 LRAP: 0.6860 NDCG: 0.7935
+val Loss: 0.9928 LRAP: 0.7160 NDCG: 0.8092
+Validation loss decreased (0.997947 --> 0.992847).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9727 LRAP: 0.6901 NDCG: 0.8032
+val Loss: 0.9785 LRAP: 0.7294 NDCG: 0.8141
+Validation loss decreased (0.992847 --> 0.978535).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9551 LRAP: 0.6994 NDCG: 0.8097
+val Loss: 0.9651 LRAP: 0.7257 NDCG: 0.8232
+Validation loss decreased (0.978535 --> 0.965053).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9399 LRAP: 0.7060 NDCG: 0.8150
+val Loss: 0.9562 LRAP: 0.7339 NDCG: 0.8277
+Validation loss decreased (0.965053 --> 0.956169).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9267 LRAP: 0.7108 NDCG: 0.8209
+val Loss: 0.9291 LRAP: 0.7608 NDCG: 0.8385
+Validation loss decreased (0.956169 --> 0.929102).  Saving model ...
+
+Training complete in 0m 57s
+Best val loss: 0.929102, best LRAP score: 0.9563
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7114 LRAP: 0.2241 NDCG: 0.5871
+val Loss: 1.2926 LRAP: 0.4616 NDCG: 0.6692
+Validation loss decreased (0.000000 --> 1.292597).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2165 LRAP: 0.5697 NDCG: 0.7215
+val Loss: 1.1325 LRAP: 0.6591 NDCG: 0.7551
+Validation loss decreased (1.292597 --> 1.132485).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1356 LRAP: 0.6228 NDCG: 0.7515
+val Loss: 1.0856 LRAP: 0.6623 NDCG: 0.7665
+Validation loss decreased (1.132485 --> 1.085554).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0888 LRAP: 0.6354 NDCG: 0.7630
+val Loss: 1.0494 LRAP: 0.6106 NDCG: 0.7621
+Validation loss decreased (1.085554 --> 1.049385).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0552 LRAP: 0.6464 NDCG: 0.7754
+val Loss: 1.0349 LRAP: 0.6623 NDCG: 0.7941
+Validation loss decreased (1.049385 --> 1.034882).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0223 LRAP: 0.6617 NDCG: 0.7864
+val Loss: 1.0104 LRAP: 0.7000 NDCG: 0.8070
+Validation loss decreased (1.034882 --> 1.010420).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9991 LRAP: 0.6792 NDCG: 0.7969
+val Loss: 0.9745 LRAP: 0.7274 NDCG: 0.8173
+Validation loss decreased (1.010420 --> 0.974513).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9746 LRAP: 0.6784 NDCG: 0.8000
+val Loss: 0.9769 LRAP: 0.7351 NDCG: 0.8237
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 0.9577 LRAP: 0.6978 NDCG: 0.8118
+val Loss: 0.9576 LRAP: 0.7097 NDCG: 0.8180
+Validation loss decreased (0.974513 --> 0.957610).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9350 LRAP: 0.6896 NDCG: 0.8111
+val Loss: 0.9552 LRAP: 0.7474 NDCG: 0.8316
+Validation loss decreased (0.957610 --> 0.955209).  Saving model ...
+
+Training complete in 0m 56s
+Best val loss: 0.955209, best LRAP score: 0.9522
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7355 LRAP: 0.2193 NDCG: 0.5838
+val Loss: 1.3527 LRAP: 0.5829 NDCG: 0.7044
+Validation loss decreased (0.000000 --> 1.352654).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2541 LRAP: 0.6253 NDCG: 0.7093
+val Loss: 1.2188 LRAP: 0.6560 NDCG: 0.7024
+Validation loss decreased (1.352654 --> 1.218765).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1715 LRAP: 0.6579 NDCG: 0.7289
+val Loss: 1.8811 LRAP: 0.3072 NDCG: 0.5733
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.1367 LRAP: 0.6639 NDCG: 0.7439
+val Loss: 1.1425 LRAP: 0.6791 NDCG: 0.7576
+Validation loss decreased (1.218765 --> 1.142485).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1093 LRAP: 0.6783 NDCG: 0.7526
+val Loss: 1.1127 LRAP: 0.6820 NDCG: 0.7523
+Validation loss decreased (1.142485 --> 1.112740).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0868 LRAP: 0.6779 NDCG: 0.7626
+val Loss: 1.0836 LRAP: 0.7005 NDCG: 0.7718
+Validation loss decreased (1.112740 --> 1.083648).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0638 LRAP: 0.6767 NDCG: 0.7672
+val Loss: 1.1031 LRAP: 0.5629 NDCG: 0.7276
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0468 LRAP: 0.6760 NDCG: 0.7735
+val Loss: 1.0671 LRAP: 0.7037 NDCG: 0.7717
+Validation loss decreased (1.083648 --> 1.067121).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.0371 LRAP: 0.6816 NDCG: 0.7823
+val Loss: 1.0474 LRAP: 0.6740 NDCG: 0.7826
+Validation loss decreased (1.067121 --> 1.047423).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0227 LRAP: 0.6754 NDCG: 0.7825
+val Loss: 1.1241 LRAP: 0.7168 NDCG: 0.7852
+EarlyStopping counter: 1 out of 25
+
+Training complete in 0m 60s
+Best val loss: 1.047423, best LRAP score: 0.9393
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8235 LRAP: 0.1932 NDCG: 0.5551
+val Loss: 2.2636 LRAP: 0.0619 NDCG: 0.4878
+Validation loss decreased (0.000000 --> 2.263644).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3278 LRAP: 0.5605 NDCG: 0.6931
+val Loss: 2.4563 LRAP: 0.1564 NDCG: 0.4682
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.2552 LRAP: 0.6105 NDCG: 0.7146
+val Loss: 1.3087 LRAP: 0.5435 NDCG: 0.6710
+Validation loss decreased (2.263644 --> 1.308717).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.2196 LRAP: 0.6136 NDCG: 0.7211
+val Loss: 1.2094 LRAP: 0.6711 NDCG: 0.7553
+Validation loss decreased (1.308717 --> 1.209393).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.2047 LRAP: 0.6159 NDCG: 0.7274
+val Loss: 1.6970 LRAP: 0.2389 NDCG: 0.5752
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1835 LRAP: 0.6175 NDCG: 0.7349
+val Loss: 1.1518 LRAP: 0.6780 NDCG: 0.7753
+Validation loss decreased (1.209393 --> 1.151843).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.1634 LRAP: 0.6302 NDCG: 0.7450
+val Loss: 1.1925 LRAP: 0.6023 NDCG: 0.7348
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1401 LRAP: 0.6237 NDCG: 0.7474
+val Loss: 1.2774 LRAP: 0.4570 NDCG: 0.6942
+EarlyStopping counter: 2 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1302 LRAP: 0.6346 NDCG: 0.7558
+val Loss: 1.3895 LRAP: 0.3748 NDCG: 0.6519
+EarlyStopping counter: 3 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.1261 LRAP: 0.6315 NDCG: 0.7555
+val Loss: 1.1379 LRAP: 0.6774 NDCG: 0.7775
+Validation loss decreased (1.151843 --> 1.137942).  Saving model ...
+
+Training complete in 0m 54s
+Best val loss: 1.137942, best LRAP score: 0.9159
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 4/10
+
+All random seeds set to: 423
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7805 LRAP: 0.2304 NDCG: 0.5685
+val Loss: 1.5120 LRAP: 0.2989 NDCG: 0.6345
+Validation loss decreased (0.000000 --> 1.511969).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2393 LRAP: 0.6033 NDCG: 0.7083
+val Loss: 1.1207 LRAP: 0.6760 NDCG: 0.7491
+Validation loss decreased (1.511969 --> 1.120691).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1303 LRAP: 0.6467 NDCG: 0.7439
+val Loss: 1.0686 LRAP: 0.6583 NDCG: 0.7478
+Validation loss decreased (1.120691 --> 1.068643).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0659 LRAP: 0.6747 NDCG: 0.7678
+val Loss: 1.0329 LRAP: 0.7020 NDCG: 0.7830
+Validation loss decreased (1.068643 --> 1.032856).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0240 LRAP: 0.6708 NDCG: 0.7789
+val Loss: 1.0006 LRAP: 0.6954 NDCG: 0.8006
+Validation loss decreased (1.032856 --> 1.000574).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 0.9971 LRAP: 0.6650 NDCG: 0.7837
+val Loss: 0.9985 LRAP: 0.6843 NDCG: 0.7949
+Validation loss decreased (1.000574 --> 0.998536).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9812 LRAP: 0.6721 NDCG: 0.7893
+val Loss: 0.9801 LRAP: 0.7091 NDCG: 0.8102
+Validation loss decreased (0.998536 --> 0.980061).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9608 LRAP: 0.6626 NDCG: 0.7934
+val Loss: 0.9895 LRAP: 0.6863 NDCG: 0.8006
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 0.9451 LRAP: 0.6819 NDCG: 0.8039
+val Loss: 0.9630 LRAP: 0.7259 NDCG: 0.8222
+Validation loss decreased (0.980061 --> 0.963018).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9348 LRAP: 0.6920 NDCG: 0.8091
+val Loss: 0.9609 LRAP: 0.7399 NDCG: 0.8262
+Validation loss decreased (0.963018 --> 0.960850).  Saving model ...
+
+Training complete in 1m 3s
+Best val loss: 0.960850, best LRAP score: 0.9516
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7009 LRAP: 0.3033 NDCG: 0.5981
+val Loss: 1.3428 LRAP: 0.5461 NDCG: 0.6967
+Validation loss decreased (0.000000 --> 1.342844).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2355 LRAP: 0.6224 NDCG: 0.7341
+val Loss: 1.2275 LRAP: 0.6238 NDCG: 0.7474
+Validation loss decreased (1.342844 --> 1.227464).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1453 LRAP: 0.6619 NDCG: 0.7586
+val Loss: 1.0927 LRAP: 0.6629 NDCG: 0.7659
+Validation loss decreased (1.227464 --> 1.092736).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0922 LRAP: 0.6828 NDCG: 0.7704
+val Loss: 1.0605 LRAP: 0.6983 NDCG: 0.7918
+Validation loss decreased (1.092736 --> 1.060521).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0669 LRAP: 0.6943 NDCG: 0.7813
+val Loss: 1.0507 LRAP: 0.6928 NDCG: 0.7806
+Validation loss decreased (1.060521 --> 1.050653).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0454 LRAP: 0.6984 NDCG: 0.7859
+val Loss: 1.0479 LRAP: 0.7088 NDCG: 0.7864
+Validation loss decreased (1.050653 --> 1.047890).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0248 LRAP: 0.7093 NDCG: 0.7955
+val Loss: 1.0355 LRAP: 0.7271 NDCG: 0.8079
+Validation loss decreased (1.047890 --> 1.035530).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9964 LRAP: 0.7134 NDCG: 0.8046
+val Loss: 1.0002 LRAP: 0.7094 NDCG: 0.8087
+Validation loss decreased (1.035530 --> 1.000163).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9725 LRAP: 0.7197 NDCG: 0.8147
+val Loss: 0.9990 LRAP: 0.7182 NDCG: 0.8060
+Validation loss decreased (1.000163 --> 0.998985).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9550 LRAP: 0.7238 NDCG: 0.8187
+val Loss: 0.9691 LRAP: 0.7522 NDCG: 0.8291
+Validation loss decreased (0.998985 --> 0.969096).  Saving model ...
+
+Training complete in 1m 26s
+Best val loss: 0.969096, best LRAP score: 0.9499
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.8639 LRAP: 0.1475 NDCG: 0.5556
+val Loss: 1.4136 LRAP: 0.4293 NDCG: 0.6486
+Validation loss decreased (0.000000 --> 1.413622).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2917 LRAP: 0.5516 NDCG: 0.6965
+val Loss: 1.3895 LRAP: 0.6463 NDCG: 0.7123
+Validation loss decreased (1.413622 --> 1.389463).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1652 LRAP: 0.6611 NDCG: 0.7340
+val Loss: 1.1368 LRAP: 0.6509 NDCG: 0.7320
+Validation loss decreased (1.389463 --> 1.136759).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1367 LRAP: 0.6683 NDCG: 0.7434
+val Loss: 1.1284 LRAP: 0.6460 NDCG: 0.7435
+Validation loss decreased (1.136759 --> 1.128378).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1070 LRAP: 0.6712 NDCG: 0.7541
+val Loss: 1.2613 LRAP: 0.5335 NDCG: 0.7342
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0896 LRAP: 0.6732 NDCG: 0.7630
+val Loss: 1.3547 LRAP: 0.4025 NDCG: 0.6648
+EarlyStopping counter: 2 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0735 LRAP: 0.6781 NDCG: 0.7658
+val Loss: 1.0574 LRAP: 0.6737 NDCG: 0.7745
+Validation loss decreased (1.128378 --> 1.057355).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.0546 LRAP: 0.6856 NDCG: 0.7758
+val Loss: 1.1420 LRAP: 0.6297 NDCG: 0.7473
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0382 LRAP: 0.6941 NDCG: 0.7824
+val Loss: 1.0278 LRAP: 0.7034 NDCG: 0.7910
+Validation loss decreased (1.057355 --> 1.027807).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0235 LRAP: 0.6967 NDCG: 0.7842
+val Loss: 1.0647 LRAP: 0.7063 NDCG: 0.7908
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 23s
+Best val loss: 1.027807, best LRAP score: 0.9373
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7812 LRAP: 0.1646 NDCG: 0.5564
+val Loss: 1.8856 LRAP: 0.4936 NDCG: 0.6127
+Validation loss decreased (0.000000 --> 1.885589).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3234 LRAP: 0.5683 NDCG: 0.6899
+val Loss: 1.6942 LRAP: 0.5275 NDCG: 0.6193
+Validation loss decreased (1.885589 --> 1.694228).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2563 LRAP: 0.6151 NDCG: 0.7123
+val Loss: 1.9490 LRAP: 0.5869 NDCG: 0.6721
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.2155 LRAP: 0.6236 NDCG: 0.7204
+val Loss: 1.3488 LRAP: 0.6089 NDCG: 0.7120
+Validation loss decreased (1.694228 --> 1.348847).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1949 LRAP: 0.6249 NDCG: 0.7296
+val Loss: 2.2263 LRAP: 0.2538 NDCG: 0.6247
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1725 LRAP: 0.6360 NDCG: 0.7401
+val Loss: 1.6598 LRAP: 0.3623 NDCG: 0.6149
+EarlyStopping counter: 2 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1602 LRAP: 0.6287 NDCG: 0.7416
+val Loss: 1.6193 LRAP: 0.4025 NDCG: 0.6265
+EarlyStopping counter: 3 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1357 LRAP: 0.6323 NDCG: 0.7455
+val Loss: 1.1545 LRAP: 0.6429 NDCG: 0.7468
+Validation loss decreased (1.348847 --> 1.154536).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.1269 LRAP: 0.6289 NDCG: 0.7471
+val Loss: 1.1060 LRAP: 0.5652 NDCG: 0.7335
+Validation loss decreased (1.154536 --> 1.105963).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1114 LRAP: 0.6363 NDCG: 0.7572
+val Loss: 1.1381 LRAP: 0.6126 NDCG: 0.7451
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 25s
+Best val loss: 1.105963, best LRAP score: 0.9272
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 5/10
+
+All random seeds set to: 424
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7910 LRAP: 0.1799 NDCG: 0.5620
+val Loss: 1.4262 LRAP: 0.4850 NDCG: 0.6734
+Validation loss decreased (0.000000 --> 1.426193).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2123 LRAP: 0.5678 NDCG: 0.7141
+val Loss: 1.1117 LRAP: 0.6415 NDCG: 0.7419
+Validation loss decreased (1.426193 --> 1.111697).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1238 LRAP: 0.6283 NDCG: 0.7405
+val Loss: 1.0900 LRAP: 0.6609 NDCG: 0.7605
+Validation loss decreased (1.111697 --> 1.089972).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0792 LRAP: 0.6501 NDCG: 0.7514
+val Loss: 1.0151 LRAP: 0.5427 NDCG: 0.7400
+Validation loss decreased (1.089972 --> 1.015112).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0433 LRAP: 0.6588 NDCG: 0.7610
+val Loss: 0.9982 LRAP: 0.6646 NDCG: 0.7706
+Validation loss decreased (1.015112 --> 0.998167).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0124 LRAP: 0.6605 NDCG: 0.7678
+val Loss: 0.9773 LRAP: 0.7011 NDCG: 0.7846
+Validation loss decreased (0.998167 --> 0.977327).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9887 LRAP: 0.6607 NDCG: 0.7745
+val Loss: 0.9606 LRAP: 0.6449 NDCG: 0.7827
+Validation loss decreased (0.977327 --> 0.960568).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9649 LRAP: 0.6691 NDCG: 0.7838
+val Loss: 0.9485 LRAP: 0.7065 NDCG: 0.7937
+Validation loss decreased (0.960568 --> 0.948538).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9434 LRAP: 0.6646 NDCG: 0.7887
+val Loss: 0.9394 LRAP: 0.7319 NDCG: 0.8223
+Validation loss decreased (0.948538 --> 0.939396).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9291 LRAP: 0.6868 NDCG: 0.8003
+val Loss: 0.9256 LRAP: 0.6997 NDCG: 0.8124
+Validation loss decreased (0.939396 --> 0.925573).  Saving model ...
+
+Training complete in 1m 31s
+Best val loss: 0.925573, best LRAP score: 0.9583
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8064 LRAP: 0.1989 NDCG: 0.5676
+val Loss: 1.3211 LRAP: 0.4739 NDCG: 0.6720
+Validation loss decreased (0.000000 --> 1.321150).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2895 LRAP: 0.5587 NDCG: 0.6989
+val Loss: 1.1670 LRAP: 0.6375 NDCG: 0.7316
+Validation loss decreased (1.321150 --> 1.167050).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1613 LRAP: 0.6345 NDCG: 0.7391
+val Loss: 1.1078 LRAP: 0.6440 NDCG: 0.7482
+Validation loss decreased (1.167050 --> 1.107796).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0977 LRAP: 0.6482 NDCG: 0.7558
+val Loss: 1.0349 LRAP: 0.6883 NDCG: 0.7909
+Validation loss decreased (1.107796 --> 1.034903).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0618 LRAP: 0.6631 NDCG: 0.7689
+val Loss: 1.0073 LRAP: 0.6880 NDCG: 0.7832
+Validation loss decreased (1.034903 --> 1.007305).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0218 LRAP: 0.6694 NDCG: 0.7816
+val Loss: 0.9932 LRAP: 0.7120 NDCG: 0.8042
+Validation loss decreased (1.007305 --> 0.993153).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9964 LRAP: 0.6943 NDCG: 0.7944
+val Loss: 0.9751 LRAP: 0.7425 NDCG: 0.8236
+Validation loss decreased (0.993153 --> 0.975104).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9852 LRAP: 0.6926 NDCG: 0.7990
+val Loss: 0.9674 LRAP: 0.7020 NDCG: 0.8051
+Validation loss decreased (0.975104 --> 0.967450).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9645 LRAP: 0.7037 NDCG: 0.8054
+val Loss: 0.9651 LRAP: 0.7431 NDCG: 0.8236
+Validation loss decreased (0.967450 --> 0.965067).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9356 LRAP: 0.7131 NDCG: 0.8126
+val Loss: 0.9467 LRAP: 0.7539 NDCG: 0.8301
+Validation loss decreased (0.965067 --> 0.946718).  Saving model ...
+
+Training complete in 1m 27s
+Best val loss: 0.946718, best LRAP score: 0.9523
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.8708 LRAP: 0.1369 NDCG: 0.5365
+val Loss: 1.3957 LRAP: 0.3554 NDCG: 0.6109
+Validation loss decreased (0.000000 --> 1.395746).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3129 LRAP: 0.5147 NDCG: 0.6740
+val Loss: 1.2279 LRAP: 0.5592 NDCG: 0.7093
+Validation loss decreased (1.395746 --> 1.227895).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1852 LRAP: 0.6316 NDCG: 0.7196
+val Loss: 1.1340 LRAP: 0.6826 NDCG: 0.7448
+Validation loss decreased (1.227895 --> 1.133981).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1320 LRAP: 0.6600 NDCG: 0.7423
+val Loss: 1.1588 LRAP: 0.5504 NDCG: 0.6949
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.1061 LRAP: 0.6562 NDCG: 0.7492
+val Loss: 1.1145 LRAP: 0.7202 NDCG: 0.7723
+Validation loss decreased (1.133981 --> 1.114461).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0754 LRAP: 0.6644 NDCG: 0.7574
+val Loss: 1.1772 LRAP: 0.4862 NDCG: 0.7064
+EarlyStopping counter: 1 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0532 LRAP: 0.6584 NDCG: 0.7631
+val Loss: 1.0522 LRAP: 0.7097 NDCG: 0.7837
+Validation loss decreased (1.114461 --> 1.052192).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.0444 LRAP: 0.6534 NDCG: 0.7663
+val Loss: 1.1423 LRAP: 0.5532 NDCG: 0.7320
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0269 LRAP: 0.6698 NDCG: 0.7787
+val Loss: 1.0383 LRAP: 0.7291 NDCG: 0.8020
+Validation loss decreased (1.052192 --> 1.038329).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0091 LRAP: 0.6758 NDCG: 0.7823
+val Loss: 1.0095 LRAP: 0.6763 NDCG: 0.7918
+Validation loss decreased (1.038329 --> 1.009523).  Saving model ...
+
+Training complete in 1m 26s
+Best val loss: 1.009523, best LRAP score: 0.9435
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8843 LRAP: 0.1258 NDCG: 0.5382
+val Loss: 2.0496 LRAP: 0.0525 NDCG: 0.5455
+Validation loss decreased (0.000000 --> 2.049583).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3438 LRAP: 0.5325 NDCG: 0.6739
+val Loss: 1.3925 LRAP: 0.3717 NDCG: 0.6232
+Validation loss decreased (2.049583 --> 1.392475).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2599 LRAP: 0.5784 NDCG: 0.6940
+val Loss: 1.4606 LRAP: 0.1964 NDCG: 0.5911
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.2310 LRAP: 0.5962 NDCG: 0.7088
+val Loss: 1.3828 LRAP: 0.2866 NDCG: 0.6243
+Validation loss decreased (1.392475 --> 1.382801).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1859 LRAP: 0.6063 NDCG: 0.7185
+val Loss: 1.2236 LRAP: 0.6763 NDCG: 0.7641
+Validation loss decreased (1.382801 --> 1.223621).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.1792 LRAP: 0.6039 NDCG: 0.7240
+val Loss: 1.4423 LRAP: 0.3043 NDCG: 0.6204
+EarlyStopping counter: 1 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1572 LRAP: 0.6087 NDCG: 0.7296
+val Loss: 1.2850 LRAP: 0.6640 NDCG: 0.7642
+EarlyStopping counter: 2 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1357 LRAP: 0.6099 NDCG: 0.7359
+val Loss: 1.1181 LRAP: 0.6152 NDCG: 0.7456
+Validation loss decreased (1.223621 --> 1.118082).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.1146 LRAP: 0.6261 NDCG: 0.7464
+val Loss: 1.1044 LRAP: 0.6235 NDCG: 0.7525
+Validation loss decreased (1.118082 --> 1.104364).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1123 LRAP: 0.6181 NDCG: 0.7449
+val Loss: 1.1150 LRAP: 0.6823 NDCG: 0.7830
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 42s
+Best val loss: 1.104364, best LRAP score: 0.9244
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 6/10
+
+All random seeds set to: 425
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7183 LRAP: 0.2865 NDCG: 0.5919
+val Loss: 1.2534 LRAP: 0.6095 NDCG: 0.7057
+Validation loss decreased (0.000000 --> 1.253437).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2308 LRAP: 0.6414 NDCG: 0.7265
+val Loss: 1.1162 LRAP: 0.6957 NDCG: 0.7606
+Validation loss decreased (1.253437 --> 1.116177).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1436 LRAP: 0.6796 NDCG: 0.7563
+val Loss: 1.0528 LRAP: 0.6900 NDCG: 0.7725
+Validation loss decreased (1.116177 --> 1.052799).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0889 LRAP: 0.6946 NDCG: 0.7713
+val Loss: 1.0438 LRAP: 0.7020 NDCG: 0.7901
+Validation loss decreased (1.052799 --> 1.043780).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0506 LRAP: 0.7069 NDCG: 0.7870
+val Loss: 1.0093 LRAP: 0.7188 NDCG: 0.7965
+Validation loss decreased (1.043780 --> 1.009316).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0184 LRAP: 0.7131 NDCG: 0.7967
+val Loss: 0.9908 LRAP: 0.7311 NDCG: 0.8102
+Validation loss decreased (1.009316 --> 0.990766).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9944 LRAP: 0.7213 NDCG: 0.8062
+val Loss: 0.9917 LRAP: 0.7354 NDCG: 0.8163
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 0.9741 LRAP: 0.7287 NDCG: 0.8124
+val Loss: 0.9672 LRAP: 0.7382 NDCG: 0.8230
+Validation loss decreased (0.990766 --> 0.967211).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9582 LRAP: 0.7320 NDCG: 0.8159
+val Loss: 0.9459 LRAP: 0.7554 NDCG: 0.8327
+Validation loss decreased (0.967211 --> 0.945893).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9372 LRAP: 0.7294 NDCG: 0.8185
+val Loss: 0.9374 LRAP: 0.7516 NDCG: 0.8314
+Validation loss decreased (0.945893 --> 0.937433).  Saving model ...
+
+Training complete in 1m 20s
+Best val loss: 0.937433, best LRAP score: 0.9567
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7870 LRAP: 0.2170 NDCG: 0.5867
+val Loss: 1.2951 LRAP: 0.5664 NDCG: 0.7102
+Validation loss decreased (0.000000 --> 1.295089).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2663 LRAP: 0.5840 NDCG: 0.7145
+val Loss: 1.1592 LRAP: 0.5672 NDCG: 0.7111
+Validation loss decreased (1.295089 --> 1.159189).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1684 LRAP: 0.6186 NDCG: 0.7368
+val Loss: 1.0677 LRAP: 0.6617 NDCG: 0.7549
+Validation loss decreased (1.159189 --> 1.067672).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1148 LRAP: 0.6436 NDCG: 0.7511
+val Loss: 1.0469 LRAP: 0.6651 NDCG: 0.7633
+Validation loss decreased (1.067672 --> 1.046937).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0839 LRAP: 0.6562 NDCG: 0.7626
+val Loss: 1.0385 LRAP: 0.7071 NDCG: 0.7968
+Validation loss decreased (1.046937 --> 1.038465).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0511 LRAP: 0.6655 NDCG: 0.7739
+val Loss: 1.0133 LRAP: 0.6763 NDCG: 0.7832
+Validation loss decreased (1.038465 --> 1.013294).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0235 LRAP: 0.6686 NDCG: 0.7788
+val Loss: 1.0089 LRAP: 0.7017 NDCG: 0.7942
+Validation loss decreased (1.013294 --> 1.008902).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9992 LRAP: 0.6840 NDCG: 0.7913
+val Loss: 0.9931 LRAP: 0.7177 NDCG: 0.8159
+Validation loss decreased (1.008902 --> 0.993063).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9832 LRAP: 0.6948 NDCG: 0.7993
+val Loss: 0.9751 LRAP: 0.7311 NDCG: 0.8144
+Validation loss decreased (0.993063 --> 0.975054).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9678 LRAP: 0.6926 NDCG: 0.8006
+val Loss: 0.9678 LRAP: 0.7065 NDCG: 0.8111
+Validation loss decreased (0.975054 --> 0.967848).  Saving model ...
+
+Training complete in 1m 26s
+Best val loss: 0.967848, best LRAP score: 0.9503
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7506 LRAP: 0.2576 NDCG: 0.5847
+val Loss: 1.4664 LRAP: 0.5918 NDCG: 0.6512
+Validation loss decreased (0.000000 --> 1.466415).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2507 LRAP: 0.6309 NDCG: 0.7110
+val Loss: 1.6177 LRAP: 0.2552 NDCG: 0.5719
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.1720 LRAP: 0.6540 NDCG: 0.7320
+val Loss: 1.1709 LRAP: 0.5450 NDCG: 0.7163
+Validation loss decreased (1.466415 --> 1.170939).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1373 LRAP: 0.6708 NDCG: 0.7474
+val Loss: 1.0716 LRAP: 0.6866 NDCG: 0.7750
+Validation loss decreased (1.170939 --> 1.071648).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1093 LRAP: 0.6789 NDCG: 0.7599
+val Loss: 1.5326 LRAP: 0.4039 NDCG: 0.6617
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0795 LRAP: 0.6848 NDCG: 0.7652
+val Loss: 1.0715 LRAP: 0.6866 NDCG: 0.7761
+Validation loss decreased (1.071648 --> 1.071525).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0681 LRAP: 0.6913 NDCG: 0.7727
+val Loss: 1.0844 LRAP: 0.6560 NDCG: 0.7709
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0548 LRAP: 0.6935 NDCG: 0.7762
+val Loss: 1.2408 LRAP: 0.5812 NDCG: 0.7500
+EarlyStopping counter: 2 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0468 LRAP: 0.6951 NDCG: 0.7824
+val Loss: 1.0494 LRAP: 0.7131 NDCG: 0.7844
+Validation loss decreased (1.071525 --> 1.049404).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0322 LRAP: 0.6944 NDCG: 0.7862
+val Loss: 1.0566 LRAP: 0.7000 NDCG: 0.7842
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 24s
+Best val loss: 1.049404, best LRAP score: 0.9347
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.9168 LRAP: 0.1579 NDCG: 0.5559
+val Loss: 2.1928 LRAP: 0.0771 NDCG: 0.4697
+Validation loss decreased (0.000000 --> 2.192817).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3584 LRAP: 0.5861 NDCG: 0.6903
+val Loss: 1.4767 LRAP: 0.6112 NDCG: 0.6834
+Validation loss decreased (2.192817 --> 1.476717).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2587 LRAP: 0.6176 NDCG: 0.7061
+val Loss: 1.2664 LRAP: 0.5575 NDCG: 0.6824
+Validation loss decreased (1.476717 --> 1.266390).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.2283 LRAP: 0.6253 NDCG: 0.7156
+val Loss: 1.3055 LRAP: 0.6192 NDCG: 0.7047
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.2127 LRAP: 0.6264 NDCG: 0.7215
+val Loss: 1.7246 LRAP: 0.3020 NDCG: 0.6004
+EarlyStopping counter: 2 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1897 LRAP: 0.6256 NDCG: 0.7281
+val Loss: 1.4004 LRAP: 0.4022 NDCG: 0.6274
+EarlyStopping counter: 3 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1739 LRAP: 0.6271 NDCG: 0.7347
+val Loss: 1.7206 LRAP: 0.3560 NDCG: 0.6437
+EarlyStopping counter: 4 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1479 LRAP: 0.6355 NDCG: 0.7383
+val Loss: 1.1404 LRAP: 0.6366 NDCG: 0.7473
+Validation loss decreased (1.266390 --> 1.140353).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.1413 LRAP: 0.6326 NDCG: 0.7455
+val Loss: 1.3660 LRAP: 0.4796 NDCG: 0.7008
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.1282 LRAP: 0.6293 NDCG: 0.7472
+val Loss: 1.4482 LRAP: 0.3802 NDCG: 0.6674
+EarlyStopping counter: 2 out of 25
+
+Training complete in 1m 25s
+Best val loss: 1.140353, best LRAP score: 0.9145
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 7/10
+
+All random seeds set to: 426
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7425 LRAP: 0.2272 NDCG: 0.5788
+val Loss: 1.2901 LRAP: 0.5612 NDCG: 0.6899
+Validation loss decreased (0.000000 --> 1.290140).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2164 LRAP: 0.6151 NDCG: 0.7242
+val Loss: 1.1468 LRAP: 0.5601 NDCG: 0.7051
+Validation loss decreased (1.290140 --> 1.146751).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1211 LRAP: 0.6729 NDCG: 0.7581
+val Loss: 1.1202 LRAP: 0.6446 NDCG: 0.7537
+Validation loss decreased (1.146751 --> 1.120181).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0708 LRAP: 0.6901 NDCG: 0.7737
+val Loss: 1.0630 LRAP: 0.6968 NDCG: 0.7766
+Validation loss decreased (1.120181 --> 1.062958).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0472 LRAP: 0.7092 NDCG: 0.7868
+val Loss: 1.0304 LRAP: 0.7065 NDCG: 0.7891
+Validation loss decreased (1.062958 --> 1.030433).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0174 LRAP: 0.7083 NDCG: 0.7956
+val Loss: 0.9956 LRAP: 0.7177 NDCG: 0.8022
+Validation loss decreased (1.030433 --> 0.995557).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9852 LRAP: 0.7143 NDCG: 0.8044
+val Loss: 0.9879 LRAP: 0.7254 NDCG: 0.8133
+Validation loss decreased (0.995557 --> 0.987928).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9685 LRAP: 0.7155 NDCG: 0.8098
+val Loss: 1.0053 LRAP: 0.7108 NDCG: 0.8095
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 0.9498 LRAP: 0.7166 NDCG: 0.8151
+val Loss: 0.9734 LRAP: 0.7217 NDCG: 0.8179
+Validation loss decreased (0.987928 --> 0.973429).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9345 LRAP: 0.7233 NDCG: 0.8215
+val Loss: 0.9521 LRAP: 0.7531 NDCG: 0.8379
+Validation loss decreased (0.973429 --> 0.952053).  Saving model ...
+
+Training complete in 1m 20s
+Best val loss: 0.952053, best LRAP score: 0.9519
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.6941 LRAP: 0.2926 NDCG: 0.5936
+val Loss: 1.2747 LRAP: 0.6175 NDCG: 0.7150
+Validation loss decreased (0.000000 --> 1.274669).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2511 LRAP: 0.6214 NDCG: 0.7279
+val Loss: 1.1613 LRAP: 0.6366 NDCG: 0.7463
+Validation loss decreased (1.274669 --> 1.161348).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1578 LRAP: 0.6535 NDCG: 0.7549
+val Loss: 1.1324 LRAP: 0.6363 NDCG: 0.7442
+Validation loss decreased (1.161348 --> 1.132448).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0951 LRAP: 0.6788 NDCG: 0.7766
+val Loss: 1.0867 LRAP: 0.6960 NDCG: 0.7844
+Validation loss decreased (1.132448 --> 1.086714).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0680 LRAP: 0.6866 NDCG: 0.7875
+val Loss: 1.0379 LRAP: 0.7140 NDCG: 0.8019
+Validation loss decreased (1.086714 --> 1.037920).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0336 LRAP: 0.6964 NDCG: 0.7949
+val Loss: 1.0247 LRAP: 0.7259 NDCG: 0.8032
+Validation loss decreased (1.037920 --> 1.024730).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0056 LRAP: 0.7083 NDCG: 0.8057
+val Loss: 1.0222 LRAP: 0.7325 NDCG: 0.8091
+Validation loss decreased (1.024730 --> 1.022180).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9772 LRAP: 0.7172 NDCG: 0.8143
+val Loss: 0.9924 LRAP: 0.7302 NDCG: 0.8141
+Validation loss decreased (1.022180 --> 0.992399).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9574 LRAP: 0.7269 NDCG: 0.8214
+val Loss: 0.9593 LRAP: 0.7411 NDCG: 0.8273
+Validation loss decreased (0.992399 --> 0.959297).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9387 LRAP: 0.7312 NDCG: 0.8241
+val Loss: 0.9605 LRAP: 0.7642 NDCG: 0.8367
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 20s
+Best val loss: 0.959297, best LRAP score: 0.9507
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.6951 LRAP: 0.2765 NDCG: 0.6006
+val Loss: 1.3536 LRAP: 0.6965 NDCG: 0.7378
+Validation loss decreased (0.000000 --> 1.353619).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2423 LRAP: 0.6371 NDCG: 0.7147
+val Loss: 1.5075 LRAP: 0.3617 NDCG: 0.6147
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.1559 LRAP: 0.6730 NDCG: 0.7420
+val Loss: 1.1547 LRAP: 0.7088 NDCG: 0.7560
+Validation loss decreased (1.353619 --> 1.154716).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1183 LRAP: 0.6782 NDCG: 0.7531
+val Loss: 1.4320 LRAP: 0.6723 NDCG: 0.7357
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.0951 LRAP: 0.6911 NDCG: 0.7611
+val Loss: 1.1163 LRAP: 0.7028 NDCG: 0.7621
+Validation loss decreased (1.154716 --> 1.116345).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0680 LRAP: 0.6999 NDCG: 0.7732
+val Loss: 1.1370 LRAP: 0.7097 NDCG: 0.7664
+EarlyStopping counter: 1 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0523 LRAP: 0.7012 NDCG: 0.7798
+val Loss: 1.1152 LRAP: 0.7282 NDCG: 0.7854
+Validation loss decreased (1.116345 --> 1.115178).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.0386 LRAP: 0.7039 NDCG: 0.7863
+val Loss: 1.2174 LRAP: 0.5421 NDCG: 0.7366
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0333 LRAP: 0.7016 NDCG: 0.7876
+val Loss: 1.0262 LRAP: 0.7171 NDCG: 0.7999
+Validation loss decreased (1.115178 --> 1.026185).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0183 LRAP: 0.7046 NDCG: 0.7920
+val Loss: 1.1554 LRAP: 0.6557 NDCG: 0.7876
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 19s
+Best val loss: 1.026185, best LRAP score: 0.9390
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8249 LRAP: 0.1379 NDCG: 0.5475
+val Loss: 1.3943 LRAP: 0.4896 NDCG: 0.6672
+Validation loss decreased (0.000000 --> 1.394269).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2989 LRAP: 0.5431 NDCG: 0.6878
+val Loss: 2.2105 LRAP: 0.1653 NDCG: 0.4262
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.2330 LRAP: 0.5943 NDCG: 0.7147
+val Loss: 1.1754 LRAP: 0.6152 NDCG: 0.7277
+Validation loss decreased (1.394269 --> 1.175362).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1940 LRAP: 0.5974 NDCG: 0.7261
+val Loss: 1.5707 LRAP: 0.3888 NDCG: 0.6332
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.1713 LRAP: 0.6033 NDCG: 0.7350
+val Loss: 1.2017 LRAP: 0.5709 NDCG: 0.7378
+EarlyStopping counter: 2 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1453 LRAP: 0.6002 NDCG: 0.7385
+val Loss: 1.1886 LRAP: 0.4565 NDCG: 0.6893
+EarlyStopping counter: 3 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1349 LRAP: 0.6148 NDCG: 0.7464
+val Loss: 1.2059 LRAP: 0.5087 NDCG: 0.7140
+EarlyStopping counter: 4 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1232 LRAP: 0.6193 NDCG: 0.7497
+val Loss: 1.7242 LRAP: 0.3320 NDCG: 0.6757
+EarlyStopping counter: 5 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0900 LRAP: 0.6233 NDCG: 0.7551
+val Loss: 1.0776 LRAP: 0.6657 NDCG: 0.7758
+Validation loss decreased (1.175362 --> 1.077561).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0745 LRAP: 0.6354 NDCG: 0.7634
+val Loss: 1.0774 LRAP: 0.6834 NDCG: 0.7824
+Validation loss decreased (1.077561 --> 1.077433).  Saving model ...
+
+Training complete in 1m 1s
+Best val loss: 1.077433, best LRAP score: 0.9284
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 8/10
+
+All random seeds set to: 427
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7559 LRAP: 0.1927 NDCG: 0.5637
+val Loss: 1.3378 LRAP: 0.5027 NDCG: 0.6701
+Validation loss decreased (0.000000 --> 1.337783).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2667 LRAP: 0.5487 NDCG: 0.6934
+val Loss: 1.1679 LRAP: 0.5541 NDCG: 0.6935
+Validation loss decreased (1.337783 --> 1.167926).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1369 LRAP: 0.6444 NDCG: 0.7422
+val Loss: 1.0970 LRAP: 0.6523 NDCG: 0.7481
+Validation loss decreased (1.167926 --> 1.097042).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0720 LRAP: 0.6674 NDCG: 0.7668
+val Loss: 1.0816 LRAP: 0.6417 NDCG: 0.7510
+Validation loss decreased (1.097042 --> 1.081601).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0322 LRAP: 0.6759 NDCG: 0.7815
+val Loss: 1.0222 LRAP: 0.6977 NDCG: 0.7914
+Validation loss decreased (1.081601 --> 1.022154).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0020 LRAP: 0.6857 NDCG: 0.7936
+val Loss: 1.0123 LRAP: 0.7174 NDCG: 0.8054
+Validation loss decreased (1.022154 --> 1.012251).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9792 LRAP: 0.6926 NDCG: 0.7993
+val Loss: 1.0043 LRAP: 0.6965 NDCG: 0.7979
+Validation loss decreased (1.012251 --> 1.004262).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9607 LRAP: 0.6981 NDCG: 0.8047
+val Loss: 0.9827 LRAP: 0.7180 NDCG: 0.8066
+Validation loss decreased (1.004262 --> 0.982724).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9400 LRAP: 0.7083 NDCG: 0.8122
+val Loss: 0.9758 LRAP: 0.7511 NDCG: 0.8216
+Validation loss decreased (0.982724 --> 0.975819).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9270 LRAP: 0.7173 NDCG: 0.8165
+val Loss: 0.9661 LRAP: 0.6866 NDCG: 0.8039
+Validation loss decreased (0.975819 --> 0.966119).  Saving model ...
+
+Training complete in 1m 26s
+Best val loss: 0.966119, best LRAP score: 0.9496
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7760 LRAP: 0.1866 NDCG: 0.5641
+val Loss: 1.3568 LRAP: 0.3991 NDCG: 0.6590
+Validation loss decreased (0.000000 --> 1.356802).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2963 LRAP: 0.5559 NDCG: 0.6997
+val Loss: 1.1758 LRAP: 0.5912 NDCG: 0.7240
+Validation loss decreased (1.356802 --> 1.175752).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1651 LRAP: 0.6369 NDCG: 0.7385
+val Loss: 1.1067 LRAP: 0.6771 NDCG: 0.7607
+Validation loss decreased (1.175752 --> 1.106692).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1204 LRAP: 0.6477 NDCG: 0.7494
+val Loss: 1.0770 LRAP: 0.6740 NDCG: 0.7584
+Validation loss decreased (1.106692 --> 1.076955).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0771 LRAP: 0.6543 NDCG: 0.7582
+val Loss: 1.0646 LRAP: 0.6968 NDCG: 0.7722
+Validation loss decreased (1.076955 --> 1.064617).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0403 LRAP: 0.6645 NDCG: 0.7698
+val Loss: 1.0715 LRAP: 0.6489 NDCG: 0.7592
+EarlyStopping counter: 1 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0199 LRAP: 0.6598 NDCG: 0.7759
+val Loss: 1.0334 LRAP: 0.6726 NDCG: 0.7762
+Validation loss decreased (1.064617 --> 1.033422).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9959 LRAP: 0.6654 NDCG: 0.7836
+val Loss: 1.0026 LRAP: 0.6894 NDCG: 0.7903
+Validation loss decreased (1.033422 --> 1.002625).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9750 LRAP: 0.6645 NDCG: 0.7860
+val Loss: 1.0210 LRAP: 0.6726 NDCG: 0.7978
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 0.9581 LRAP: 0.6649 NDCG: 0.7927
+val Loss: 1.0075 LRAP: 0.7131 NDCG: 0.8035
+EarlyStopping counter: 2 out of 25
+
+Training complete in 1m 30s
+Best val loss: 1.002625, best LRAP score: 0.9433
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7087 LRAP: 0.2627 NDCG: 0.5932
+val Loss: 2.0486 LRAP: 0.1887 NDCG: 0.5642
+Validation loss decreased (0.000000 --> 2.048568).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2512 LRAP: 0.6361 NDCG: 0.7215
+val Loss: 1.3145 LRAP: 0.5464 NDCG: 0.6801
+Validation loss decreased (2.048568 --> 1.314491).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1660 LRAP: 0.6644 NDCG: 0.7378
+val Loss: 1.2075 LRAP: 0.6286 NDCG: 0.7244
+Validation loss decreased (1.314491 --> 1.207453).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1300 LRAP: 0.6763 NDCG: 0.7604
+val Loss: 1.1899 LRAP: 0.6283 NDCG: 0.7388
+Validation loss decreased (1.207453 --> 1.189850).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0957 LRAP: 0.6912 NDCG: 0.7756
+val Loss: 2.0386 LRAP: 0.2455 NDCG: 0.6261
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0775 LRAP: 0.6964 NDCG: 0.7822
+val Loss: 1.1371 LRAP: 0.7102 NDCG: 0.7772
+Validation loss decreased (1.189850 --> 1.137058).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0655 LRAP: 0.7019 NDCG: 0.7820
+val Loss: 1.1251 LRAP: 0.6689 NDCG: 0.7865
+Validation loss decreased (1.137058 --> 1.125107).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.0502 LRAP: 0.7062 NDCG: 0.7914
+val Loss: 1.0606 LRAP: 0.7117 NDCG: 0.7939
+Validation loss decreased (1.125107 --> 1.060570).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 1.0419 LRAP: 0.7104 NDCG: 0.7916
+val Loss: 1.0790 LRAP: 0.7045 NDCG: 0.7931
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.0218 LRAP: 0.7163 NDCG: 0.7968
+val Loss: 1.0607 LRAP: 0.7268 NDCG: 0.8003
+EarlyStopping counter: 2 out of 25
+
+Training complete in 1m 30s
+Best val loss: 1.060570, best LRAP score: 0.9291
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8578 LRAP: 0.1413 NDCG: 0.5501
+val Loss: 1.4216 LRAP: 0.5033 NDCG: 0.6738
+Validation loss decreased (0.000000 --> 1.421629).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3678 LRAP: 0.5390 NDCG: 0.6762
+val Loss: 1.6668 LRAP: 0.2124 NDCG: 0.5752
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.2617 LRAP: 0.6136 NDCG: 0.7072
+val Loss: 1.2582 LRAP: 0.6574 NDCG: 0.7252
+Validation loss decreased (1.421629 --> 1.258191).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.2227 LRAP: 0.6164 NDCG: 0.7189
+val Loss: 1.5611 LRAP: 0.2284 NDCG: 0.6126
+EarlyStopping counter: 1 out of 25
+
+Epoch 4/9
+----------
+train Loss: 1.2042 LRAP: 0.6199 NDCG: 0.7238
+val Loss: 1.3098 LRAP: 0.4371 NDCG: 0.6652
+EarlyStopping counter: 2 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1705 LRAP: 0.6326 NDCG: 0.7374
+val Loss: 1.3222 LRAP: 0.6260 NDCG: 0.7218
+EarlyStopping counter: 3 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1553 LRAP: 0.6354 NDCG: 0.7443
+val Loss: 1.2375 LRAP: 0.4807 NDCG: 0.6960
+Validation loss decreased (1.258191 --> 1.237513).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.1395 LRAP: 0.6305 NDCG: 0.7487
+val Loss: 1.2403 LRAP: 0.6731 NDCG: 0.7552
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1206 LRAP: 0.6283 NDCG: 0.7536
+val Loss: 1.2045 LRAP: 0.5715 NDCG: 0.7431
+Validation loss decreased (1.237513 --> 1.204451).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1192 LRAP: 0.6244 NDCG: 0.7525
+val Loss: 1.2849 LRAP: 0.3994 NDCG: 0.6853
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 27s
+Best val loss: 1.204451, best LRAP score: 0.9137
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 9/10
+
+All random seeds set to: 428
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7411 LRAP: 0.2286 NDCG: 0.5739
+val Loss: 1.3433 LRAP: 0.6083 NDCG: 0.7197
+Validation loss decreased (0.000000 --> 1.343307).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2182 LRAP: 0.5853 NDCG: 0.7224
+val Loss: 1.1341 LRAP: 0.6552 NDCG: 0.7599
+Validation loss decreased (1.343307 --> 1.134104).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1135 LRAP: 0.6415 NDCG: 0.7537
+val Loss: 1.0871 LRAP: 0.6788 NDCG: 0.7737
+Validation loss decreased (1.134104 --> 1.087121).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0664 LRAP: 0.6736 NDCG: 0.7724
+val Loss: 1.0529 LRAP: 0.6777 NDCG: 0.7781
+Validation loss decreased (1.087121 --> 1.052927).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0292 LRAP: 0.6879 NDCG: 0.7848
+val Loss: 1.0465 LRAP: 0.6806 NDCG: 0.7875
+Validation loss decreased (1.052927 --> 1.046470).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0116 LRAP: 0.6927 NDCG: 0.7904
+val Loss: 1.0215 LRAP: 0.6860 NDCG: 0.7969
+Validation loss decreased (1.046470 --> 1.021528).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9788 LRAP: 0.6886 NDCG: 0.7972
+val Loss: 1.0156 LRAP: 0.6940 NDCG: 0.8076
+Validation loss decreased (1.021528 --> 1.015579).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9611 LRAP: 0.6856 NDCG: 0.7992
+val Loss: 1.0002 LRAP: 0.6711 NDCG: 0.8009
+Validation loss decreased (1.015579 --> 1.000239).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9424 LRAP: 0.6992 NDCG: 0.8102
+val Loss: 0.9767 LRAP: 0.7268 NDCG: 0.8228
+Validation loss decreased (1.000239 --> 0.976666).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9286 LRAP: 0.7059 NDCG: 0.8128
+val Loss: 0.9760 LRAP: 0.7265 NDCG: 0.8124
+Validation loss decreased (0.976666 --> 0.976049).  Saving model ...
+
+Training complete in 1m 30s
+Best val loss: 0.976049, best LRAP score: 0.9507
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7648 LRAP: 0.2174 NDCG: 0.5824
+val Loss: 1.4052 LRAP: 0.3291 NDCG: 0.6439
+Validation loss decreased (0.000000 --> 1.405156).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2715 LRAP: 0.5907 NDCG: 0.7293
+val Loss: 1.2550 LRAP: 0.5884 NDCG: 0.7165
+Validation loss decreased (1.405156 --> 1.254984).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1592 LRAP: 0.6551 NDCG: 0.7583
+val Loss: 1.1250 LRAP: 0.6557 NDCG: 0.7617
+Validation loss decreased (1.254984 --> 1.124998).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0974 LRAP: 0.6737 NDCG: 0.7728
+val Loss: 1.0688 LRAP: 0.6848 NDCG: 0.7818
+Validation loss decreased (1.124998 --> 1.068758).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0602 LRAP: 0.6927 NDCG: 0.7843
+val Loss: 1.0589 LRAP: 0.6734 NDCG: 0.7728
+Validation loss decreased (1.068758 --> 1.058921).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0288 LRAP: 0.6986 NDCG: 0.7927
+val Loss: 1.0565 LRAP: 0.6766 NDCG: 0.7832
+Validation loss decreased (1.058921 --> 1.056491).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0091 LRAP: 0.7006 NDCG: 0.7979
+val Loss: 1.1016 LRAP: 0.6195 NDCG: 0.7650
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 0.9799 LRAP: 0.7088 NDCG: 0.8050
+val Loss: 1.0202 LRAP: 0.7120 NDCG: 0.8059
+Validation loss decreased (1.056491 --> 1.020204).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9688 LRAP: 0.7196 NDCG: 0.8139
+val Loss: 1.0236 LRAP: 0.7468 NDCG: 0.8246
+EarlyStopping counter: 1 out of 25
+
+Epoch 9/9
+----------
+train Loss: 0.9495 LRAP: 0.7260 NDCG: 0.8177
+val Loss: 0.9901 LRAP: 0.7514 NDCG: 0.8268
+Validation loss decreased (1.020204 --> 0.990146).  Saving model ...
+
+Training complete in 1m 29s
+Best val loss: 0.990146, best LRAP score: 0.9482
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.7987 LRAP: 0.1897 NDCG: 0.5758
+val Loss: 1.9482 LRAP: 0.5707 NDCG: 0.6422
+Validation loss decreased (0.000000 --> 1.948218).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2410 LRAP: 0.6270 NDCG: 0.7108
+val Loss: 1.2219 LRAP: 0.6001 NDCG: 0.6802
+Validation loss decreased (1.948218 --> 1.221941).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1556 LRAP: 0.6590 NDCG: 0.7293
+val Loss: 1.3583 LRAP: 0.4025 NDCG: 0.6741
+EarlyStopping counter: 1 out of 25
+
+Epoch 3/9
+----------
+train Loss: 1.1152 LRAP: 0.6765 NDCG: 0.7464
+val Loss: 1.1690 LRAP: 0.5983 NDCG: 0.7214
+Validation loss decreased (1.221941 --> 1.168998).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0952 LRAP: 0.6827 NDCG: 0.7538
+val Loss: 1.1891 LRAP: 0.6100 NDCG: 0.7149
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0857 LRAP: 0.6898 NDCG: 0.7582
+val Loss: 1.0743 LRAP: 0.6806 NDCG: 0.7575
+Validation loss decreased (1.168998 --> 1.074317).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0579 LRAP: 0.6883 NDCG: 0.7636
+val Loss: 1.2047 LRAP: 0.6751 NDCG: 0.7350
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0426 LRAP: 0.6911 NDCG: 0.7706
+val Loss: 1.1894 LRAP: 0.7160 NDCG: 0.7819
+EarlyStopping counter: 2 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0363 LRAP: 0.6882 NDCG: 0.7767
+val Loss: 1.0839 LRAP: 0.6514 NDCG: 0.7501
+EarlyStopping counter: 3 out of 25
+
+Epoch 9/9
+----------
+train Loss: 1.0249 LRAP: 0.6882 NDCG: 0.7787
+val Loss: 1.8789 LRAP: 0.3771 NDCG: 0.6226
+EarlyStopping counter: 4 out of 25
+
+Training complete in 1m 5s
+Best val loss: 1.074317, best LRAP score: 0.9310
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.7866 LRAP: 0.2183 NDCG: 0.5710
+val Loss: 1.4867 LRAP: 0.5572 NDCG: 0.6818
+Validation loss decreased (0.000000 --> 1.486725).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3221 LRAP: 0.5861 NDCG: 0.6940
+val Loss: 1.4032 LRAP: 0.3979 NDCG: 0.6329
+Validation loss decreased (1.486725 --> 1.403193).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2418 LRAP: 0.6174 NDCG: 0.7129
+val Loss: 1.3986 LRAP: 0.6980 NDCG: 0.7527
+Validation loss decreased (1.403193 --> 1.398632).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.2073 LRAP: 0.6313 NDCG: 0.7267
+val Loss: 1.2682 LRAP: 0.6963 NDCG: 0.7558
+Validation loss decreased (1.398632 --> 1.268206).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1879 LRAP: 0.6281 NDCG: 0.7339
+val Loss: 1.2259 LRAP: 0.6406 NDCG: 0.7322
+Validation loss decreased (1.268206 --> 1.225874).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.1735 LRAP: 0.6298 NDCG: 0.7402
+val Loss: 1.1855 LRAP: 0.6731 NDCG: 0.7515
+Validation loss decreased (1.225874 --> 1.185491).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.1519 LRAP: 0.6307 NDCG: 0.7439
+val Loss: 1.3615 LRAP: 0.4162 NDCG: 0.6700
+EarlyStopping counter: 1 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.1420 LRAP: 0.6373 NDCG: 0.7501
+val Loss: 1.3691 LRAP: 0.6009 NDCG: 0.7056
+EarlyStopping counter: 2 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1272 LRAP: 0.6380 NDCG: 0.7544
+val Loss: 1.1455 LRAP: 0.6646 NDCG: 0.7640
+Validation loss decreased (1.185491 --> 1.145509).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1210 LRAP: 0.6463 NDCG: 0.7599
+val Loss: 1.2695 LRAP: 0.5353 NDCG: 0.7020
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 19s
+Best val loss: 1.145509, best LRAP score: 0.9208
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv
+----------------
+Run 10/10
+
+All random seeds set to: 429
+Split complete!
+Train set size: 16348
+Validation set size: 3503
+Test set size: 3504
+----------------
+Running configuration: baseline_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.8368 LRAP: 0.1392 NDCG: 0.5608
+val Loss: 1.2965 LRAP: 0.4105 NDCG: 0.6637
+Validation loss decreased (0.000000 --> 1.296465).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2460 LRAP: 0.5609 NDCG: 0.7175
+val Loss: 1.0926 LRAP: 0.5601 NDCG: 0.7235
+Validation loss decreased (1.296465 --> 1.092648).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1307 LRAP: 0.6409 NDCG: 0.7558
+val Loss: 1.0750 LRAP: 0.6754 NDCG: 0.7690
+Validation loss decreased (1.092648 --> 1.075015).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.0787 LRAP: 0.6496 NDCG: 0.7694
+val Loss: 1.0442 LRAP: 0.6854 NDCG: 0.7894
+Validation loss decreased (1.075015 --> 1.044150).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0434 LRAP: 0.6791 NDCG: 0.7858
+val Loss: 1.0291 LRAP: 0.6195 NDCG: 0.7763
+Validation loss decreased (1.044150 --> 1.029138).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0126 LRAP: 0.6776 NDCG: 0.7892
+val Loss: 0.9940 LRAP: 0.7083 NDCG: 0.8096
+Validation loss decreased (1.029138 --> 0.994018).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 0.9884 LRAP: 0.6831 NDCG: 0.7984
+val Loss: 0.9763 LRAP: 0.7025 NDCG: 0.8124
+Validation loss decreased (0.994018 --> 0.976252).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9694 LRAP: 0.6999 NDCG: 0.8094
+val Loss: 0.9452 LRAP: 0.7534 NDCG: 0.8298
+Validation loss decreased (0.976252 --> 0.945213).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9478 LRAP: 0.7107 NDCG: 0.8143
+val Loss: 0.9442 LRAP: 0.7197 NDCG: 0.8156
+Validation loss decreased (0.945213 --> 0.944188).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9343 LRAP: 0.7168 NDCG: 0.8192
+val Loss: 0.9493 LRAP: 0.7345 NDCG: 0.8273
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 20s
+Best val loss: 0.944188, best LRAP score: 0.9522
+
+----------------
+Running configuration: baseline_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'random' initialization method (training from scratch).
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8210 LRAP: 0.1780 NDCG: 0.5495
+val Loss: 1.3213 LRAP: 0.5361 NDCG: 0.6908
+Validation loss decreased (0.000000 --> 1.321341).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2671 LRAP: 0.5710 NDCG: 0.7051
+val Loss: 1.1608 LRAP: 0.5978 NDCG: 0.7149
+Validation loss decreased (1.321341 --> 1.160797).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.1780 LRAP: 0.6158 NDCG: 0.7322
+val Loss: 1.0904 LRAP: 0.6452 NDCG: 0.7552
+Validation loss decreased (1.160797 --> 1.090412).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1133 LRAP: 0.6336 NDCG: 0.7501
+val Loss: 1.0657 LRAP: 0.6386 NDCG: 0.7510
+Validation loss decreased (1.090412 --> 1.065721).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.0757 LRAP: 0.6350 NDCG: 0.7560
+val Loss: 1.0423 LRAP: 0.6683 NDCG: 0.7734
+Validation loss decreased (1.065721 --> 1.042333).  Saving model ...
+
+Epoch 5/9
+----------
+train Loss: 1.0478 LRAP: 0.6485 NDCG: 0.7670
+val Loss: 1.0267 LRAP: 0.6806 NDCG: 0.7864
+Validation loss decreased (1.042333 --> 1.026699).  Saving model ...
+
+Epoch 6/9
+----------
+train Loss: 1.0197 LRAP: 0.6425 NDCG: 0.7708
+val Loss: 1.0136 LRAP: 0.6494 NDCG: 0.7720
+Validation loss decreased (1.026699 --> 1.013558).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 0.9912 LRAP: 0.6406 NDCG: 0.7763
+val Loss: 0.9974 LRAP: 0.6934 NDCG: 0.7906
+Validation loss decreased (1.013558 --> 0.997434).  Saving model ...
+
+Epoch 8/9
+----------
+train Loss: 0.9705 LRAP: 0.6535 NDCG: 0.7848
+val Loss: 0.9666 LRAP: 0.7142 NDCG: 0.8083
+Validation loss decreased (0.997434 --> 0.966583).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 0.9526 LRAP: 0.6701 NDCG: 0.7946
+val Loss: 0.9829 LRAP: 0.6951 NDCG: 0.8076
+EarlyStopping counter: 1 out of 25
+
+Training complete in 1m 32s
+Best val loss: 0.966583, best LRAP score: 0.9473
+
+----------------
+Running configuration: infused_trainable
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: True.
+
+Epoch 0/9
+----------
+train Loss: 1.8297 LRAP: 0.2120 NDCG: 0.5690
+val Loss: 1.3461 LRAP: 0.6078 NDCG: 0.7061
+Validation loss decreased (0.000000 --> 1.346051).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.2827 LRAP: 0.6157 NDCG: 0.7187
+val Loss: 1.7036 LRAP: 0.6235 NDCG: 0.6973
+EarlyStopping counter: 1 out of 25
+
+Epoch 2/9
+----------
+train Loss: 1.1840 LRAP: 0.6531 NDCG: 0.7370
+val Loss: 1.2785 LRAP: 0.7057 NDCG: 0.7748
+Validation loss decreased (1.346051 --> 1.278487).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.1460 LRAP: 0.6650 NDCG: 0.7517
+val Loss: 1.0839 LRAP: 0.6771 NDCG: 0.7490
+Validation loss decreased (1.278487 --> 1.083939).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1144 LRAP: 0.6760 NDCG: 0.7635
+val Loss: 1.1734 LRAP: 0.6717 NDCG: 0.7667
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.0934 LRAP: 0.6782 NDCG: 0.7680
+val Loss: 1.1123 LRAP: 0.6389 NDCG: 0.7373
+EarlyStopping counter: 2 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.0660 LRAP: 0.6821 NDCG: 0.7752
+val Loss: 1.3579 LRAP: 0.5527 NDCG: 0.7203
+EarlyStopping counter: 3 out of 25
+
+Epoch 7/9
+----------
+train Loss: 1.0567 LRAP: 0.6834 NDCG: 0.7812
+val Loss: 1.0930 LRAP: 0.6800 NDCG: 0.7601
+EarlyStopping counter: 4 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.0426 LRAP: 0.6874 NDCG: 0.7814
+val Loss: 1.0522 LRAP: 0.7080 NDCG: 0.7906
+Validation loss decreased (1.083939 --> 1.052165).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.0233 LRAP: 0.6952 NDCG: 0.7873
+val Loss: 1.0488 LRAP: 0.7054 NDCG: 0.7922
+Validation loss decreased (1.052165 --> 1.048763).  Saving model ...
+
+Training complete in 1m 30s
+Best val loss: 1.048763, best LRAP score: 0.9346
+
+----------------
+Running configuration: infused_fixed
+
+SweetNet model instantiated with lib_size=2565, num_classes=15, hidden_dim=320.
+Handling 'external' initialization method.
+SweetNet item_embedding layer set to trainable: False.
+
+Epoch 0/9
+----------
+train Loss: 1.8398 LRAP: 0.1713 NDCG: 0.5583
+val Loss: 1.7023 LRAP: 0.1085 NDCG: 0.5715
+Validation loss decreased (0.000000 --> 1.702259).  Saving model ...
+
+Epoch 1/9
+----------
+train Loss: 1.3134 LRAP: 0.5774 NDCG: 0.6910
+val Loss: 1.3200 LRAP: 0.3660 NDCG: 0.6480
+Validation loss decreased (1.702259 --> 1.319993).  Saving model ...
+
+Epoch 2/9
+----------
+train Loss: 1.2501 LRAP: 0.6111 NDCG: 0.7182
+val Loss: 1.2032 LRAP: 0.6001 NDCG: 0.7179
+Validation loss decreased (1.319993 --> 1.203166).  Saving model ...
+
+Epoch 3/9
+----------
+train Loss: 1.2075 LRAP: 0.6199 NDCG: 0.7278
+val Loss: 1.1438 LRAP: 0.6557 NDCG: 0.7478
+Validation loss decreased (1.203166 --> 1.143839).  Saving model ...
+
+Epoch 4/9
+----------
+train Loss: 1.1853 LRAP: 0.6258 NDCG: 0.7365
+val Loss: 1.1860 LRAP: 0.6634 NDCG: 0.7583
+EarlyStopping counter: 1 out of 25
+
+Epoch 5/9
+----------
+train Loss: 1.1714 LRAP: 0.6229 NDCG: 0.7414
+val Loss: 1.2824 LRAP: 0.6086 NDCG: 0.7212
+EarlyStopping counter: 2 out of 25
+
+Epoch 6/9
+----------
+train Loss: 1.1597 LRAP: 0.6231 NDCG: 0.7462
+val Loss: 1.1414 LRAP: 0.6472 NDCG: 0.7586
+Validation loss decreased (1.143839 --> 1.141370).  Saving model ...
+
+Epoch 7/9
+----------
+train Loss: 1.1431 LRAP: 0.6292 NDCG: 0.7498
+val Loss: 1.1557 LRAP: 0.6235 NDCG: 0.7398
+EarlyStopping counter: 1 out of 25
+
+Epoch 8/9
+----------
+train Loss: 1.1255 LRAP: 0.6356 NDCG: 0.7554
+val Loss: 1.1350 LRAP: 0.6178 NDCG: 0.7477
+Validation loss decreased (1.141370 --> 1.135003).  Saving model ...
+
+Epoch 9/9
+----------
+train Loss: 1.1194 LRAP: 0.6362 NDCG: 0.7584
+val Loss: 1.0919 LRAP: 0.6269 NDCG: 0.7614
+Validation loss decreased (1.135003 --> 1.091875).  Saving model ...
+
+Training complete in 1m 33s
+Best val loss: 1.091875, best LRAP score: 0.9271
+
+Saved training histories to epoch_data_infusion_trial_time.pkl
+Saved summary results to summary_infusion_trial_time.csv

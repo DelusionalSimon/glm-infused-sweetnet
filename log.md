@@ -167,5 +167,12 @@
 - I ran a trial with tissue data and it didn't even seem to reach its max within 100 epochs, trying 200 epochs now
 - Added patiance as global parameter in automated evaluation system
 - I Think I'll try to implement a hyperloop around the experiment loop foir basic hyperparameter exploration
+- I should split off the test portion before running the loop, (add a flag to only split into )
+- Set patience to 25 rather than 50
+- Running proper run of Kingdom
+- Did basic averages of my runs so far
+- Interestingly the traibability of the embeddings mattered very little
+- Preented my work to the Bojar Lab
+- Time to iterate the project using my PDD. 
 
   
