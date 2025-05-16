@@ -31,11 +31,11 @@ I’m going to thoroughly test my infusion method using several different tasks 
 
 **Must haves (60% of effort max)**
 0.	Core Data collection pipeline
-    0.2	Change test split pipeline, splitting out test set before experiment and saving it
-        0.2.1	Add flag to split function to split just once and use twise, one time outside of loop and then within the loop
-        0.2.2	Perhaps doing the more standard way and just splitting before each experiment and just rerunning training. Compare variability
-        0.2.3	Save test set for each experiment, and other split used for further split down the line
-    0.3	Save models 
+    0.2	+Change test split pipeline, splitting out test set before experiment and saving it
+        0.2.1	+Add flag to split function to split just once and use twise, one time outside of loop and then within the loop
+        0.2.2	-Perhaps doing the more standard way and just splitting before each experiment and just rerunning training. Compare variability
+        0.2.3	+Save test set for each experiment, and other split used for further split down the line
+    0.3	!Save models 
         0.3.1	Save the model.state_dict() of every training run
         0.3.2	Run sufficient experiments with modified pipeline (10 x disease, kingdom, and tissue)
 1.	Core statistical analysis to quantify how infusion influences the model

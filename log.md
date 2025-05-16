@@ -188,5 +188,7 @@
 - Break point is below 0.593
 - Now I am able to train with more data!
 - Used the updated multilabel_split to iterate the Experimental loop thing. Now it splits and saves the test dataloader before the experiment
+- Feat: Now saves state dictionaries of the best models from each training run
+- I Think I need to restructure my folder structure next, it is getting messy
 
   
