@@ -186,5 +186,7 @@
 - Feat(multilabel_split): Fixed how the logic deals with the ratios of the splits. For some arcane reason the split works with num_classes as low as 2 which should be impossible for a 3-way split. SSS may be doing some weird stuff.
 - Interestingly, setting the train_size to something lower like 0.5 makes the function require a higher min_class_size
 - Break point is below 0.593
+- Now I am able to train with more data!
+- Used the updated multilabel_split to iterate the Experimental loop thing. Now it splits and saves the test dataloader before the experiment
 
   

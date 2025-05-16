@@ -66,6 +66,7 @@
 - Multilabel NCC and AUROC
 - t-sne plots of different common types of glycans (salicitated vs glycolated5)
 - Go through disease and tussiue data and create new higher-level categories like cancer or circulatory system
+- I wonder is culling more classes could give better performance?
 
 
 # Presentation (monday, can be adapted to main presenation later)
