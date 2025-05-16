@@ -183,5 +183,8 @@
 - Tested updated function
 - Interestingly I can set my min_class_size lower (4 instead of 6) in my build_multilabel_dataset function when I use my splitting function twice in 2-way splitting mode rather than once using 3-way split, shouldn't the two be pretty much identical?
 - Feat(multilabel_split): When testing 2-way split I found that I could use a lower min_class size  (4 vs. 6) in build_multilabel_dataset compared ton when using 3 way split. I'm changing the internal ordering of the splits to mirror the 2-way split behaviour.
+- Feat(multilabel_split): Fixed how the logic deals with the ratios of the splits. For some arcane reason the split works with num_classes as low as 2 which should be impossible for a 3-way split. SSS may be doing some weird stuff.
+- Interestingly, setting the train_size to something lower like 0.5 makes the function require a higher min_class_size
+- Break point is below 0.593
 
   
