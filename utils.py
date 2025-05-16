@@ -170,34 +170,33 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
     # Convert labels to a suitable format for stratification (string representation)
     label_strings = [''.join(map(str, label)) for label in labels]
 
-    # Initial split for train vs. (val + test)
-    sss = StratifiedShuffleSplit(n_splits = 1, test_size = 1 - train_size, random_state = random_state)
-    train_index, temp_index = next(sss.split(glycans, label_strings))
-    train_glycans = [glycans[i] for i in train_index]
-    train_labels = [labels[i] for i in train_index]
-    temp_glycans = [glycans[i] for i in temp_index]
-    temp_labels = [labels[i] for i in temp_index]
+    # Initializing empty test sets for no_test = True
+    test_glycans = []
+    test_labels = []
+    temp_glycans = glycans
+    temp_labels = labels
 
-    # If no_test is True, return only train and validation sets
-    if no_test:
-        val_glycans = temp_glycans
-        val_labels = temp_labels
-        test_glycans = []
-        test_labels = []   
-        print("Split without test set complete!")
-        print(f"Train set size: {len(train_glycans)}")
-        print(f"Validation set size: {len(val_glycans)}")   
-    else: # Split the remaining (val + test) into validation and test sets
-        sss_val_test = StratifiedShuffleSplit(n_splits = 1, test_size = 0.5, random_state = random_state)
-        val_index, test_index = next(sss_val_test.split(temp_glycans, [''.join(map(str, label)) for label in temp_labels]))
-        val_glycans = [temp_glycans[i] for i in val_index]
-        val_labels = [temp_labels[i] for i in val_index]
-        test_glycans = [temp_glycans[i] for i in test_index]
-        test_labels = [temp_labels[i] for i in test_index]
-        print("Split complete!")
-        print(f"Train set size: {len(train_glycans)}")
-        print(f"Validation set size: {len(val_glycans)}")
-        print(f"Test set size: {len(test_glycans)}")
+    # If no_test is False, we need to split out the test set first
+    if not no_test:
+        # Initial split for train+val vs. test
+        sss = StratifiedShuffleSplit(n_splits = 1, test_size = train_size/2, random_state = random_state)
+        test_index, temp_index = next(sss.split(glycans, label_strings))
+        test_glycans = [glycans[i] for i in test_index]
+        test_labels = [labels[i] for i in test_index]
+        temp_glycans = [glycans[i] for i in temp_index]
+        temp_labels = [labels[i] for i in temp_index]
+
+    # Split the remaining train+val into validation and test sets
+    sss_val_test = StratifiedShuffleSplit(n_splits = 1, test_size = train_size/2, random_state = random_state)
+    val_index, train_index = next(sss_val_test.split(temp_glycans, temp_labels))
+    val_glycans = [temp_glycans[i] for i in val_index]
+    val_labels = [temp_labels[i] for i in val_index]
+    train_glycans = [temp_glycans[i] for i in train_index]
+    train_labels = [temp_labels[i] for i in train_index]
+    print("Split complete!")
+    print(f"Train set size: {len(train_glycans)}")
+    print(f"Validation set size: {len(val_glycans)}")
+    print(f"Test set size: {len(test_glycans)}")
         
     return train_glycans, val_glycans, test_glycans, train_labels, val_labels, test_labels
 

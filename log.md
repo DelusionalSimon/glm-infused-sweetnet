@@ -181,5 +181,7 @@
 - Spent more time on the metaphor. unable to let go. lets move on
 - Updated multilabel_split to include a flag for 2-way splitting
 - Tested updated function
+- Interestingly I can set my min_class_size lower (4 instead of 6) in my build_multilabel_dataset function when I use my splitting function twice in 2-way splitting mode rather than once using 3-way split, shouldn't the two be pretty much identical?
+- Feat(multilabel_split): When testing 2-way split I found that I could use a lower min_class size  (4 vs. 6) in build_multilabel_dataset compared ton when using 3 way split. I'm changing the internal ordering of the splits to mirror the 2-way split behaviour.
 
   
