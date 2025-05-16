@@ -190,5 +190,8 @@
 - Used the updated multilabel_split to iterate the Experimental loop thing. Now it splits and saves the test dataloader before the experiment
 - Feat: Now saves state dictionaries of the best models from each training run
 - I Think I need to restructure my folder structure next, it is getting messy
+- But first I'll jump down a bit in the requirements list and create the hyperloop structure to make fully automated data aquisition possible
+- The whole thing grew in my head as I made the last couple of changes
+- Hyperautomatic Barrel Batching system started. put in a new notebook to not overcomplicate things for people that try to use my stuff
 
   

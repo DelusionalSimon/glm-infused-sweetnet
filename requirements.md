@@ -35,8 +35,8 @@ I’m going to thoroughly test my infusion method using several different tasks 
         0.2.1	+Add flag to split function to split just once and use twise, one time outside of loop and then within the loop
         0.2.2	-Perhaps doing the more standard way and just splitting before each experiment and just rerunning training. Compare variability
         0.2.3	+Save test set for each experiment, and other split used for further split down the line
-    0.3	!Save models 
-        0.3.1	Save the model.state_dict() of every training run
+    0.3	+Save models 
+        0.3.1	+Save the model.state_dict() of every training run
         0.3.2	Run sufficient experiments with modified pipeline (10 x disease, kingdom, and tissue)
 1.	Core statistical analysis to quantify how infusion influences the model
     1.2	t-SNE Analysis
@@ -64,6 +64,8 @@ I’m going to thoroughly test my infusion method using several different tasks 
 4.	Advanced Data collection [run in parallel with other requirements]
     4.2	Set up desktop-based data collection system that can run all the time
         4.2.1	Hyperloop to run several experiments one after another
+           4.2.1.1 Create a loop over the loop
+           4.2.1.2 save a configuration file for each experiment
     4.3	Collect data from several different tasks
         4.3.1	Different df_species hierarchies
     4.4	Get performance data of GlyLMs from roman
