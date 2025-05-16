@@ -135,6 +135,11 @@
 - Based on preliminary learning rate sweeps, a rate of 0.005 was found to be effective for both the baseline and the infused-trainable models
 - Include all datasets I have generated for others to analyze
 - The reason the GlyLM embeddings didn't work well for the prediction tasks I threw at them was that they were mainly evolutionary relationships where structure wasn't really related to chemestry?
+- I could design the bottle or can of the stout "barrel-aged SweetNet" to put on the cover of the thesis (with glycans as decoration)
+  - Ingredients list half visible
+  - hints on how it may taste
+  - a Sweet desert stout
+  - Try to get a 
 
 # things to improve in glycowork
 - documentation for using pretrained models

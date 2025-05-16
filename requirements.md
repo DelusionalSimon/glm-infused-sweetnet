@@ -2,21 +2,21 @@ Using MoSCoW Prioritization
 
 Top level requirements (Plan for whole project)
 
-2.1.1 Must have:
+*Must have:*
 1.	+Getting SweetNet Up and running (2025-04-11 2025-04-16)
 2.	+Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25 2025-05-12)
 3.	!!Through testing and statistics to quantify how the infusion influenced the model (2025-05-23)
 4.	!Write a thesis that conveys my findings and results (2024-05-29) (see paper writing catech)
-2.1.2 Should have:
+*Should have:*
 5.	More generalizable results 
-5.2	general "infuse" function to test different GNN architectures
-5.2.1	Test with Lectinoracle
+    5.2	general "infuse" function to test different GNN architectures
+        5.2.1	Test with Lectinoracle
 6.	Applying SweetNet to specific problem 
 7.	Hyperparameter Optimized Sweetnet (Evolutionary algorithm?)
 8.	Improve Glycowork
-8.2	Fix glycowork bugs
-8.3	Improve glycowork documentation
-2.1.3 Could have:
+    8.2	Fix glycowork bugs
+    8.3	Improve glycowork documentation
+*Could have:*
 9.	Tinkering with Sweetnet Structure (birthing new model)
 10.	13. One-hot encoding tests
 	

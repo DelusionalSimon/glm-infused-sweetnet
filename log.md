@@ -176,5 +176,10 @@
 -   -------------------------------Monday meeting 2025-05-12--------------------------------------------
 - Time to iterate the project using my PDD. 
 - PDD used to generate new requirements
+- Using Paper writing catech to define paper.
+- Spent a day and a half developing a barrel-aging metaphor to describe the infusion process
+- Spent more time on the metaphor. unable to let go. lets move on
+- Updated multilabel_split to include a flag for 2-way splitting
+- Tested updated function
 
   
