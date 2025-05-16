@@ -193,5 +193,9 @@
 - But first I'll jump down a bit in the requirements list and create the hyperloop structure to make fully automated data aquisition possible
 - The whole thing grew in my head as I made the last couple of changes
 - Hyperautomatic Barrel Batching system started. put in a new notebook to not overcomplicate things for people that try to use my stuff
+- I wonder why my projects always seem to end with loops within loops within loops until my mind starts to break. Why do all my projects somehow converge on that?
+- I kinda like that feeling of being on the verge of infinity.
+- Hyperautomatic system done!
+- 
 
   
