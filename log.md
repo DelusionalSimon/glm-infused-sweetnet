@@ -196,6 +196,7 @@
 - I wonder why my projects always seem to end with loops within loops within loops until my mind starts to break. Why do all my projects somehow converge on that?
 - I kinda like that feeling of being on the verge of infinity.
 - Hyperautomatic system done!
+- Updated environment file just to make sure before setting up desktop clone to run automated experiments while I finalize the project.
 - 
 
   
