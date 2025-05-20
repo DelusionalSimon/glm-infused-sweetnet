@@ -37,8 +37,8 @@ I’m going to thoroughly test my infusion method using several different tasks 
         0.2.3	+Save test set for each experiment, and other split used for further split down the line
     0.3	+Save models 
         0.3.1	+Save the model.state_dict() of every training run
-        0.3.2	Run sufficient experiments with modified pipeline (10 x disease, kingdom, and tissue)
-1.	Core statistical analysis to quantify how infusion influences the model
+        0.3.2	+Run sufficient experiments with modified pipeline (10 x disease, kingdom, and tissue)
+1.	!Core statistical analysis to quantify how infusion influences the model
     1.2	t-SNE Analysis
         1.2.1	notebook that loads embeddings
     1.3	Statistical analysis of the three experiments I have run thus far
@@ -84,9 +84,9 @@ I’m going to thoroughly test my infusion method using several different tasks 
     7.4	Graphs for split
     7.5	Testing system diagram
     7.6	Beautify Graphs
-8.	Optional Data collection
-    8.2	Once I have collected all the data I need, run simple hyperparameter exploration
-        8.2.1	To give my desktop something to do, setting up each experiment takes no time
+8.	!Optional Data collection
+    8.2!	Once I have collected all the data I need, run simple hyperparameter exploration
+        8.2.1!	To give my desktop something to do, setting up each experiment takes no time
     8.3	Collect data from other prediction types
         8.3.1	Glycolisation
         8.3.2	Basic category kingdom

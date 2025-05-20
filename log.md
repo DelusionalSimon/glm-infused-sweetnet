@@ -202,5 +202,7 @@
 - Changed code to save all data to specific data dir to not clutter main folder
 - cleaned up main folder by moving all old shit to old_data dir
 - Setup to redo all old experiments using hyperautomation
+- 3 full experiments for tissue, kingdom, and disease (120 training runs) done in 110 minutes
+- 
 
   

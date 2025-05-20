@@ -1,0 +1,31 @@
+experiment_name: Disease1
+global_parameters_for_this_experiment:
+  glycan_dataset: df_disease
+  glycan_class: disease_association
+  num_runs: 10
+  epochs: 150
+  batch_size: 128
+  train_size: 0.7
+  learning_rate: 0.005
+  drop_last: false
+  augment_prob: 0.0
+  generaliz_prob: 0.2
+  patience: 25
+experiment_specific_configs:
+  name: Disease1
+  glycan_dataset: df_disease
+  glycan_class: disease_association
+all_model_configurations_tested:
+- name: baseline_trainable
+  initialization_method: random
+  trainable_embeddings: true
+- name: baseline_fixed
+  initialization_method: random
+  trainable_embeddings: false
+- name: infused_trainable
+  initialization_method: external
+  trainable_embeddings: true
+- name: infused_fixed
+  initialization_method: external
+  trainable_embeddings: false
+base_random_state_for_experiment_batch: 42
