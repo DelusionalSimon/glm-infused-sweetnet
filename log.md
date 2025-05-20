@@ -208,6 +208,7 @@
   - added silent flags to all utils functions
   - silenced sigmoid errors
   - added tqdm.auto progress bars
-  - 
+  - Set up big round of hyperoptimization experiments
+  - Added a time metric to keep track of how long each model takes to train, could be interesting
 
   
