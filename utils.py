@@ -384,7 +384,7 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
 
 # --- Utility Functions ---
 
-def seed_everything(seed: int, full_reproducibility: bool = True, silent: int =  False) -> None:   
+def seed_everything(seed: int,  silent: int =  False, full_reproducibility: bool = True) -> None:   
     """
     Set all random seeds for reproducibility.
 
@@ -397,6 +397,9 @@ def seed_everything(seed: int, full_reproducibility: bool = True, silent: int = 
     ----------
     seed : int
         The seed value to use for all random number generators.
+    silent : bool, optional, default = False
+        If True, suppresses print statements.
+        If False, prints the seed value being set.
     full_reproducibility : bool, optional, default = True
         If True, sets additional PyTorch settings for full reproducibility.
         This may affect performance but ensures that results are consistent
