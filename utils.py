@@ -281,7 +281,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
 
     # Instantiate the SweetNet model
     model = SweetNet(lib_size=len(libr), num_classes=num_classes, hidden_dim=hidden_dim)
-    print(f"SweetNet model instantiated with lib_size={len(libr)}, num_classes={num_classes}, hidden_dim={hidden_dim}.")
+    if not silent:
+        print(f"SweetNet model instantiated with lib_size={len(libr)}, num_classes={num_classes}, hidden_dim={hidden_dim}.")
 
 
     # Apply initial weights to all layers (embedding and non-embedding)
