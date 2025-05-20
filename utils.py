@@ -34,7 +34,8 @@ from glycowork.ml.models import SweetNet, init_weights
 
 def build_multilabel_dataset(glycan_dataset: str = 'df_species',
                           glycan_class: str = 'Kingdom',
-                          min_class_size: int = 6) -> Tuple[List[str], List[List[float]], List[str]]:
+                          min_class_size: int = 6,
+                          silent: bool = False) -> Tuple[List[str], List[List[float]], List[str]]:
     """
     Loads glycan data, prepares it for multi-label classification, and filters it.
 
@@ -56,7 +57,9 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
         - 'df_disease': 'disease_association', 'disease_sample', 'disease_direction', 'disease_species', 'disease_id', 'disease_ref'
     min_class_size : int, optional, default = 6
         Minimum number of samples required for a specific multi-label combination
-        to be included. Set to 1 to include all combinations. 
+        to be included. Set to 1 to include all combinations.
+    silent : bool, optional, default = False
+        If True, suppresses print statements.
 
     Returns
     -------
@@ -79,7 +82,8 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
     # Extract the list of unique individual labels from the chosen class from the custom_glycan_df
     # These are used to dechipher the labels when the model is used for prediction
     all_possible_label_names = sorted(list(custom_glycan_df[glycan_class].unique()))
-    print(f"Found {len(all_possible_label_names)} unique individual classes/labels.")
+    if not silent:
+        print(f"Found {len(all_possible_label_names)} unique individual classes/labels.")
 
     # Populates the the label_names so that they are there even when filtering is disabled
     label_names = all_possible_label_names
@@ -100,7 +104,8 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
         # Filter glycans and labels based on class size
         glycan_sequences = [glycans[i] for i, label_str in enumerate(label_strings) if label_counts[label_str] >= min_class_size]
         binary_labels_unfiltered = [labels[i] for i, label_str in enumerate(label_strings) if label_counts[label_str] >= min_class_size]
-        print(f"Number of unique glycans left after filtering rare classes (size >= {min_class_size}): {len(glycan_sequences)}/{len(glycans)}")
+        if not silent:
+            print(f"Number of unique glycans left after filtering rare classes (size >= {min_class_size}): {len(glycan_sequences)}/{len(glycans)}")
         
         # Filter out individual labels with no positive examples after glycan filtering
 
@@ -120,12 +125,14 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
         # Create the final filtered binary label vectors, keeping only the active columns
         binary_labels = binary_labels_np[:, active_label_indices].tolist() # Convert back to list of lists
 
-        print(f"Number of unique labels left after filtering: {len(binary_labels[0])}")
+        if not silent:
+            print(f"Number of unique labels left after filtering: {len(binary_labels[0])}")
 
     else:
         glycan_sequences = glycans
         binary_labels = labels
-        print(f"Number of unique glycans: {len(glycan_sequences)}")
+        if not silent:
+            print(f"Number of unique glycans: {len(glycan_sequences)}")
 
     return glycan_sequences, binary_labels, label_names
 
@@ -134,7 +141,8 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
                  labels: List[Union[float, int, str]], # list of prediction labels
                  train_size: float = 0.7, # size of train set, the rest is split into validation and test sets
                  random_state: int = 42, # random state for reproducibility
-                 no_test: bool = False # if True, only train and validation sets are returned
+                 no_test: bool = False, # if True, only train and validation sets are returned
+                 silent: bool = False # if True, suppresses print statements
                 )-> Tuple[List[str], List[str], List[str], List[List[float]], List[List[float]], List[List[float]]]:
     """
     Splits the data into training, validation, and testing sets using StratifiedShuffleSplit.
@@ -148,12 +156,14 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
     train_size : float, optional, default = 0.7
         Proportion of the dataset to include in the training split.
         If no_test is True, the remaining data is the validation set
-        Otherwise the remaining data is split equally into validation and test sets
-        
+        Otherwise the remaining data is split equally into validation and test sets        
     random_state : int, optional, default = 42
         Controls the randomness of the split for reproducibility. 
     no_test : bool, optional, default = False
         If True, only the training and validation sets are created, and the test set is omitted.
+    silent : bool, optional, default = False
+        If True, suppresses print statements.
+        If False, prints the sizes of the training, validation, and test sets.
     Returns
     -------
     Tuple[List[str], List[str], List[str], List[List[float]], List[List[float]], List[List[float]]]
@@ -201,10 +211,11 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
     val_labels = [temp_labels[i] for i in val_index]
     train_glycans = [temp_glycans[i] for i in train_index]
     train_labels = [temp_labels[i] for i in train_index]
-    print("Split complete!")
-    print(f"Train set size: {len(train_glycans)}")
-    print(f"Validation set size: {len(val_glycans)}")
-    print(f"Test set size: {len(test_glycans)}")
+    if not silent:
+        print("Split complete!")
+        print(f"Train set size: {len(train_glycans)}")
+        print(f"Validation set size: {len(val_glycans)}")
+        print(f"Test set size: {len(test_glycans)}")
         
     return train_glycans, val_glycans, test_glycans, train_labels, val_labels, test_labels
 
@@ -215,6 +226,7 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
                            trainable_embeddings: bool = True, # whether the external embeddings should be trainable
                            hidden_dim: int = 320, # hidden dimension for the model (be sure to match dimension of embeddings)  
                            libr: Optional[Dict[str, int]] = None, # dictionary of form glycoletter:index
+                           silent: bool = False # if True, suppresses print statements
                           ) -> torch.nn.Module:
     """
     Instantiates and prepares a SweetNet model with specified embedding initialization.
@@ -239,6 +251,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     libr : Optional[Dict[str, int]], optional, default = None
         Dictionary of form glycoletter:index.
         If None, the standard glycowork library is used. 
+    silent : bool, optional, default = False
+        If True, suppresses print statements.
 
     Returns
     -------
@@ -277,7 +291,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     model = model.to(device)
     
     if initialization_method == 'external':
-        print("Handling 'external' initialization method.")
+        if not silent:
+            print("Handling 'external' initialization method.")
         
         # Check if embeddings_dict is provided
         # If not, raise an error (this is a required parameter for 'external' method)
@@ -316,7 +331,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
          
 
     elif initialization_method == 'random':
-        print("Handling 'random' initialization method (training from scratch).")
+        if not silent:
+            print("Handling 'random' initialization method (training from scratch).")
         
         # The item_embedding layer was already initialized randomly by the standard initialization loop above.
 
@@ -324,7 +340,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
 
         
     elif initialization_method == 'one_hot':
-        print(" 'one_hot' initialization method not implemented yet")
+        if not silent:
+            print(" 'one_hot' initialization method not implemented yet")
         
     # either I need the hidden_dim to be the same as the number of glycoletters in the library
     # or I need to find a way to reduce the dimensionality of the one-hot encoding to match the hidden_dim
@@ -357,7 +374,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     # This happens AFTER the initialization logic in the branches above.
     # The logic for setting requires_grad is the same regardless of initialization method.
     model.item_embedding.weight.requires_grad = trainable_embeddings
-    print(f"SweetNet item_embedding layer set to trainable: {trainable_embeddings}.")
+    if not silent:
+        print(f"SweetNet item_embedding layer set to trainable: {trainable_embeddings}.")
 
     
     # Return the model
@@ -366,7 +384,7 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
 
 # --- Utility Functions ---
 
-def seed_everything(seed: int, full_reproducibility: bool = True) -> None:   
+def seed_everything(seed: int, full_reproducibility: bool = True, silent: int =  False) -> None:   
     """
     Set all random seeds for reproducibility.
 
@@ -383,6 +401,7 @@ def seed_everything(seed: int, full_reproducibility: bool = True) -> None:
         If True, sets additional PyTorch settings for full reproducibility.
         This may affect performance but ensures that results are consistent
         across different runs and hardware configurations.
+    
     """
       
     random.seed(seed)
@@ -398,4 +417,5 @@ def seed_everything(seed: int, full_reproducibility: bool = True) -> None:
         else:
             torch.backends.cudnn.deterministic = False
             torch.backends.cudnn.benchmark = True
-    print(f"All random seeds set to: {seed}")
+    if not silent:
+        print(f"All random seeds set to: {seed}")
