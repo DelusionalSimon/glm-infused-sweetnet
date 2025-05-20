@@ -201,6 +201,6 @@
 - added thing to save the experimental settings to YAML file
 - Changed code to save all data to specific data dir to not clutter main folder
 - cleaned up main folder by moving all old shit to old_data dir
-- 
+- Setup to redo all old experiments using hyperautomation
 
   
