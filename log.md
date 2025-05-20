@@ -210,5 +210,7 @@
   - added tqdm.auto progress bars
   - Set up big round of hyperoptimization experiments
   - Added a time metric to keep track of how long each model takes to train, could be interesting
+  - Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
+  - 
 
   
