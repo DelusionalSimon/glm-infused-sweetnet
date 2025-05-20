@@ -203,6 +203,11 @@
 - cleaned up main folder by moving all old shit to old_data dir
 - Setup to redo all old experiments using hyperautomation
 - 3 full experiments for tissue, kingdom, and disease (120 training runs) done in 110 minutes
-- 
+- Improved hyperautomation loop to make the progress easier to follow. 
+  - silenced train_model
+  - added silent flags to all utils functions
+  - silenced sigmoid errors
+  - added tqdm.auto progress bars
+  - 
 
   
