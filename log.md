@@ -197,6 +197,10 @@
 - I kinda like that feeling of being on the verge of infinity.
 - Hyperautomatic system done!
 - Updated environment file just to make sure before setting up desktop clone to run automated experiments while I finalize the project.
+- Got system cloned to desktop
+- added thing to save the experimental settings to YAML file
+- Changed code to save all data to specific data dir to not clutter main folder
+- cleaned up main folder by moving all old shit to old_data dir
 - 
 
   
