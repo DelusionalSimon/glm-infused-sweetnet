@@ -217,5 +217,9 @@
   - Looped that other thing and calculated statistically relevant values.
   - Quickly added a thing to remove most trailing decemals
   -  I added a thing to my hyperautomation system to save all prepped models before training and ran a small experiment. Piping that data into a simplified euclidian distance analysis thing showed me that the distance of a trained baseline model and it's untrained base embeddings were of a similar magnitude as the difference between a trainable and fixed infused model.
+  -  Roman suggested to divide every embedding by the L2-norm of the longest embedding vector. This brought down the range and changed some results 
+     -  Some embeddings may be more zoomed in than others
+     -  It is interesting that the values comparing different baseline runs now has a higher value than the comparison between the baseline and infused models.
+  -  
 
   
