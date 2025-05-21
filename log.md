@@ -216,6 +216,6 @@
   - Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
   - Looped that other thing and calculated statistically relevant values.
   - Quickly added a thing to remove most trailing decemals
-  - 
+  -  I added a thing to my hyperautomation system to save all prepped models before training and ran a small experiment. Piping that data into a simplified euclidian distance analysis thing showed me that the distance of a trained baseline model and it's untrained base embeddings were of a similar magnitude as the difference between a trainable and fixed infused model.
 
   
