@@ -214,5 +214,8 @@
   - implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
   - Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
   - Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
+  - Looped that other thing and calculated statistically relevant values.
+  - Quickly added a thing to remove most trailing decemals
+  - 
 
   
