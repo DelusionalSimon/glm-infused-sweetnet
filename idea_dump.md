@@ -146,6 +146,7 @@
 - Distribute a lean, easy-to-clone version of the project (a new repository) for general use and to get people started quickly.
   - add a link to the original github project for people that want to look into the messy history
   - "For the full development history and commit log of this project, please refer to the original repository: [Link to your original (large) GitHub repo]"
+- Add a note on the Euclidian distance analysis when comparing how the embeddings work, highlighting how little the infused models change, suggesting that they have relevant data in them.
 - 
 
 # things to improve in glycowork

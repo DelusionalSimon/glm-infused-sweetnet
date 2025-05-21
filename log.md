@@ -213,5 +213,6 @@
   - Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
   - implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
   - Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
+  - Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
 
   
