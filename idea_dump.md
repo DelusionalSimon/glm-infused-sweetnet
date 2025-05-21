@@ -143,6 +143,10 @@
   - Try to get a 
 - Figshare: Free, easy to use, assigns a DOI (Digital Object Identifier) making your data citable. Widely used across disciplines.
 - Zenodo: Operated by CERN, integrated with GitHub (can publish GitHub releases directly), also assigns DOIs.
+- Distribute a lean, easy-to-clone version of the project (a new repository) for general use and to get people started quickly.
+  - add a link to the original github project for people that want to look into the messy history
+  - "For the full development history and commit log of this project, please refer to the original repository: [Link to your original (large) GitHub repo]"
+- 
 
 # things to improve in glycowork
 - documentation for using pretrained models

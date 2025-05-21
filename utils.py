@@ -1,10 +1,17 @@
 """
 Utility functions for the GLM-Infused SweetNet project.
 
-includes build_multilabel_dataset, multilabel_split, prep_infused_sweetnet, and seed_everything.
+Functions included:
+    Data Loading Functions
+        - build_multilabel_dataset
+        - get_embeddings_from_state_dict
+    Preparation Functions
+        - multilabel_split
+        - prep_infused_sweetnet
+    Utility Functions   
+        - seed_everything
 
-This file contains general utilities as well as functions for data loading, preprocessing, splitting,
-and model preparation for training and evaluation. 
+This file contains general utilities as well as functions for data loading and preparation of data and models. 
 """
 
 # Standard library imports
@@ -30,7 +37,7 @@ from glycowork.ml.train_test_split import prepare_multilabel
 from glycowork.ml.models import SweetNet, init_weights
 
 
-# --- Data Loading and Preparation Functions ---
+# --- Data Loading Functions ---
 
 def build_multilabel_dataset(glycan_dataset: str = 'df_species',
                           glycan_class: str = 'Kingdom',
@@ -136,6 +143,41 @@ def build_multilabel_dataset(glycan_dataset: str = 'df_species',
 
     return glycan_sequences, binary_labels, label_names
 
+
+def get_embeddings_from_state_dict(model_state_path: str) -> np.ndarray:
+    """
+    Loads a model's state dictionary and directly extracts its item_embedding weights
+    without instantiating the full model.
+
+    Parameters
+    ----------
+    model_state_path : str
+        Path to the saved model state dictionary (.pth file).
+
+    Returns
+    -------
+    np.ndarray
+        The extracted item_embedding weights (as a NumPy array).
+    
+    Raises
+    ------
+        ValueError 
+            - If the model state dictionary does not contain 'item_embedding.weight'.
+    """
+    state_dict = torch.load(model_state_path, map_location=torch.device('cpu'))
+    
+    # Directly access the embedding layer's weights by its key in the state_dict
+    # This key must be exactly 'item_embedding.weight'
+    if 'item_embedding.weight' in state_dict:
+        embeddings_tensor = state_dict['item_embedding.weight']
+        embeddings_np = embeddings_tensor.cpu().numpy()
+        return embeddings_np
+    else:
+        raise KeyError(f"'{model_state_path}' does not contain 'item_embedding.weight'. Check model architecture.")
+    
+
+
+# --- Preparation Functions ---
 
 def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
                  labels: List[Union[float, int, str]], # list of prediction labels
@@ -383,6 +425,7 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     return model
 
 
+
 # --- Utility Functions ---
 
 def seed_everything(seed: int,  silent: int =  False, full_reproducibility: bool = True) -> None:   
@@ -423,3 +466,6 @@ def seed_everything(seed: int,  silent: int =  False, full_reproducibility: bool
             torch.backends.cudnn.benchmark = True
     if not silent:
         print(f"All random seeds set to: {seed}")
+
+
+

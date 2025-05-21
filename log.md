@@ -211,6 +211,7 @@
   - Set up big round of hyperoptimization experiments
   - Added a time metric to keep track of how long each model takes to train, could be interesting
   - Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
-  - 
+  - implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
+  - Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
 
   
