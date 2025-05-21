@@ -50,6 +50,7 @@
 - Implement Cross-Validation: K-fold cross-validation involves splitting your data into K folds. You train the model K times, each time using K-1 folds for training and the remaining fold for validation. This uses your data more efficiently and provides a more robust estimate of performance by averaging results over different train/validation splits.
 - Since the embeddings didn't matter much, perhaps I could minimize them for a more efficient model
 - Set learning rate higher for just the embeddings layer
+- divide every embedding by the L2-norm of the longest embedding vector.
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
