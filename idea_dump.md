@@ -141,6 +141,8 @@
   - hints on how it may taste
   - a Sweet desert stout
   - Try to get a 
+- Figshare: Free, easy to use, assigns a DOI (Digital Object Identifier) making your data citable. Widely used across disciplines.
+- Zenodo: Operated by CERN, integrated with GitHub (can publish GitHub releases directly), also assigns DOIs.
 
 # things to improve in glycowork
 - documentation for using pretrained models

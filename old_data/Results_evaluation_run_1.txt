@@ -1,8 +1,0 @@
---- Descriptive Statistics ---
-   Configuration     Metric    Mean Std Dev  Median     Min     Max  Count
-0     Infused_tr  Best Loss  1.4754  0.0652  1.4573  1.4076  1.5714      5
-1     Infused_tr  Best LRAP  0.8578  0.0060  0.8587  0.8492  0.8652      5
-2       baseline  Best Loss  1.3312  0.0515  1.3239  1.2701  1.3943      5
-3       baseline  Best LRAP  0.8905  0.0105  0.8933  0.8764  0.9029      5
-4  infused_fixed  Best Loss  1.6452  0.0249  1.6489  1.6174  1.6818      5
-5  infused_fixed  Best LRAP  0.8326  0.0038  0.8325  0.8283  0.8387      5
