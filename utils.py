@@ -15,7 +15,7 @@ This file contains general utilities as well as functions for data loading and p
 """
 
 # Standard library imports
-from typing import List, Tuple, Union, Dict, Optional, Literal 
+from typing import List, Tuple, Union, Dict, Optional, Literal, Any 
 from collections import Counter
 import random
 import os 
@@ -161,7 +161,7 @@ def get_embeddings_from_state_dict(model_state_path: str) -> np.ndarray:
     
     Raises
     ------
-        ValueError 
+        KeyError 
             - If the model state dictionary does not contain 'item_embedding.weight'.
     """
     state_dict = torch.load(model_state_path, map_location=torch.device('cpu'))
