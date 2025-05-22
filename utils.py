@@ -5,6 +5,7 @@ Functions included:
     Data Loading Functions
         - build_multilabel_dataset
         - get_embeddings_from_state_dict
+        - pickle_loader
     Preparation Functions
         - multilabel_split
         - prep_infused_sweetnet
@@ -18,6 +19,7 @@ This file contains general utilities as well as functions for data loading and p
 from typing import List, Tuple, Union, Dict, Optional, Literal, Any 
 from collections import Counter
 import random
+import pickle
 import os 
 
 # Third-party library imports
@@ -175,6 +177,47 @@ def get_embeddings_from_state_dict(model_state_path: str) -> np.ndarray:
     else:
         raise KeyError(f"'{model_state_path}' does not contain 'item_embedding.weight'. Check model architecture.")
     
+
+def pickle_loader(pickle_file_path: str, silent: bool = False) -> Any:
+    """
+    Load the contents of a pickle file.
+    
+    Parameters
+    -------
+    pickle_file_path : str 
+        Path to the pickle file containing embeddings.
+    silent : bool, optional
+        If True, suppresses print statements. Default is False.    
+
+    Returns:
+    -------
+    Any
+        The object loaded from the pickle file.
+
+    Raises:
+    FileNotFoundError: 
+        - If the specified file does not exist.
+    Exception: 
+        - If there is an error during loading the pickle file.
+    """
+    if os.path.exists(pickle_file_path):
+        if not silent: 
+            print(f"Loading object from: {pickle_file_path}")
+
+        try:
+            # Open the file in binary read mode ('rb')
+            with open(pickle_file_path, 'rb') as file_handle:
+                # Load the object(s) from the pickle file
+                object = pickle.load(file_handle)
+
+            if not silent: 
+                print("Object loaded successfully!")        
+            return object
+        except Exception as e:
+            raise Exception(f"An error occurred while loading the pickle file: {e}")
+    else:
+        raise FileNotFoundError(f"Error: File not found at '{pickle_file_path}'. Please check the filename and path.")
+
 
 
 # --- Preparation Functions ---
