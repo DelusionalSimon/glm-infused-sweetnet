@@ -173,7 +173,7 @@
 - Did basic averages of my runs so far
 - Interestingly the traibability of the embeddings mattered very little
 - Preenting my work to the Bojar Lab
--   -------------------------------Monday meeting 2025-05-12--------------------------------------------
+-------------------------------Monday meeting 2025-05-12--------------------------------------------
 - Time to iterate the project using my PDD. 
 - PDD used to generate new requirements
 - Using Paper writing catech to define paper.
@@ -196,6 +196,7 @@
 - I wonder why my projects always seem to end with loops within loops within loops until my mind starts to break. Why do all my projects somehow converge on that?
 - I kinda like that feeling of being on the verge of infinity.
 - Hyperautomatic system done!
+-------------------------------Monday meeting 2025-05-19--------------------------------------------
 - Updated environment file just to make sure before setting up desktop clone to run automated experiments while I finalize the project.
 - Got system cloned to desktop
 - added thing to save the experimental settings to YAML file
@@ -220,6 +221,8 @@
   -  Roman suggested to divide every embedding by the L2-norm of the longest embedding vector. This brought down the range and changed some results 
      -  Some embeddings may be more zoomed in than others
      -  It is interesting that the values comparing different baseline runs now has a higher value than the comparison between the baseline and infused models.
-  -  
+  -  Made my pickle loading thing into a function
+  -   Iterated my HBBS to use the new pickle loader within the main loop to enable me to sequentially use different embeddings as a new parameter. to generate data for different embeddings
+  -   I'm about to rerun all base experiments using the 5 new embeddings
 
   
