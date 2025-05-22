@@ -209,20 +209,24 @@
   - added silent flags to all utils functions
   - silenced sigmoid errors
   - added tqdm.auto progress bars
-  - Set up big round of hyperoptimization experiments
-  - Added a time metric to keep track of how long each model takes to train, could be interesting
-  - Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
-  - implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
-  - Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
-  - Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
-  - Looped that other thing and calculated statistically relevant values.
-  - Quickly added a thing to remove most trailing decemals
-  -  I added a thing to my hyperautomation system to save all prepped models before training and ran a small experiment. Piping that data into a simplified euclidian distance analysis thing showed me that the distance of a trained baseline model and it's untrained base embeddings were of a similar magnitude as the difference between a trainable and fixed infused model.
-  -  Roman suggested to divide every embedding by the L2-norm of the longest embedding vector. This brought down the range and changed some results 
-     -  Some embeddings may be more zoomed in than others
-     -  It is interesting that the values comparing different baseline runs now has a higher value than the comparison between the baseline and infused models.
-  -  Made my pickle loading thing into a function
-  -   Iterated my HBBS to use the new pickle loader within the main loop to enable me to sequentially use different embeddings as a new parameter. to generate data for different embeddings
-  -   I'm about to rerun all base experiments using the 5 new embeddings
+- Set up big round of hyperoptimization experiments
+- Added a time metric to keep track of how long each model takes to train, could be interesting
+- Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
+- implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
+- Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
+- Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
+- Looped that other thing and calculated statistically relevant values.
+- Quickly added a thing to remove most trailing decemals
+-  I added a thing to my hyperautomation system to save all prepped models before training and ran a small experiment. Piping that data into a simplified euclidian distance analysis thing showed me that the distance of a trained baseline model and it's untrained base embeddings were of a similar magnitude as the difference between a trainable and fixed infused model.
+-  Roman suggested to divide every embedding by the L2-norm of the longest embedding vector. This brought down the range and changed some results 
+   -  Some embeddings may be more zoomed in than others
+   -  It is interesting that the values comparing different baseline runs now has a higher value than the comparison between the baseline and infused models.
+-  Made my pickle loading thing into a function
+-   Iterated my HBBS to use the new pickle loader within the main loop to enable me to sequentially use different embeddings as a new parameter. to generate data for different embeddings
+- I'm about to rerun all base experiments using the 5 new embeddings
+- Got a bunch of "[glycoword] is not in library, keeping its initial random value."... prints
+  - Never silenced that when I addewd the silent flag, which was very good, otherwise I wouldn't have caught that the new embeddings lack 143 glycowords
+  - Also very good that I added the thing to make sure that my system would work with embedding files that don't match the library on a flawed assumption
+  - Most of those seem like they could be removed from the main library  
 
   

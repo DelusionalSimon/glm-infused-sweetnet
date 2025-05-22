@@ -412,7 +412,8 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
 
                     else:
                         # If a glycan word in libr is NOT in embeddings_dict, its initial random value is preserved (for smaller dictionaries).
-                        print(f"{glycan_word} is not in library, keeping its initial random value.")
+                        if not silent:
+                            print(f"{glycan_word} is not in library, keeping its initial random value.")
                         pass # Explicitly do nothing, keeping the initial random value
          
 
