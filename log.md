@@ -211,6 +211,15 @@
   - Set up big round of hyperoptimization experiments
   - Added a time metric to keep track of how long each model takes to train, could be interesting
   - Noticed synching to github took a long time. All of the data I generate takes up a lot of space, moved the saving location to an untracked location
-  - 
+  - implemented and tested function to load embeddings from the state dictionaries that I save in my experiment data. 
+  - Feat: Added get_embeddings_from_state_dict function to utils.py and improved docstring and flow
+  - Added a thing to compare euclidian distances on a whim (that annoying copilot autocomplete thing suggested it below code I was writing and I got intrigued and let it finish the code. after editing the code to be actually useful I did some research. seems like this analysis could actually be useful for my project).
+  - Looped that other thing and calculated statistically relevant values.
+  - Quickly added a thing to remove most trailing decemals
+  -  I added a thing to my hyperautomation system to save all prepped models before training and ran a small experiment. Piping that data into a simplified euclidian distance analysis thing showed me that the distance of a trained baseline model and it's untrained base embeddings were of a similar magnitude as the difference between a trainable and fixed infused model.
+  -  Roman suggested to divide every embedding by the L2-norm of the longest embedding vector. This brought down the range and changed some results 
+     -  Some embeddings may be more zoomed in than others
+     -  It is interesting that the values comparing different baseline runs now has a higher value than the comparison between the baseline and infused models.
+  -  
 
   

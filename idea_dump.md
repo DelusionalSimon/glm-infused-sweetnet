@@ -50,6 +50,7 @@
 - Implement Cross-Validation: K-fold cross-validation involves splitting your data into K folds. You train the model K times, each time using K-1 folds for training and the remaining fold for validation. This uses your data more efficiently and provides a more robust estimate of performance by averaging results over different train/validation splits.
 - Since the embeddings didn't matter much, perhaps I could minimize them for a more efficient model
 - Set learning rate higher for just the embeddings layer
+- divide every embedding by the L2-norm of the longest embedding vector.
 
 # Analysis & Interpretation Ideas
 - Visualize and analyze the learned SweetNet representations (e.g., using t-SNE, UMAP).
@@ -141,6 +142,14 @@
   - hints on how it may taste
   - a Sweet desert stout
   - Try to get a 
+- Figshare: Free, easy to use, assigns a DOI (Digital Object Identifier) making your data citable. Widely used across disciplines.
+- Zenodo: Operated by CERN, integrated with GitHub (can publish GitHub releases directly), also assigns DOIs.
+- Distribute a lean, easy-to-clone version of the project (a new repository) for general use and to get people started quickly.
+  - add a link to the original github project for people that want to look into the messy history
+  - "For the full development history and commit log of this project, please refer to the original repository: [Link to your original (large) GitHub repo]"
+- Add a note on the Euclidian distance analysis when comparing how the embeddings work, highlighting how little the infused models change, suggesting that they have relevant data in them.
+  - changed to compare the model before and after training, and found that the trainable and fixed baseline models get initiated with random embeddings
+- 
 
 # things to improve in glycowork
 - documentation for using pretrained models

@@ -30,7 +30,7 @@ I’m going to thoroughly test my infusion method using several different tasks 
 ---- Requirements -----
 
 **Must haves (60% of effort max)**
-0.	Core Data collection pipeline
+0.	+Core Data collection pipeline
     0.2	+Change test split pipeline, splitting out test set before experiment and saving it
         0.2.1	+Add flag to split function to split just once and use twise, one time outside of loop and then within the loop
         0.2.2	-Perhaps doing the more standard way and just splitting before each experiment and just rerunning training. Compare variability
@@ -40,7 +40,8 @@ I’m going to thoroughly test my infusion method using several different tasks 
         0.3.2	+Run sufficient experiments with modified pipeline (10 x disease, kingdom, and tissue)
 1.	!Core statistical analysis to quantify how infusion influences the model
     1.2	t-SNE Analysis
-        1.2.1	notebook that loads embeddings
+        1.2.1	+notebook that loads embeddings (created function)
+        1.2.2       
     1.3	Statistical analysis of the three experiments I have run thus far
         1.3.1	Delve into what kind of methods might be useful
         1.3.2	Delve into pandas
