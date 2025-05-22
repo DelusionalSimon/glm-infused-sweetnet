@@ -67,10 +67,10 @@ I’m going to thoroughly test my infusion method using several different tasks 
         4.2.1	+Hyperloop to run several experiments one after another
            4.2.1.1 +Create a loop over the loop
            4.2.1.2 save a configuration file for each experiment
-    4.3	Collect data from several different tasks
-        4.3.1	Different df_species hierarchies
+    4.3	+Collect data from several different tasks
+        4.3.1	+Different df_species hierarchies
     4.4	Get performance data of GlyLMs from roman
-    4.5	Try embeddings from other GLyLMs (trivial with the pipeline I have)
+    4.5	+Try embeddings from other GLyLMs (trivial with the pipeline I have)
 5.	More advanced statistical analysis
     5.2	Compare the t-SNE plots of several random embeddings to see how much they differ
     5.3	SHAP analysis (use GNNShap?)
