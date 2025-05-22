@@ -227,6 +227,9 @@
 - Got a bunch of "[glycoword] is not in library, keeping its initial random value."... prints
   - Never silenced that when I addewd the silent flag, which was very good, otherwise I wouldn't have caught that the new embeddings lack 143 glycowords
   - Also very good that I added the thing to make sure that my system would work with embedding files that don't match the library on a flawed assumption
-  - Most of those seem like they could be removed from the main library  
+  - Most of those seem like they could be removed from the main library 
+  - Made the t-SNE thing into a function
+  -  Set up all different t-SNEs I might want to do on a given run
+  -  
 
   
