@@ -235,5 +235,8 @@
   -  Added density plot to t-SNE part of Statistics Silo
   -  Time To tackle the rest of the analysis. Time is running out
   -  added a cell to load all of the summary statistics from an experiment
+  -  Seems like t-tests will be good enough for my base comparisons
+     -  Might do effect size measures (Cohen's d) as well
+  -  Made a little thing similar to what I do in the HBBS and t-SNE to define my sets of experiments
 
   
