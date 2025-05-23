@@ -243,6 +243,9 @@
      -  Embedding 1 is the best. Running that going forward.
   -  Now lets save the data I need for the tables
   -  Found a core error in my HBBS loop that doesn't reset the variable that I use to save the summary data, it accumulates between experiments. 
-  -  
+  -  I see now. I'm actually initializing the dictionaries outside of the experiment loop, they just get set once at the start of the cell. this is why my csvs are aggregating all values. all of the data I have captured thus far is fucked. Good thing everything is so automated
+  -  Fixed bug and briefly experimented with paralellization to speed up things. it did not.
+  - I'll have to build the rest of my statistical pipeline on fucked data. 
+  - MAde a thing to generate the tables from one experiment for one metric.
 
   
