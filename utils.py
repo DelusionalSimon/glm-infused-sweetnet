@@ -9,6 +9,7 @@ Functions included:
     Preparation Functions
         - multilabel_split
         - prep_infused_sweetnet
+        - prepare_tsne_data
     Utility Functions   
         - seed_everything
 
@@ -472,6 +473,74 @@ def prep_infused_sweetnet(num_classes: int, # number of unique classes for class
     return model
 
 
+def prepare_tsne_data(embedding_arrays: List[np.ndarray], 
+                      embedding_names: List[str],
+                      normalize: bool = True
+                      ) -> Tuple[np.ndarray, List[str]]:
+    """
+    Prepares embedding data for t-SNE visualization by normalizing and concatenating.
+
+    Parameters
+    ----------
+    embedding_arrays : List[np.ndarray]
+        A list of NumPy arrays, where each array contains a set of embeddings
+        (e.g., [baseline_embs, raw_glm_embs, infused_embs]).
+        All arrays in the list must have the same number of rows (glycowords)
+        and same number of columns (embedding dimensions).
+    embedding_names : List[str]
+        A list of string names corresponding to each array in `embedding_arrays`.
+        These names will be used as labels in the t-SNE plot legend.
+    normalize : bool, optional
+        If True, each embedding array will be normalized before concatenation.
+        Default is True.
+
+    Returns
+    -------
+    Tuple[np.ndarray, List[str]]
+        A tuple containing:
+        - tsne_embeddings (np.ndarray): All input embeddings, normalized and vertically stacked.
+        - tsne_labels (List[str]): Corresponding labels for each row in all_embs_for_tsne.
+
+    Raises
+    ------
+    ValueError
+        If the number of embedding arrays does not match the number of names,
+        are empty, don't have the same number of rows,
+        or if the arrays have inconsistent shapes.
+    Exception
+        If an error occurs during normalization.
+    """
+    if len(embedding_arrays) != len(embedding_names):
+        raise ValueError("Number of embedding arrays must match number of embedding names.")
+    if not embedding_arrays: # Handle empty input list
+        raise ValueError("No embedding arrays provided.")
+
+    # Get the number of glycowords (rows) from the first embedding array
+    num_glycowords = embedding_arrays[0].shape[0]
+
+    # Normalize each embedding array and collect them if that flag is set
+    
+    normalized_arrays = []
+    for arr in embedding_arrays:
+        if arr.shape[0] != num_glycowords:
+            raise ValueError("All embedding arrays must have the same number of rows (glycowords).")
+        if normalize:
+            try:
+                arr = arr / np.max(np.linalg.norm(arr, axis=1, keepdims=True))
+            except Exception as e:
+                raise Exception(f"Error normalizing array: {e}")
+            normalized_arrays.append(arr)
+            embedding_arrays = normalized_arrays
+
+    # Concatenate all normalized arrays vertically
+    tsne_embeddings = np.concatenate(embedding_arrays, axis=0)
+    
+    # Create the combined list of labels
+    tsne_labels = []
+    for name in embedding_names:
+        tsne_labels.extend([name] * num_glycowords) # Extend with 'num_glycowords' repetitions of each name
+
+    return tsne_embeddings, tsne_labels
 
 # --- Utility Functions ---
 
