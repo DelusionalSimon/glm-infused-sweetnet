@@ -232,6 +232,7 @@
   -  Set up all different t-SNEs I might want to do on a given run
   -  Feat: Iterated preparation system for t_SNE using a list of dicts for ease of automation later
   -  Feat: load the embeddings and labels for a given t-SNE target
+  -  Added density plot to t-SNE part of Statistics Silo
   -  
 
   
