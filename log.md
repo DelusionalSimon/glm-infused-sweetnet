@@ -233,6 +233,7 @@
   -  Feat: Iterated preparation system for t_SNE using a list of dicts for ease of automation later
   -  Feat: load the embeddings and labels for a given t-SNE target
   -  Added density plot to t-SNE part of Statistics Silo
-  -  
+  -  Time To tackle the rest of the analysis. Time is running out
+  -  added a cell to load all of the summary statistics from an experiment
 
   

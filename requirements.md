@@ -51,7 +51,7 @@ I’m going to thoroughly test my infusion method using several different tasks 
     1.4	Write relevant part of paper as each analysis is done
 2.	Core Tables and diagrams (run in parallel withs statistical analysis)
     2.2	Delve into plotting libraries in python
-    2.3	Basic t-SNE diagrams
+    2.3	+Basic t-SNE diagrams
     2.4	Main results table comparing infusion vs random for different tasks
         2.4.1	Regenerate table from presentation using Python
         2.4.2	Populate with new data as it comes in
