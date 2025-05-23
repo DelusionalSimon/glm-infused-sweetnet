@@ -238,5 +238,11 @@
   -  Seems like t-tests will be good enough for my base comparisons
      -  Might do effect size measures (Cohen's d) as well
   -  Made a little thing similar to what I do in the HBBS and t-SNE to define my sets of experiments
+  -  Let's make a thing to aggregate all of the data in the set of experiments. 
+  -  First I did a thing to quickly compare experiments. 
+     -  Embedding 1 is the best. Running that going forward.
+  -  Now lets save the data I need for the tables
+  -  Found a core error in my HBBS loop that doesn't reset the variable that I use to save the summary data, it accumulates between experiments. 
+  -  
 
   
