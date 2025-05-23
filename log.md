@@ -227,6 +227,12 @@
 - Got a bunch of "[glycoword] is not in library, keeping its initial random value."... prints
   - Never silenced that when I addewd the silent flag, which was very good, otherwise I wouldn't have caught that the new embeddings lack 143 glycowords
   - Also very good that I added the thing to make sure that my system would work with embedding files that don't match the library on a flawed assumption
-  - Most of those seem like they could be removed from the main library  
+  - Most of those seem like they could be removed from the main library 
+  - Made the t-SNE thing into a function
+  -  Set up all different t-SNEs I might want to do on a given run
+  -  Feat: Iterated preparation system for t_SNE using a list of dicts for ease of automation later
+  -  Feat: load the embeddings and labels for a given t-SNE target
+  -  Added density plot to t-SNE part of Statistics Silo
+  -  
 
   
