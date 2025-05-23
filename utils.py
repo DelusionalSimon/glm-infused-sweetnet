@@ -518,22 +518,27 @@ def prepare_tsne_data(embedding_arrays: List[np.ndarray],
     # Get the number of glycowords (rows) from the first embedding array
     num_glycowords = embedding_arrays[0].shape[0]
 
-    # Normalize each embedding array and collect them if that flag is set
     
-    normalized_arrays = []
+    # Initialize a list to hold the arrays that will be concatenated
+    arrays_to_concatenate = []
+
+    # Normalize each embedding array and collect them if that flag is set
     for arr in embedding_arrays:
         if arr.shape[0] != num_glycowords:
             raise ValueError("All embedding arrays must have the same number of rows (glycowords).")
+        
         if normalize:
             try:
-                arr = arr / np.max(np.linalg.norm(arr, axis=1, keepdims=True))
+                # Normalization logic
+                normalized_arr = arr / np.max(np.linalg.norm(arr, axis=1, keepdims=True))
+                arrays_to_concatenate.append(normalized_arr)
             except Exception as e:
                 raise Exception(f"Error normalizing array: {e}")
-            normalized_arrays.append(arr)
-            embedding_arrays = normalized_arrays
-
-    # Concatenate all normalized arrays vertically
-    tsne_embeddings = np.concatenate(embedding_arrays, axis=0)
+        else:
+            arrays_to_concatenate.append(arr) # If not normalizing, just add the original array
+            
+    # Concatenate all (potentially normalized) arrays vertically
+    tsne_embeddings = np.concatenate(arrays_to_concatenate, axis=0)
     
     # Create the combined list of labels
     tsne_labels = []
