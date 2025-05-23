@@ -272,6 +272,9 @@ def multilabel_split(glycans: List[str], # list of IUPAC-condensed glycans
     temp_labels = labels
 
     # calculating split ratios
+    # I used to just split out the train set and then split the rest into val and test sets
+    # but the sklearn StratifiedShuffleSplit that I use down the line requires a higher min_class_size then
+    # for some arcane reason splits below 0.593 require a much higher min_class_size
     if not no_test:
         test_raio = (1 - train_size)/2
         train_ratio =(1 - train_size) / (1 + train_size)
