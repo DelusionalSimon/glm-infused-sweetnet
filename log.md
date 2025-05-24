@@ -251,6 +251,7 @@
   - Fixed that bug but found some more. 
     - Settings used in one experiment but not another overrode the base settings
     - I figured out why I wasn't able to incrrease the num_workers, can't save dataloaders made with num_workers>0
-    - 
+    - Tried that again but need to do too much work to only perhaps get a performance increase. lets leave that behind.
+  - Performance is way worse than expected, I ran the smallest dataset on all runs. I won't have time to run all possible experiments. 
 
   
