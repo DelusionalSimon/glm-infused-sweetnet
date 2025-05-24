@@ -247,5 +247,10 @@
   -  Fixed bug and briefly experimented with paralellization to speed up things. it did not.
   - I'll have to build the rest of my statistical pipeline on fucked data. 
   - MAde a thing to generate the tables from one experiment for one metric.
+  - Tried my statistic tools on a fresh batch of data and discovered a fatal bug, I never piped in what dataset to run the HBBS on. I'äve just ran disease the last hundrreds of experiments. 
+  - Fixed that bug but found some more. 
+    - Settings used in one experiment but not another overrode the base settings
+    - I figured out why I wasn't able to incrrease the num_workers, can't save dataloaders made with num_workers>0
+    - 
 
   
