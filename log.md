@@ -257,5 +257,7 @@
   - moved to utils
   - Feat (test_model): Iterated test_model function to calculate its own criterion to simplify use. 
   - roughly made a script to instantiate the best model of an experiment and running its test set through it using test_model. 
+  - Added basic way to   show common glycowords on t-SNE plot
+  - 
 
   
