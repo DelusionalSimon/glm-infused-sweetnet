@@ -45,7 +45,7 @@ except ImportError:
 from glycowork.glycan_data.loader import build_custom_df, df_glycan, lib
 from glycowork.ml.train_test_split import prepare_multilabel
 from glycowork.ml.models import SweetNet, init_weights
-from glycowork.ml.model_training import sigmoid
+from glycowork.ml.model_training import sigmoid, Poly1CrossEntropyLoss
 
 
 # --- Data Loading Functions ---
@@ -602,7 +602,7 @@ def seed_everything(seed: int,  silent: int =  False, full_reproducibility: bool
 
 def test_model(model: torch.nn.Module, 
                dataloader: torch.utils.data.DataLoader, 
-               criterion: torch.nn.Module) -> dict[str, float]:
+               num_classes: int) -> dict[str, float]:
     """
     Evaluates a multi-label model on a test set.
 
@@ -612,8 +612,8 @@ def test_model(model: torch.nn.Module,
         The trained model to evaluate.
     dataloader: torch.utils.data.DataLoader
         DataLoader containing the test split.
-    criterion: torch.nn.Module
-        The loss function to calculate average loss during evaluation.
+    num_classes: int
+        Number of unique classes for classification.
 
     Returns
     -------
@@ -622,6 +622,9 @@ def test_model(model: torch.nn.Module,
         for the multi-label task (Loss, LRAP, NDCG).
     """
     model.eval()  # Set the model to evaluation mode
+
+    # Generate criterion for multi-label or multi-class classification
+    criterion = Poly1CrossEntropyLoss(num_classes = num_classes).to(device)
 
     with torch.no_grad(): 
         total_loss = 0.
