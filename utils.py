@@ -12,9 +12,13 @@ Functions included:
         - prepare_tsne_data
     Utility Functions   
         - seed_everything
+        - test_model
 
 This file contains general utilities as well as functions for data loading and preparation of data and models. 
 """
+# Developing function to test model here before migrating to utils.py 
+
+
 
 # Standard library imports
 from typing import List, Tuple, Union, Dict, Optional, Literal, Any 
@@ -24,10 +28,13 @@ import pickle
 import os 
 
 # Third-party library imports
+from sklearn.metrics import label_ranking_average_precision_score, ndcg_score
 from sklearn.model_selection import StratifiedShuffleSplit
 import numpy as np
 try:
     import torch
+    import torch.utils.data
+    import torch.nn 
     device = "cpu"
     if torch.cuda.is_available():
         device = "cuda:0"
@@ -38,6 +45,7 @@ except ImportError:
 from glycowork.glycan_data.loader import build_custom_df, df_glycan, lib
 from glycowork.ml.train_test_split import prepare_multilabel
 from glycowork.ml.models import SweetNet, init_weights
+from glycowork.ml.model_training import sigmoid
 
 
 # --- Data Loading Functions ---
@@ -590,3 +598,91 @@ def seed_everything(seed: int,  silent: int =  False, full_reproducibility: bool
 
 
 
+
+
+def test_model(model: torch.nn.Module, 
+               dataloader: torch.utils.data.DataLoader, 
+               criterion: torch.nn.Module) -> dict[str, float]:
+    """
+    Evaluates a multi-label model on a test set.
+
+    Parameters
+    ----------
+    model: torch.nn.Module
+        The trained model to evaluate.
+    dataloader: torch.utils.data.DataLoader
+        DataLoader containing the test split.
+    criterion: torch.nn.Module
+        The loss function to calculate average loss during evaluation.
+
+    Returns
+    -------
+    dict
+        A dictionary containing calculated evaluation metrics
+        for the multi-label task (Loss, LRAP, NDCG).
+    """
+    model.eval()  # Set the model to evaluation mode
+
+    with torch.no_grad(): 
+        total_loss = 0.
+        raw_output = []
+        true_labels = []
+
+        for data in dataloader:
+            # Get all relevant node attributes
+            x, y, edge_index, batch = data.labels, data.y, data.edge_index, data.batch
+            prot = getattr(data, 'train_idx', None)
+            if prot is not None:
+                prot = prot.view(max(batch) + 1, -1).to(device)
+            x = x.to(device)            
+            y = y.view(max(batch) + 1, -1).to(device)
+            edge_index = edge_index.to(device)
+            batch = batch.to(device)
+
+            # --- Forward Pass ---
+            # Call the model with the extracted data, similar to train_model
+            if prot is not None:
+                 pred = model(prot, x, edge_index, batch)
+            else:
+                 pred = model(x, edge_index, batch)
+
+            # --- Calculate and Accumulate Loss ---
+            # Use the criterion to calculate loss and accumulate total loss
+            
+            loss = criterion(pred, y.float())
+            # Accumulate loss, weighted by the number of graphs in the batch
+            # max(batch) + 1 gives the number of graphs in a PyG Batch object
+            total_loss += loss.item() * (max(batch) + 1)
+
+            # --- Collect Outputs and Labels ---
+            # Append the raw model outputs and true labels to lists
+            # Keep them as tensors on the device for now
+            raw_output.append(pred)
+            true_labels.append(y)
+
+    # Concatenate all collected outputs and labels
+    all_preds = torch.cat(raw_output, dim=0)
+    all_labels = torch.cat(true_labels, dim=0)
+
+    # Convert raw model outputs to probabilities (sigmoid for BCEWithLogitsLoss)
+    # Use your imported sigmoid function
+    all_probs = sigmoid(all_preds.cpu()).numpy()
+    all_true_labels_np = all_labels.cpu().numpy()
+
+    # Calculate average loss
+    total_samples = len(dataloader.dataset) # Get total samples from DataLoader
+    average_loss = total_loss / total_samples
+
+    # Calculate LRAP and NDCG
+    
+    lrap = label_ranking_average_precision_score(all_true_labels_np, all_probs)
+    ndcg = ndcg_score(all_true_labels_np, all_probs)
+
+    # Return the calculated metrics
+    return_metrics = {
+        'loss': average_loss.item(),
+        'lrap': lrap.item(),
+        'ndcg': ndcg.item()
+    }
+    
+    return return_metrics
