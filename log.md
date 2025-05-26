@@ -258,6 +258,9 @@
   - Feat (test_model): Iterated test_model function to calculate its own criterion to simplify use. 
   - roughly made a script to instantiate the best model of an experiment and running its test set through it using test_model. 
   - Added basic way to   show common glycowords on t-SNE plot
+  - Ran some quick experiments to verify a difference I saw when I lowered the min_class size after my splitting optimization
+    - There was a significand improvement in all
+    - but this would lower generalizability or coverage, I'm basically reducing the complexity of the task. 
   - 
 
   

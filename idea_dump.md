@@ -149,6 +149,8 @@
   - "For the full development history and commit log of this project, please refer to the original repository: [Link to your original (large) GitHub repo]"
 - Add a note on the Euclidian distance analysis when comparing how the embeddings work, highlighting how little the infused models change, suggesting that they have relevant data in them.
   - changed to compare the model before and after training, and found that the trainable and fixed baseline models get initiated with random embeddings
+  - increased min_class_size yieldedd better results.
+    - Limited Applicability in Real-World Scenarios: If your model is intended for a broad application where rare glycan properties are encountered and need to be predicted, using a high min_class_size might render it unusable for those specific, though infrequent, cases
 - 
 
 # things to improve in glycowork
