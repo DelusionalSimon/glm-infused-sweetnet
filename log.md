@@ -264,6 +264,7 @@
   - got my small fix to glycoworks pushed to the origin!
   - This insures that my code can run without a local install. 
   - Now I need to focus hard oin finishing the paper, just a couple of days left
+  - I've been looking at kingdom runs when doing t-sne and euclidian distance analysis, looking at another task, the difference is striking, the embeddings change much more. The kingdom task bottoms out too quickly
   - 
 
   
