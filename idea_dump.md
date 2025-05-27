@@ -154,16 +154,10 @@
     - Limited Applicability in Real-World Scenarios: If your model is intended for a broad application where rare glycan properties are encountered and need to be predicted, using a high min_class_size might render it unusable for those specific, though infrequent, cases
   - add supplimentary tables with all of the experiments I have run after the paper.
   - Amount of tokens can influence models
-  - Differene3ce between GlyLM models
-    - Tokenization Wordpiece
-    - 1 pretokenization: glYles approach Token count:
-    - 2 pretokenization: glYles approach Token count:
-    - 3 pretokenization: glYles approach Token count:
-    - 4 pretokenization: Glycowork  Token count:
-    - 5 pretokenization: Glycowork approach Token count:
-    - min_class_size stuff
-    - Cutoff based on the amount of data you want to keep. 
+  - min_class_size stuff
+  - Cutoff based on the amount of data you want to keep. 
   - Frame around how trainable embeddings didn't really matter. (flat embeddings,  interaction between barrel and model)
+  - Include number of lines of code.
     - 
     - 
 - 

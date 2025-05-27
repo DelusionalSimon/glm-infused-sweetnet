@@ -40,7 +40,7 @@
 - Set up Jupyter notebook structure 
 - Got Embedding data imported
 - Through exploration of embeddings
-- Loaded glyconet library
+- Loaded glycowork library
 - They correspond one to one!
 - I successfully ran the SweetNet, init_weights, and Prep_model code from cells, and the  training worked
 - I split the kingdom model running code into two cells to not have to load the data each time
@@ -266,6 +266,8 @@
   - Now I need to focus hard oin finishing the paper, just a couple of days left
   - I've been looking at kingdom runs when doing t-sne and euclidian distance analysis, looking at another task, the difference is striking, the embeddings change much more. The kingdom task bottoms out too quickly
   - Feat (t-SNE): for lack of better judgement I added a setting to only plot SNFG monosaccharides. No more coding.
+  - iterated skeleton (Now with more bones!) moving along nicely. 
+  - I feel like the embedding space insights directly explain some of my key findings.  Why doesn't trainability impact performance in the baseline case? because the embeddings barely move and show no clusters, perhaps because the model is already "saturated" by just shifting the weights. which is why the trainability only becomes relevant on hard training sets. This also explains why infusion wasn't effective. if the base embeddings don't matter much, what good can pre-trained embeddings do? The fact that they actually lower performance points towards the conclusion that the embeddings are only used to tell glycowords apart. pure random embeddings are better "labels" than the clustered embeddings from the GlyLMs
   - 
 
   

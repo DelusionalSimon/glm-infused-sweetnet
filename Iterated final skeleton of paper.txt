@@ -1,0 +1,157 @@
+0. Title page <with a title and picture that sets the tone of the paper>
+
+Barrel-aged SweetNet: Assessing the Utility of Infusing a Graph Neural Network with Language Model Embeddings for Glycan Property Prediction
+
+[Barrel-Aged SweetNet Pastry Stout can]
+
+1. Table of Contents <Structural - Will be generated at the end>
+
+2. Abstract <Written Last - Summarizes Everything>
+
+<Purpose: A concise, standalone summary of the entire work. It's the "elevator pitch" of the paper.>
+
+Problem: Briefly state the challenge in glycan property prediction.
+Approach: How I addressed it (GlyLM-infused SweetNet, GNNs, embeddings).
+Key Results: Your most significant findings 
+Conclusion/Impact: What my work contributes to the field.
+
+Include link to new simplified github repo for project and database for models and data
+
+
+3. Introduction
+
+<Purpose: To provide necessary background, state the problem, and present the hypothesis and contribution. It tells the reader why they should care.>
+
+3.1 General Background: Glycans and the Rise of AI in Biology
+- Glycans: the Dark Matter of Biology
+- The Computational Paradigm Shift
+- Graph Neural Networks for Structured Data
+- Language Models and Transfer Learning
+- Application of GNNs and LMs in Glycoinformatics
+
+3.2 Challenges in Glycan Property Prediction
+- Structural Complexity & Computational Representation
+- Data Scarcity & The Absence of Pre-trained Knowledge
+- Lack of Interpretability and Transparency in Models
+
+3.3 Infusion: A Possible Solution?
+- The Infusion Concept and Its Mechanism (Transfer Learning)
+- The Barrel-Aging Metaphor
+
+3.4 Original Project Goal & Hypothesis
+
+3.5 Key Contributions of This Study
+- GlyLM Embedding Infusion Methodology in Glycan GNNs
+- Empirical Investigation into GlyLM Infusion Efficacy
+- Exploratory Insights into Embedding Dynamics and Quality
+- Novel Findings on Baseline Embedding Trainability
+
+(Briefly mention the structure of the rest of the paper before moving on)
+
+
+4. Materials and Methods 
+
+<Purpose: To describe exactly how the research was conducted, enabling reproducibility. It tells the reader what I did.>
+
+(A very brief introductory paragraph that sets the stage for the entire Methods section, stating its purpose (e.g., "This section details the computational tools, datasets, model architecture, and experimental procedures employed in this study, enabling reproducibility of the presented results.")
+
+4.1 Project Environment and Tools
+- Python & Jupyter notebooks. 
+- Key Libraries (Torch geometric, etc.).
+- Core Library (Glycowork).
+- Custom Utility Functions.
+
+4.2 Datasets and their Preparation
+- Glycan datasets.
+- Glycan Language Model (GlyLM) Embeddings.
+
+4.3 Model Architecture and Training
+- SweetNet Model Architecture.
+- Optimization Setup.
+- Model Training Protocol.
+
+4.4 Experimental Design and Execution in the Hyperautomated Barrel-Batching System
+- Data Splitting Protocol.
+- Experiment Batch Design.
+- Metric Calculation and Logging.
+
+4.5 Evaluation, Plotting and Testing in the Statistics Silo
+- Quantitative Statistical analysis.
+- Analysis of Embedding Space.
+- Final Test Set Evaluation.
+
+(a short concluding paragraph could briefly summarize the rigor of your methodology)
+
+
+5. Results 
+
+<Purpose: To present your findings objectively, without interpretation. It tells the reader what you observed.>
+
+(Start with a brief introductory sentence about the experiments conducted.)
+
+5.1 Overall Performance Across Prediction Tasks: 
+Selection of optimal GLyLM Embedding
+[Main LRAP comparison table (Table 1)]
+Performance Comparison: GLM-Infused vs. Baseline.
+?[heatmap of p-values]
+
+5.2 Impact of Embedding Trainability
+[Figure 1: LRAP bar-charts comparing Infused (trainable vs. fixed)]
+[Figure 2: LRAP bar-charts comparing Baseline (trainable vs. fixed)]
+Performance Comparison: Trainable vs. Fixed.
+
+5.3 Quantitative Analysis of Embedding Space using Euclidean Distance Measurements 
+[Average Euclidean Distance Between Glycan Embeddings (Table 2)]
+- Analysis of Embedding Vector Dissimilarity
+Euclidean distance is a measure of dissimilarity
+
+5.4 Qualitative Analysis of Embedding Space using t-SNE plots 
+[T-SNE Visualization of infused trained vs untrained (Figure 3)]
+[T-SNE Visualization of baseline trained vs untrained (Figure 4)]
+- Comparing the Dynamics and Clustering of Embeddings 
+Clusters in GLyLM are distinct and changes over training
+Baseline embeddings overlap and form no clusters
+
+5.5 Hyperparameter Optimization
+?[table of hyperparameter experiments] 
+- Parameter Exploration
+- Data filtering performance
+
+5.6 Best Performing models out of all experiments
+[Test set metrics for the best-performing model out of each dataset]
+- Final Performance of the Selected Best Models
+
+6. Discussion 
+
+<Purpose: To interpret the results, relate them to the broader field, acknowledge limitations, and suggest future work. It tells the reader what your findings signify.>
+
+6.1 Interpretation of Key Findings
+- Reconciling Hypothesis with Observed Performance
+- Insights from Embedding Space Dynamics
+- Implications: Embeddings as Glycoword Identifiers
+Explain why you observed your results. Do they support your hypothesis? Discuss the strengths and weaknesses of GLM infusion.Why didn't GLyLM-infusion improve performance?
+
+6.2 Limitations
+Be honest about the limitations of the study (e.g., dataset size, specific model architecture, computational constraints). 
+
+6.3 Future Work.
+- Adapting infusion pipeline to work with other models
+- Modified SweetNet With reduced embedding dimensions
+- Trying different prediction tasks
+- Proper Hyperparameter Tuning
+- Adding my system to pip or glycowork
+- Applying the best models real problems
+- SHAP Analysis
+Suggest concrete next steps for research (e.g., exploring other GLMs, different prediction tasks, advanced explainability, improving handling of rare classes, structural modifications to SweetNet). 
+
+
+7. Conclusion <The Take-Home Message - Written Last>
+
+<Purpose: A brief, high-level summary of the entire paper's findings and contributions.>
+
+Reiterate the main problem addressed.
+Summarize approach.
+State the most significant findings 
+Reiterate overall contribution to glycoinformatics.
+
+8. Reference List <Structural - Compiled throughout, finalized at the end>
