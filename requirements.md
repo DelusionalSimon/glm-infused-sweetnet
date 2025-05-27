@@ -5,7 +5,7 @@ Top level requirements (Plan for whole project)
 *Must have:*
 1.	+Getting SweetNet Up and running (2025-04-11 2025-04-16)
 2.	+Infusing SweetNet with GLM Embeddings and comparing it (2025-04-25 2025-05-12)
-3.	!!Through testing and statistics to quantify how the infusion influenced the model (2025-05-23)
+3.	+Through testing and statistics to quantify how the infusion influenced the model (2025-05-23)
 4.	!Write a thesis that conveys my findings and results (2024-05-29) (see paper writing catech)
 *Should have:*
 5.	More generalizable results 
@@ -23,8 +23,16 @@ Top level requirements (Plan for whole project)
 
 
 
-Current Iteration [2]:
+Current Iteration [3]:
 
+
+
+Finish the damn paper!
+
+
+
+
+Old iteration-------------------
 I’m going to thoroughly test my infusion method using several different tasks and datasets, running through statistical analyzes on the data that I generate to quantify how infusion affects the performance of the model. I’m also going to try to figure out why I get the results I get by looking at the embeddings using t-SNE and perhaps by using SHAP or some other explainability framework adapted to GNNs. Througout this I will generate tables, statistics, and graphs that I will use in my paper that I will be writing in paralell to my statistical analysis. Focusing on a MVP version that I can iterate using nicer graphs and better language. 
 
 ---- Requirements -----

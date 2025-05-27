@@ -261,6 +261,9 @@
   - Ran some quick experiments to verify a difference I saw when I lowered the min_class size after my splitting optimization
     - There was a significand improvement in all
     - but this would lower generalizability or coverage, I'm basically reducing the complexity of the task. 
+  - got my small fix to glycoworks pushed to the origin!
+  - This insures that my code can run without a local install. 
+  - Now I need to focus hard oin finishing the paper, just a couple of days left
   - 
 
   
