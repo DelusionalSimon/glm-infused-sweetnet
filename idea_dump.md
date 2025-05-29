@@ -161,6 +161,10 @@
     - 
     - 
 - 
+# Visual ideas paper
+-  Basing it of the template for tool paper for computational biology might be apt. 
+-  
+
 
 # things to improve in glycowork
 - documentation for using pretrained models

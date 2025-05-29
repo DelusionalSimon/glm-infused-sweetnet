@@ -268,6 +268,7 @@
   - Feat (t-SNE): for lack of better judgement I added a setting to only plot SNFG monosaccharides. No more coding.
   - iterated skeleton (Now with more bones!) moving along nicely. 
   - I feel like the embedding space insights directly explain some of my key findings.  Why doesn't trainability impact performance in the baseline case? because the embeddings barely move and show no clusters, perhaps because the model is already "saturated" by just shifting the weights. which is why the trainability only becomes relevant on hard training sets. This also explains why infusion wasn't effective. if the base embeddings don't matter much, what good can pre-trained embeddings do? The fact that they actually lower performance points towards the conclusion that the embeddings are only used to tell glycowords apart. pure random embeddings are better "labels" than the clustered embeddings from the GlyLMs
+  - I'm adopting a ruthlessly iterative approach today. To ensure that I have something to hand in at the end of the day I'm skipping the rest of my results section and writing only the relevant discussion for the initial results section with only hints to the embeddings as labels idea, followed by relevant methods and a barebones introduction. Given time I will iterate the entire structure to add each new finding in turn, fleshing out discussion and other parts as I do so.
   - 
 
   
